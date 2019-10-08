@@ -15,9 +15,22 @@ class StoryblocksApi {
    * @param {string} credentials.privateKey
    * @param {string} credentials.publicKey
    */
-  constructor (base, credentials) {
+  constructor (base, credentials, endpoints = []) {
     this[BASE] = base;
     this[CREDENTIALS] = credentials;
+    endpoints.forEach(this.endpoint.bind(this));
+  }
+
+  /**
+   * Add an endpoint to this api.
+   *
+   * @param {string} config.name
+   * @param {string} config.endpoint
+   * @param {string} config.method
+   */
+  endpoint (config) {
+    const { name, endpoint, method = 'GET' } = config;
+    this[name] = this[name] || this.request.bind(this, endpoint, method);
   }
 
   /**
@@ -60,15 +73,20 @@ class StoryblocksApi {
   /**
    * Make a request.
    *
-   * @param {string} endpoint
+   * @param {function} endpointFn
    * @param {string} method
    * @param {object} params
    * @return {object}
    */
-  async request (endpoint, method, params) {
-    const baseUrl = this[BASE];
-    const query = { ...this.query(params), ...this.auth(endpoint) };
-    const opts = { baseUrl, json: true, method, query, throwHttpErrors: false };
+  async request (endpointFn, method, params) {
+    const { endpoint, query } = endpointFn(this.query(params));
+    const opts = {
+      baseUrl: this[BASE],
+      json: true,
+      method,
+      query: { ...query, ...this.auth(endpoint) },
+      throwHttpErrors: false
+    };
     const response = await got(endpoint, opts);
     const {
       body: { success = false, message = 'request failed', ...results } = {},
