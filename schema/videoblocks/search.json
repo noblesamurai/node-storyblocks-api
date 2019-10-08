@@ -1,0 +1,91 @@
+{
+  "uri": "https://api.videoblocks.com/api/v1/stock-items/search",
+  "method": "GET",
+  "query": {
+    "keywords": {
+      "type": "string"
+    },
+    "page": {
+      "type": "integer"
+    },
+    "num_results": {
+      "type": "integer",
+      "max": 10000
+    },
+    "contributor_id": {
+      "type": "string"
+    },
+    "sort": {
+      "type": "enum",
+      "values": [
+        "most_relevant",
+        "most_downloaded",
+        "highest_rated",
+        "most_recent",
+        "trending_now",
+        "undiscovered"
+      ]
+    },
+    "content_type": {
+      "type": "enum",
+      "values": [
+        "all",
+        "footage",
+        "motionbackgrounds",
+        "templates"
+      ]
+    },
+    "qualityy": {
+      "type": "enum",
+      "values": [
+        "HD",
+        "4K",
+        "ALL"
+      ]
+    },
+    "has_talent_released": {
+      "type": "boolean"
+    },
+    "has_property_released": {
+      "type": "boolean"
+    },
+    "is_editorial": {
+      "type": "boolean"
+    },
+    "min_duration": {
+      "type": "integer"
+    },
+    "max_duration": {
+      "type": "integer"
+    },
+    "filtered_keywords": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "string"
+    },
+    "library_ids": {
+      "type": "string"
+    },
+    "exclude_library_ids": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "available_through": {
+      "type": "date"
+    }
+  },
+  "response": {
+    "info": {
+      "type": "array"
+    },
+    "totalSearchResults": {
+      "type": "integer"
+    }
+  }
+}

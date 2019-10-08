@@ -1,0 +1,25 @@
+{
+  "uri": "https://api.videoblocks.com/api/v1/collections/{collection_id}",
+  "method": "GET",
+  "params": {
+    "collection_id": {
+      "type": "integer"
+    }
+  },
+  "query": {
+    "page": {
+      "type": "integer"
+    },
+    "num_results": {
+      "type": "integer"
+    }
+  },
+  "response": {
+    "info": {
+      "type": "array"
+    },
+    "totalSearchResults": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "uri": "https://api.audioblocks.com/api/v1/stock-items/download/{stock_item_id}/{downloader_id}",
+  "method": "GET",
+  "params": {
+    "stock_item_id": {
+      "type": "integer"
+    },
+    "downloader_id": {
+      "type": "string"
+    }
+  },
+  "response": {
+    "info": {
+      "type": "array"
+    }
+  }
+}

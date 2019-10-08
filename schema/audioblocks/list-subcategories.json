@@ -1,0 +1,14 @@
+{
+  "uri": "https://api.audioblocks.com/api/v1/stock-items/categories/{category}/subcategories",
+  "method": "GET",
+  "params": {
+    "category": {
+      "type": "string"
+    }
+  },
+  "response": {
+    "info": {
+      "type": "array"
+    }
+  }
+}

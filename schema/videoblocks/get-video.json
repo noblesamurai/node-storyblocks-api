@@ -1,0 +1,18 @@
+{
+  "uri": "https://api.videoblocks.com/api/v1/stock-items/{stock_item_id}",
+  "method": "GET",
+  "params": {
+    "stock_item_id": {
+      "type": "integer"
+    }
+  },
+  "query": {},
+  "response": {
+    "info": {
+      "type": "array"
+    },
+    "totalResults": {
+      "type": "integer"
+    }
+  }
+}

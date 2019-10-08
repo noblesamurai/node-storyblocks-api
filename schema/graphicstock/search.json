@@ -1,0 +1,105 @@
+{
+  "uri": "https://api.graphicstock.com/api/v1/stock-items/search",
+  "method": "GET",
+  "query": {
+    "keywords": {
+      "type": "string"
+    },
+    "page": {
+      "type": "integer"
+    },
+    "num_results": {
+      "type": "integer",
+      "max": 10000
+    },
+    "sort": {
+      "type": "enum",
+      "values": [
+        "most_relevant",
+        "most_downloaded",
+        "highest_rated",
+        "most_recent",
+        "trending_now",
+        "undiscovered"
+      ]
+    },
+    "content_type": {
+      "type": "enum",
+      "values": [
+        "all",
+        "photos",
+        "illustrations",
+        "vectors"
+      ]
+    },
+    "categories": {
+      "type": "enum",
+      "values": [
+				"backgrounds",
+				"beauty-and-fashion",
+				"buildings-and-landmarks",
+				"business",
+				"cultural",
+        "design-elements",
+				"fictional",
+				"health-and-science",
+				"holidays-and-celebrations",
+				"nature-and-wildlife",
+				"objects",
+				"people",
+				"sports-and-outdoors",
+				"travel-and-transportation"
+      ]
+    },
+    "orientation": {
+      "type": "enum",
+      "values": [
+        "all",
+				"portrait",
+				"square",
+				"landscape"
+      ]
+    },
+    "has_transparency": {
+      "type": "boolean"
+    },
+    "color": {
+      "type": "color"
+    },
+    "has_talent_released": {
+      "type": "boolean"
+    },
+    "has_property_released": {
+      "type": "boolean"
+    },
+    "is_editorial": {
+      "type": "boolean"
+    },
+    "filtered_keywords": {
+      "type": "string"
+    },
+    "library_ids": {
+      "type": "string"
+    },
+    "exclude_library_ids": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "available_through": {
+      "type": "date"
+    }
+  },
+  "response": {
+    "info": {
+      "type": "array"
+    },
+    "totalSearchResults": {
+      "type": "integer"
+    }
+  }
+}

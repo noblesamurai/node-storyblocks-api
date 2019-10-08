@@ -1,0 +1,130 @@
+{
+  "uri": "https://api.audioblocks.com/api/v1/stock-items/search",
+  "method": "GET",
+  "query": {
+    "keywords": {
+      "type": "string"
+    },
+    "page": {
+      "type": "integer"
+    },
+    "num_results": {
+      "type": "integer",
+      "max": 10000
+    },
+    "sort": {
+      "type": "enum",
+      "values": [
+        "most_relevant",
+        "most_downloaded",
+        "highest_rated",
+        "most_recent",
+        "trending_now",
+        "undiscovered"
+      ]
+    },
+    "content_type": {
+      "type": "enum",
+      "values": [
+        "all",
+        "music",
+        "loops",
+        "sfx"
+      ]
+    },
+    "genres": {
+      "type": "enum",
+      "values": [
+        "ambient",
+        "blues",
+        "bumpers-and-stingers",
+        "chill-out",
+        "cinematic",
+        "classical",
+        "corporate",
+        "country",
+        "electronic",
+        "folk",
+        "hip-hop",
+        "holidays-and-special-events",
+        "horror",
+        "jazz",
+        "kids-and-family",
+        "pop",
+        "religious",
+        "rhythm-and-blues",
+        "rock",
+        "world"
+      ]
+    },
+    "moods": {
+      "type": "enum",
+      "values": [
+        "angry",
+        "dark",
+        "epic",
+        "happy",
+        "inspiring",
+        "love",
+        "playful",
+        "relaxing",
+        "sad",
+        "serious"
+      ]
+    },
+    "categories": {
+      "type": "string"
+    },
+    "instruments": {
+      "type": "enum",
+      "values": [
+        "brass",
+        "guitar-instrument",
+        "orchestra",
+        "percussion-instrument",
+        "piano",
+        "synth",
+        "vocals",
+        "woodwind"
+      ]
+    },
+    "min_duration": {
+      "type": "integer"
+    },
+    "max_duration": {
+      "type": "integer"
+    },
+    "min_bpm": {
+      "type": "integer"
+    },
+    "max_bpm": {
+      "type": "integer"
+    },
+    "filtered_keywords": {
+      "type": "string"
+    },
+    "library_ids": {
+      "type": "string"
+    },
+    "exclude_library_ids": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "available_through": {
+      "type": "date"
+    }
+  },
+  "response": {
+    "info": {
+      "type": "array"
+    },
+    "totalSearchResults": {
+      "type": "integer"
+    }
+  }
+}
