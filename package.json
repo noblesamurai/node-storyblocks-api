@@ -1,0 +1,59 @@
+{
+  "name": "storyblocks-api",
+  "description": "storyblocks API wrapper for node.js",
+  "version": "0.0.1",
+  "author": "Andrew Harris <andrew@noblesamurai.com>",
+  "license": "BSD",
+  "main": "src/index.js",
+  "files": [
+    "/src"
+  ],
+  "scripts": {
+    "coverage": "nyc npm test",
+    "pretest": "semistandard",
+    "test": "mocha --recursive test",
+    "watch": "mocha --recursive --watch test",
+    "docs": "jsdoc2md index.js"
+  },
+  "homepage": "https://github.com/noblesamurai/storyblocks-api",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/noblesamurai/storyblocks-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/noblesamurai/storyblocks-api/issues"
+  },
+  "engines": {
+    "node": "10.x",
+    "npm": "6.x"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "dirty-chai": "^2.0.1",
+    "jsdoc-to-markdown": "^4.0.1",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "semistandard": "*",
+    "sinon": "^7.2.7",
+    "sinon-chai": "^3.3.0"
+  },
+  "keywords": [],
+  "nyc": {
+    "include": [
+      "src"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "cache": true,
+    "all": true
+  },
+  "semistandard": {
+    "env": [
+      "mocha"
+    ]
+  }
+}
