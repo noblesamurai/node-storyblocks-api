@@ -1,7 +1,8 @@
+const createError = require('http-errors');
 const crypto = require('crypto');
+const got = require('got');
 const mapKeys = require('lodash.mapkeys');
 const snakeCase = require('lodash.snakecase');
-const request = require('request-promise-native');
 
 const BASE = Symbol('base');
 const CREDENTIALS = Symbol('credentials');
@@ -52,7 +53,7 @@ class StoryblocksApi {
    * @param {object} params
    * @return {object}
    */
-  qs (params) {
+  query (params) {
     return mapKeys(params, (value, key) => snakeCase(key));
   }
 
@@ -65,9 +66,16 @@ class StoryblocksApi {
    * @return {object}
    */
   async request (endpoint, method, params) {
-    const uri = this.uri(endpoint);
-    const qs = { ...this.qs(params), ...this.auth(endpoint) };
-    return request({ method, uri, qs, json: true });
+    const baseUrl = this[BASE];
+    const query = { ...this.query(params), ...this.auth(endpoint) };
+    const opts = { baseUrl, json: true, method, query, throwHttpErrors: false };
+    const response = await got(endpoint, opts);
+    const {
+      body: { success = false, message = 'request failed', ...results } = {},
+      statusCode = 500
+    } = response;
+    if (!success) throw createError(statusCode, message, results);
+    return results;
   }
 }
 

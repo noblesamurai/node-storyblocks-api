@@ -1,6 +1,6 @@
 const StoryblocksApi = require('./storyblocks');
 
-const AUTIOBLOCKS_BASE = 'https://api.audioblocks.com';
+const AUTIOBLOCKS_BASE = 'https://api.audioblocks.com/';
 
 class AudioblocksApi extends StoryblocksApi {
   /**
