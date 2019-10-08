@@ -2,6 +2,14 @@
  * Create an endpoint creation function so that we can inject query values
  * into the actual URL (removing them from the query object in the process).
  *
+ * Usage example:
+ * ```
+ * const endpointFn = endpointTemplate`/api/item/${'item'}`;
+ * const { endpoint, query } = endpointFn({ item: 42, keyword: 'test' });
+ * // endpoint = '/api/item/42';
+ * // query = { keyword: 'test' };
+ * ```
+ *
  * @param {array} strings
  * @param {array<string>} ...keys
  * @return {function}
