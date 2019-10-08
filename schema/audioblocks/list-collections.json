@@ -1,9 +1,0 @@
-{
-  "uri": "https://api.audioblocks.com/api/v1/collections",
-  "method": "GET",
-  "response": {
-    "info": {
-      "type": "array"
-    }
-  }
-}

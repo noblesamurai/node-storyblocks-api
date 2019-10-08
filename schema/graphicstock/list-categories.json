@@ -1,9 +1,0 @@
-{
-  "uri": "https://api.graphicstock.com/api/v1/stock-items/categories",
-  "method": "GET",
-  "response": {
-    "info": {
-      "type": "array"
-    }
-  }
-}
