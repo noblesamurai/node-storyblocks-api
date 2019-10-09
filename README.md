@@ -1,25 +1,6 @@
-# Storyblocks-api [![Build Status](https://secure.travis-ci.org/noblesamurai/storyblocks-api.png?branch=master)](http://travis-ci.org/noblesamurai/storyblocks-api) [![NPM version](https://badge-me.herokuapp.com/api/npm/storyblocks-api.png)](http://badges.enytc.com/for/npm/storyblocks-api)
+# Storyblocks API [![Build Status](https://travis-ci.org/noblesamurai/node-storyblocks-api.svg?branch=master)](https://travis-ci.org/noblesamurai/node-storyblocks-api)
 
 > storyblocks API wrapper for node.js
-
-## Purpose
-- What problem does this module solve? At least a few sentences.
-PLEASE_FILL_IN_HERE
-
-## Usage
-
-```js
-// Several examples of usage.
-// Usually copying and pasting code from the tests and making the code standalone suffices.
-// PLEASE_FILL_IN_HERE
-```
-
-## API
-
-PLEASE_FILL_IN_HERE
-
-Note: To regenerate this section from the jsdoc run `npm run docs` and paste
-the output above.
 
 ## Installation
 
@@ -28,6 +9,132 @@ This module is installed via npm:
 ``` bash
 $ npm install storyblocks-api
 ```
+
+## API
+
+Create the authorised API service you need (audioblocks or videoblocks).
+
+```js
+const credentials = {
+  privateKey: '...',
+  publicKey: '...'
+};
+const { videoblocks } = require('storyblocks-api')(credentials);
+```
+
+Then start making your requests to storyblocks
+```js
+const params = {
+  keywords: 'mountain aerial',
+  page: 1,
+  numResults: 5
+};
+const results = await videoblocks.search(params);
+```
+
+#### Parameters
+
+The parameters argument combines both the URI parameters and the Query parameters
+shown in the [docs](https://developer.storyblocks.com/docs/v1/index.html).
+
+All parameter keys can be defined in camel case to be consistent with code styling
+practices.  All keys will be converted back to snake case for the acutal request
+to storyblocks.
+
+### Audioblocks
+
+#### Search Audio
+```js
+const results = await audioblocks.search(params);
+```
+For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=search-audio).
+
+#### List Categories
+```js
+const results = await audioblocks.categories(params);
+```
+For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=list-categories-2).
+
+#### List Subcategories
+```js
+const results = await audioblocks.subcategories(params);
+```
+For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=list-subcategories).
+
+#### Get Audio
+```js
+const results = await audioblocks.audio(params);
+```
+For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=get-audio).
+
+#### Get Similar Audio
+```js
+const results = await audioblocks.similar(params);
+```
+For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=get-similar-audio).
+
+#### Download Audio
+```js
+const results = await audioblocks.download(params);
+```
+For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=download-audio).
+
+#### List Collections
+```js
+const results = await audioblocks.collections(params);
+```
+For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=list-collections-2).
+
+#### Get Collections
+```js
+const results = await audioblocks.collection(params);
+```
+For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=get-collection-2).
+
+### Videoblocks
+
+#### Search Videos
+```js
+const results = await videoblocks.search(params);
+```
+For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=search-videos).
+
+#### List Categories
+```js
+const results = await videoblocks.categories(params);
+```
+For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=list-categories).
+
+#### Get Video
+```js
+const results = await videoblocks.video(params);
+```
+For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=get-video).
+
+#### Get Similar Videos
+```js
+const results = await videoblocks.similar(params);
+```
+For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=get-similar-videos).
+
+#### Download Video
+```js
+const results = await videoblocks.download(params);
+```
+For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=download-video).
+
+#### List Collections
+```js
+const results = await videoblocks.collections(params);
+```
+For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=list-collections).
+
+#### Get Collections
+```js
+const results = await videoblocks.collection(params);
+```
+For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=get-collection).
+
 ## License
 
 The BSD License
