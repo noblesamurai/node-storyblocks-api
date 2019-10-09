@@ -15,13 +15,13 @@
     "watch": "mocha --recursive --watch test",
     "docs": "jsdoc2md index.js"
   },
-  "homepage": "https://github.com/noblesamurai/storyblocks-api",
+  "homepage": "https://github.com/noblesamurai/node-storyblocks-api",
   "repository": {
     "type": "git",
-    "url": "git://github.com/noblesamurai/storyblocks-api.git"
+    "url": "git://github.com/noblesamurai/node-storyblocks-api.git"
   },
   "bugs": {
-    "url": "https://github.com/noblesamurai/storyblocks-api/issues"
+    "url": "https://github.com/noblesamurai/node-storyblocks-api/issues"
   },
   "engines": {
     "node": "10.x",
