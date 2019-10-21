@@ -34,7 +34,7 @@ APIS.forEach(({ service: name, type, baseUrl }) => {
       expect(service).to.respondTo('collection');
     });
 
-    it('should search for audio', async function () {
+    it(`should search for ${type}`, async function () {
       let query;
       nock(baseUrl).get('/api/v1/stock-items/search')
         .query(q => (query = q) || true) // export query for checking later
@@ -52,7 +52,7 @@ APIS.forEach(({ service: name, type, baseUrl }) => {
         .reply(401, { success: false, code: 1001, message: 'API request is invalid.' });
 
       const search = service.search();
-      await expect(search).to.eventually.be.rejectedWith(UnauthorizedError, 'API request is invalid.');
+      await expect(search).to.be.rejectedWith(UnauthorizedError, 'API request is invalid.');
     });
   });
 });

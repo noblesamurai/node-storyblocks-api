@@ -19,7 +19,7 @@ const credentials = {
   privateKey: '...',
   publicKey: '...'
 };
-const { videoblocks } = require('storyblocks-api')(credentials);
+const { audioblocks, videoblocks } = require('storyblocks-api')(credentials);
 ```
 
 Then start making your requests to storyblocks
@@ -30,6 +30,7 @@ const params = {
   numResults: 5
 };
 const results = await videoblocks.search(params);
+// results = { info: [...], totalSearchResults: 4652 };
 ```
 
 #### Parameters

@@ -25,7 +25,7 @@ class StoryblocksApi {
   }
 
   /**
-   * Construct the require authentication query string parameters.
+   * Construct the required authentication query string parameters.
    *
    * @param {string} endpoint
    * @return {object}
