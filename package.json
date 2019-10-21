@@ -1,7 +1,7 @@
 {
   "name": "storyblocks-api",
   "description": "storyblocks API wrapper for node.js",
-  "version": "0.0.1",
+  "version": "1.0.0-0",
   "author": "Andrew Harris <andrew@noblesamurai.com>",
   "license": "BSD",
   "main": "src/index.js",
@@ -15,29 +15,33 @@
     "watch": "mocha --recursive --watch test",
     "docs": "jsdoc2md index.js"
   },
-  "homepage": "https://github.com/noblesamurai/storyblocks-api",
+  "homepage": "https://github.com/noblesamurai/node-storyblocks-api",
   "repository": {
     "type": "git",
-    "url": "git://github.com/noblesamurai/storyblocks-api.git"
+    "url": "git://github.com/noblesamurai/node-storyblocks-api.git"
   },
   "bugs": {
-    "url": "https://github.com/noblesamurai/storyblocks-api/issues"
+    "url": "https://github.com/noblesamurai/node-storyblocks-api/issues"
   },
   "engines": {
     "node": "10.x",
     "npm": "6.x"
   },
-  "dependencies": {},
+  "dependencies": {
+    "got": "^9.6.0",
+    "http-errors": "^1.7.3",
+    "lodash.mapkeys": "^4.6.0",
+    "lodash.snakecase": "^4.1.1"
+  },
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "dirty-chai": "^2.0.1",
     "jsdoc-to-markdown": "^5.0.1",
     "mocha": "^6.2.1",
+    "nock": "^11.4.0",
     "nyc": "^14.1.1",
-    "semistandard": "*",
-    "sinon": "^7.5.0",
-    "sinon-chai": "^3.3.0"
+    "semistandard": "*"
   },
   "keywords": [],
   "nyc": {
