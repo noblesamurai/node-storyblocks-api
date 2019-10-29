@@ -46,6 +46,15 @@ APIS.forEach(({ service: name, type, baseUrl }) => {
       expect(query).to.include({ keyword: 'fish', num_results: '5' });
     });
 
+    it('should get rid of \u0000', async function () {
+      nock(baseUrl).get('/api/v1/stock-items/search')
+        .query(true)
+        .reply(200, { success: true, items: ['ITEM'], info: { blerg: 'things\u0000' } });
+
+      const results = await service.search({ keyword: 'fish', numResults: 5 });
+      expect(results.info.blerg).to.equal('things');
+    });
+
     it('should throw an error', async function () {
       nock(baseUrl).get('/api/v1/stock-items/search')
         .query(true)
