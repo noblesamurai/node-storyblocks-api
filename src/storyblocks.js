@@ -4,6 +4,13 @@ const got = require('got');
 const mapKeys = require('lodash.mapkeys');
 const snakeCase = require('lodash.snakecase');
 
+// strip any \u0000 null characters from the response before it is json parsed.
+const client = got.extend({
+  hooks: {
+    afterResponse: (response) => ({ ...response, body: response.body.replace('\\u0000', '') })
+  }
+});
+
 const BASE = Symbol('base');
 const CREDENTIALS = Symbol('credentials');
 
@@ -67,7 +74,7 @@ class StoryblocksApi {
       query: { ...query, ...this.auth(endpoint) },
       throwHttpErrors: false
     };
-    const response = await got(endpoint, opts);
+    const response = await client(endpoint, opts);
     const {
       body: { success = false, message = 'request failed', ...results } = {},
       statusCode = 500
