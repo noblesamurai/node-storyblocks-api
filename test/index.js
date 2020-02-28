@@ -15,8 +15,16 @@ describe('index', function () {
 });
 
 const APIS = [
-  { service: 'audioblocks', type: 'audio', baseUrl: 'https://api.audioblocks.com/' },
-  { service: 'videoblocks', type: 'video', baseUrl: 'https://api.videoblocks.com/' }
+  {
+    service: 'audioblocks',
+    type: 'audio',
+    baseUrl: 'https://api.audioblocks.com/'
+  },
+  {
+    service: 'videoblocks',
+    type: 'video',
+    baseUrl: 'https://api.videoblocks.com/'
+  }
 ];
 APIS.forEach(({ service: name, type, baseUrl }) => {
   describe(`index: ${name}`, function () {
@@ -36,32 +44,52 @@ APIS.forEach(({ service: name, type, baseUrl }) => {
 
     it(`should search for ${type}`, async function () {
       let query;
-      nock(baseUrl).get('/api/v1/stock-items/search')
+      nock(baseUrl)
+        .get('/api/v1/stock-items/search')
         .query(q => (query = q) || true) // export query for checking later
         .reply(200, { success: true, items: ['ITEM'] });
 
       const results = await service.search({ keyword: 'fish', numResults: 5 });
       expect(results).to.deep.equal({ items: ['ITEM'] });
-      expect(query).to.have.keys('keyword', 'num_results', 'EXPIRES', 'HMAC', 'APIKEY');
+      expect(query).to.have.keys(
+        'keyword',
+        'num_results',
+        'EXPIRES',
+        'HMAC',
+        'APIKEY'
+      );
       expect(query).to.include({ keyword: 'fish', num_results: '5' });
     });
 
     it('should get rid of \u0000', async function () {
-      nock(baseUrl).get('/api/v1/stock-items/search')
+      nock(baseUrl)
+        .get('/api/v1/stock-items/search')
         .query(true)
-        .reply(200, { success: true, items: ['ITEM'], info: { blerg: 'things\u0000' } });
+        .reply(200, {
+          success: true,
+          items: ['ITEM'],
+          info: { blerg: 'things\u0000' }
+        });
 
       const results = await service.search({ keyword: 'fish', numResults: 5 });
       expect(results.info.blerg).to.equal('things');
     });
 
     it('should throw an error', async function () {
-      nock(baseUrl).get('/api/v1/stock-items/search')
+      nock(baseUrl)
+        .get('/api/v1/stock-items/search')
         .query(true)
-        .reply(401, { success: false, code: 1001, message: 'API request is invalid.' });
+        .reply(401, {
+          success: false,
+          code: 1001,
+          message: 'API request is invalid.'
+        });
 
       const search = service.search();
-      await expect(search).to.be.rejectedWith(UnauthorizedError, 'API request is invalid.');
+      await expect(search).to.be.rejectedWith(
+        UnauthorizedError,
+        'API request is invalid.'
+      );
     });
   });
 });

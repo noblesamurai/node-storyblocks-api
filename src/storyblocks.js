@@ -7,7 +7,10 @@ const snakeCase = require('lodash.snakecase');
 // strip any \u0000 null characters from the response before it is json parsed.
 const client = got.extend({
   hooks: {
-    afterResponse: (response) => ({ ...response, body: response.body.replace('\\u0000', '') })
+    afterResponse: response => ({
+      ...response,
+      body: response.body.replace('\\u0000', '')
+    })
   }
 });
 
