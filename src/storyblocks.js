@@ -74,8 +74,7 @@ class StoryblocksApi {
       baseUrl: this[BASE],
       json: true,
       method,
-      query: { ...query, ...this.auth(endpoint) },
-      throwHttpErrors: false
+      query: { ...query, ...this.auth(endpoint) }
     };
     const response = await client(endpoint, opts);
     const {
