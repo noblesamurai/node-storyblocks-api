@@ -4,6 +4,8 @@ const got = require('got');
 const mapKeys = require('lodash.mapkeys');
 const snakeCase = require('lodash.snakecase');
 
+const AUTH_EXPIRY_SECONDS = 12 * 60 * 60; // 12 hours
+
 // strip any \u0000 null characters from the response before it is json parsed.
 const client = got.extend({
   hooks: {
@@ -42,7 +44,7 @@ class StoryblocksApi {
    */
   auth (endpoint) {
     const { privateKey, publicKey } = this[CREDENTIALS];
-    const expires = Math.floor(Date.now() / 1000);
+    const expires = Math.floor(Date.now() / 1000) + AUTH_EXPIRY_SECONDS;
     const hmac = crypto.createHmac('sha256', privateKey + expires);
     hmac.update(endpoint);
     return { EXPIRES: expires, HMAC: hmac.digest('hex'), APIKEY: publicKey };
