@@ -1,7 +1,7 @@
 {
   "name": "storyblocks-api",
   "description": "storyblocks API wrapper for node.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Andrew Harris <andrew@noblesamurai.com>",
   "license": "BSD",
   "main": "src/index.js",
