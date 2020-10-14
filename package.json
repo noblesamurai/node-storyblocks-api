@@ -41,7 +41,8 @@
     "mocha": "^6.2.1",
     "nock": "^11.4.0",
     "nyc": "^14.1.1",
-    "semistandard": "*"
+    "semistandard": "*",
+    "supertest": "^5.0.0"
   },
   "keywords": [],
   "nyc": {
