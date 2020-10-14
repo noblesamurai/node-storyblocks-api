@@ -19,17 +19,19 @@ const services = credentials =>
     (acc, { service, type, baseUrl }) => ({
       ...acc,
       [service]: new StoryblocksApi(baseUrl, credentials, [
-        { name: 'search', endpoint: e`/api/v2/stock-items/search` },
         { name: 'categories', endpoint: e`/api/v2/stock-items/categories` },
-        // audio is the only endpoint with subcategories...
         ...(type === 'audio'
           ? [
+            { name: 'search', endpoint: e`/api/v2/audio/search` },
+            // audio is the only endpoint with subcategories...
             {
               name: 'subcategories',
               endpoint: e`/api/v2/stock-items/categories/${'category'}/subcategories`
             }
           ]
-          : []),
+          : [
+            { name: 'search', endpoint: e`/api/v2/videos/search` }
+          ]),
         { name: type, endpoint: e`/api/v2/stock-items/${'stock_item_id'}` },
         {
           name: 'similar',

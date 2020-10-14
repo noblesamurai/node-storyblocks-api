@@ -81,10 +81,10 @@ class StoryblocksApi {
     };
     const response = await client(endpoint, opts);
     const {
-      body: { success = false, message = 'request failed', ...results } = {},
+      body: { errors: message = 'request failed', ...results } = {},
       statusCode = 500
     } = response;
-    if (!success) throw createError(statusCode, message, results);
+    if (statusCode >= 300) throw createError(statusCode, message, results);
     return results;
   }
 }

@@ -45,39 +45,38 @@ APIS.forEach(({ service: name, type, baseUrl }) => {
     it(`should search for ${type}`, async function () {
       let query;
       nock(baseUrl)
-        .get('/api/v2/stock-items/search')
+        .get(`/api/v2/${type === 'audio' ? 'audio' : 'videos'}/search`)
         .query(q => (query = q) || true) // export query for checking later
-        .reply(200, { success: true, items: ['ITEM'] });
+        .reply(200, { total_results: 1, results: ['ITEM'] });
 
-      const results = await service.search({ keyword: 'fish', numResults: 5 });
-      expect(results).to.deep.equal({ items: ['ITEM'] });
+      const results = await service.search({ projectId: 'blerg', userId: 'merg', keyword: 'fish' });
+      expect(results).to.deep.equal({ total_results: 1, results: ['ITEM'] });
       expect(query).to.have.keys(
-        'keyword',
-        'num_results',
+        'APIKEY',
         'EXPIRES',
         'HMAC',
-        'APIKEY'
+        'keyword',
+        'project_id',
+        'user_id'
       );
-      expect(query).to.include({ keyword: 'fish', num_results: '5' });
+      expect(query).to.include({ keyword: 'fish', project_id: 'blerg', user_id: 'merg' });
     });
 
     it('should get rid of \u0000', async function () {
       nock(baseUrl)
-        .get('/api/v2/stock-items/search')
+        .get(`/api/v2/${type === 'audio' ? 'audio' : 'videos'}/search`)
         .query(true)
         .reply(200, {
-          success: true,
-          items: ['ITEM'],
-          info: { blerg: 'things\u0000' }
+          results: ['things\u0000']
         });
 
-      const results = await service.search({ keyword: 'fish', numResults: 5 });
-      expect(results.info.blerg).to.equal('things');
+      const results = await service.search({ projectId: 'blerg', userId: 'merg', keyword: 'fish' });
+      expect(results.results[0]).to.equal('things');
     });
 
     it('should throw an error', async function () {
       nock(baseUrl)
-        .get('/api/v2/stock-items/search')
+        .get(`/api/v2/${type === 'audio' ? 'audio' : 'videos'}/search`)
         .query(true)
         .reply(401, {
           success: false,
