@@ -19,30 +19,30 @@ const services = credentials =>
     (acc, { service, type, baseUrl }) => ({
       ...acc,
       [service]: new StoryblocksApi(baseUrl, credentials, [
-        { name: 'search', endpoint: e`/api/v1/stock-items/search` },
-        { name: 'categories', endpoint: e`/api/v1/stock-items/categories` },
+        { name: 'search', endpoint: e`/api/v2/stock-items/search` },
+        { name: 'categories', endpoint: e`/api/v2/stock-items/categories` },
         // audio is the only endpoint with subcategories...
         ...(type === 'audio'
           ? [
             {
               name: 'subcategories',
-              endpoint: e`/api/v1/stock-items/categories/${'category'}/subcategories`
+              endpoint: e`/api/v2/stock-items/categories/${'category'}/subcategories`
             }
           ]
           : []),
-        { name: type, endpoint: e`/api/v1/stock-items/${'stock_item_id'}` },
+        { name: type, endpoint: e`/api/v2/stock-items/${'stock_item_id'}` },
         {
           name: 'similar',
-          endpoint: e`/api/v1/stock-items/similar/${'stock_item_id'}`
+          endpoint: e`/api/v2/stock-items/similar/${'stock_item_id'}`
         },
         {
           name: 'download',
-          endpoint: e`/api/v1/stock-items/download/${'stock_item_id'}/${'downloader_id'}`
+          endpoint: e`/api/v2/stock-items/download/${'stock_item_id'}/${'downloader_id'}`
         },
-        { name: 'collections', endpoint: e`/api/v1/collections` },
+        { name: 'collections', endpoint: e`/api/v2/collections` },
         {
           name: 'collection',
-          endpoint: e`/api/v1/collections/${'collection_id'}`
+          endpoint: e`/api/v2/collections/${'collection_id'}`
         }
       ])
     }),

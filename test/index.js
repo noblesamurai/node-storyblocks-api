@@ -45,7 +45,7 @@ APIS.forEach(({ service: name, type, baseUrl }) => {
     it(`should search for ${type}`, async function () {
       let query;
       nock(baseUrl)
-        .get('/api/v1/stock-items/search')
+        .get('/api/v2/stock-items/search')
         .query(q => (query = q) || true) // export query for checking later
         .reply(200, { success: true, items: ['ITEM'] });
 
@@ -63,7 +63,7 @@ APIS.forEach(({ service: name, type, baseUrl }) => {
 
     it('should get rid of \u0000', async function () {
       nock(baseUrl)
-        .get('/api/v1/stock-items/search')
+        .get('/api/v2/stock-items/search')
         .query(true)
         .reply(200, {
           success: true,
@@ -77,7 +77,7 @@ APIS.forEach(({ service: name, type, baseUrl }) => {
 
     it('should throw an error', async function () {
       nock(baseUrl)
-        .get('/api/v1/stock-items/search')
+        .get('/api/v2/stock-items/search')
         .query(true)
         .reply(401, {
           success: false,
