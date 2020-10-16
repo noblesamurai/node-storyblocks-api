@@ -30,6 +30,7 @@
   "dependencies": {
     "got": "^9.6.0",
     "http-errors": "^1.7.3",
+    "lodash.camelcase": "^4.3.0",
     "lodash.mapkeys": "^4.6.0",
     "lodash.snakecase": "^4.1.1"
   },

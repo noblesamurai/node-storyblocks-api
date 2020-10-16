@@ -1,10 +1,18 @@
-const createError = require('http-errors');
+const _createError = require('http-errors');
+const camelCase = require('lodash.camelcase');
 const crypto = require('crypto');
 const got = require('got');
 const mapKeys = require('lodash.mapkeys');
 const snakeCase = require('lodash.snakecase');
+const { URL } = require('url');
 
 const AUTH_EXPIRY_SECONDS = 12 * 60 * 60; // 12 hours
+
+function createError (code, errorOrErrors) {
+  if (typeof errorOrErrors === 'string') return _createError(code, errorOrErrors);
+  const errors = mapKeys(errorOrErrors, (value, key) => camelCase(key));
+  return _createError(code, 'request failed', { errors });
+}
 
 // strip any \u0000 null characters from the response before it is json parsed.
 const client = got.extend({
@@ -46,7 +54,8 @@ class StoryblocksApi {
     const { privateKey, publicKey } = this[CREDENTIALS];
     const expires = Math.floor(Date.now() / 1000) + AUTH_EXPIRY_SECONDS;
     const hmac = crypto.createHmac('sha256', privateKey + expires);
-    hmac.update(endpoint);
+    const { pathname } = new URL(this[BASE] + endpoint);
+    hmac.update(pathname);
     return { EXPIRES: expires, HMAC: hmac.digest('hex'), APIKEY: publicKey };
   }
 
@@ -81,10 +90,10 @@ class StoryblocksApi {
     };
     const response = await client(endpoint, opts);
     const {
-      body: { success = false, message = 'request failed', ...results } = {},
+      body: { errors, ...results } = {},
       statusCode = 500
     } = response;
-    if (!success) throw createError(statusCode, message, results);
+    if (errors) throw createError(statusCode, errors);
     return results;
   }
 }
