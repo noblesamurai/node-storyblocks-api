@@ -19,29 +19,36 @@ const services = credentials =>
     (acc, { service, type, baseUrl }) => ({
       ...acc,
       [service]: new StoryblocksApi(baseUrl, credentials, [
-        { name: 'categories', endpoint: e`/api/v2/stock-items/categories` },
         ...(type === 'audio'
           ? [
             { name: 'search', endpoint: e`/api/v2/audio/search` },
             // audio is the only endpoint with subcategories...
             {
               name: 'subcategories',
-              endpoint: e`/api/v2/stock-items/categories/${'category'}/subcategories`
-            }
+              endpoint: e`/api/v2/stock-item/categories/${'category'}/subcategories`
+            },
+            { name: 'audio', endpoint: e`/api/v2/audio/stock-item/details/${'stock_item_id'}` },
+            {
+              name: 'download',
+              endpoint: e`/api/v2/audio/stock-item/download/${'stock_item_id'}`
+            },
+            { name: 'categories', endpoint: e`/api/v2/audio/stock-item/categories` },
+            { name: 'collections', endpoint: e`/api/v2/audio/stock-item/collections` },
           ]
           : [
-            { name: 'search', endpoint: e`/api/v2/videos/search` }
+            { name: 'search', endpoint: e`/api/v2/videos/search` },
+            { name: 'video', endpoint: e`/api/v2/videos/stock-item/details/${'stock_item_id'}` },
+            {
+              name: 'download',
+              endpoint: e`/api/v2/videos/stock-item/download/${'stock_item_id'}`
+            },
+            { name: 'categories', endpoint: e`/api/v2/videos/stock-item/categories` },
+            { name: 'collections', endpoint: e`/api/v2/videos/stock-item/collections` },
           ]),
-        { name: type, endpoint: e`/api/v2/stock-items/${'stock_item_id'}` },
         {
           name: 'similar',
           endpoint: e`/api/v2/stock-items/similar/${'stock_item_id'}`
         },
-        {
-          name: 'download',
-          endpoint: e`/api/v2/stock-items/download/${'stock_item_id'}/${'downloader_id'}`
-        },
-        { name: 'collections', endpoint: e`/api/v2/collections` },
         {
           name: 'collection',
           endpoint: e`/api/v2/collections/${'collection_id'}`
