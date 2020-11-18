@@ -17,26 +17,30 @@ function createError (code, errorOrErrors) {
 // strip any \u0000 null characters from the response before it is json parsed.
 const client = got.extend({
   hooks: {
-    afterResponse: response => ({
-      ...response,
-      body: response.body.replace('\\u0000', '')
-    })
+    afterResponse: [
+      response => {
+        return {
+          ...response,
+          body: response.body.replace('\\u0000', '')
+        };
+      }
+    ]
   }
 });
 
-const BASE = Symbol('base');
+const PREFIX = Symbol('prefix');
 const CREDENTIALS = Symbol('credentials');
 
 class StoryblocksApi {
   /**
    * Constructor
    *
-   * @param {string} base the api base domain url
+   * @param {string} prefix the api url prefix
    * @param {string} credentials.privateKey
    * @param {string} credentials.publicKey
    */
-  constructor (base, credentials, endpoints = []) {
-    this[BASE] = base;
+  constructor (prefix, credentials, endpoints = []) {
+    this[PREFIX] = prefix;
     this[CREDENTIALS] = credentials;
     endpoints.forEach(addEndpoint.bind(this));
     // don't allow any more modifications to this object after the constructor
@@ -54,7 +58,7 @@ class StoryblocksApi {
     const { privateKey, publicKey } = this[CREDENTIALS];
     const expires = Math.floor(Date.now() / 1000) + AUTH_EXPIRY_SECONDS;
     const hmac = crypto.createHmac('sha256', privateKey + expires);
-    const { pathname } = new URL(this[BASE] + endpoint);
+    const { pathname } = new URL(this[PREFIX] + endpoint);
     hmac.update(pathname);
     return { EXPIRES: expires, HMAC: hmac.digest('hex'), APIKEY: publicKey };
   }
@@ -82,18 +86,14 @@ class StoryblocksApi {
   async request (endpointFn, method, params) {
     const { endpoint, query } = endpointFn(this.query(params));
     const opts = {
-      baseUrl: this[BASE],
-      json: true,
+      prefixUrl: this[PREFIX],
       method,
-      query: { ...query, ...this.auth(endpoint) },
+      searchParams: { ...query, ...this.auth(endpoint) },
       throwHttpErrors: false
     };
     const response = await client(endpoint, opts);
-    const {
-      body: { errors, ...results } = {},
-      statusCode = 500
-    } = response;
-    if (errors) throw createError(statusCode, errors);
+    const { errors, ...results } = JSON.parse(response.body);
+    if (errors) throw createError(response.statusCode || 500, errors);
     return results;
   }
 }

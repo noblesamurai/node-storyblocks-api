@@ -15,20 +15,18 @@ describe('index', function () {
 });
 
 const APIS = [
-  /*
   {
     service: 'audioblocks',
     type: 'audio',
-    baseUrl: 'https://api.audioblocks.com/api/v2/audio/'
+    prefixUrl: 'https://api.audioblocks.com/api/v2/audio/'
   },
-  */
   {
     service: 'videoblocks',
     type: 'video',
-    baseUrl: 'https://api.videoblocks.com/api/v2/videos/'
+    prefixUrl: 'https://api.videoblocks.com/api/v2/videos/'
   }
 ];
-APIS.forEach(({ service: name, type, baseUrl }) => {
+APIS.forEach(({ service: name, type, prefixUrl }) => {
   describe(`index: ${name}`, function () {
     const { [name]: service } = storyblocks;
 
@@ -46,7 +44,7 @@ APIS.forEach(({ service: name, type, baseUrl }) => {
 
     it(`should search for ${type}`, async function () {
       let query;
-      nock(baseUrl)
+      nock(prefixUrl)
         .get('/search')
         .query(q => (query = q) || true) // export query for checking later
         .reply(200, { total_results: 1, results: ['ITEM'] });
@@ -66,7 +64,7 @@ APIS.forEach(({ service: name, type, baseUrl }) => {
     });
 
     it('should get rid of \u0000', async function () {
-      nock(baseUrl)
+      nock(prefixUrl)
         .get('/search')
         .query(true)
         .reply(200, {
@@ -79,7 +77,7 @@ APIS.forEach(({ service: name, type, baseUrl }) => {
     });
 
     it('should handle an error string response', async function () {
-      nock(baseUrl)
+      nock(prefixUrl)
         .get('/search')
         .query(true)
         .reply(400, { errors: 'HMAC header is invalid' });
@@ -91,7 +89,7 @@ APIS.forEach(({ service: name, type, baseUrl }) => {
     });
 
     it('should handle an error object response', async function () {
-      nock(baseUrl)
+      nock(prefixUrl)
         .get('/search')
         .query(true)
         .reply(400, {
