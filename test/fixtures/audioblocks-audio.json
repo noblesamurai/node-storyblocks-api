@@ -1,0 +1,35 @@
+[
+    {
+        "path": "/api/v2/audio/stock-item/details/148396?EXPIRES=1234567890&HMAC=0000000000&APIKEY=PUBLIC_KEY",
+        "scope": "https://api.audioblocks.com:443",
+        "method": "GET",
+        "body": "",
+        "status": 200,
+        "response": [
+            "1f8b08000000000000039d544d6fdb300cfd2b86ce69d22e6990e6b6ecb21d3a0cd8b01e86219065da662b8baa3e92a645fffb48db495b6c18b05d12f14914df7ba4fca412260b6aad3eb9e831a06b8aaf54a762a3cd5d1328bb4a4d546a73573a8d769b83e5b36d4a3eae67b3aa3bbf7f58a573bc6accd5d458ca551dc8a5a983343b25c599ce15d26c13bfed3fec371f37b78ffb5c2e7031c363cdb3c835cfca53cda9770dd7c54aad2f16abf9d592391cbcd0ec7244235b71eb60afd6b5b61126ca07d821ecff85df98f21fecb69f6faea79d9f338d2a079d909cf03c9fa8d277bcba58f006ed9d255d6d6b0a9d4e51ad9fd4f597b9fc0dc8d6e94e04093851355ad8467c846d7948c0a72f978bf3e5e5ea79a26ede7fff3d4bc03f64bd5bac9697f38bd533e7199da0a18072db0fd511556b6ff5a1ce9633fbf064ff1168b5f7070e1a7001d686822796078cf0d11472072ead9b8c4987b317e4edb647ede82d140f2eb5eae744ddc1614fa1ea0969d322ec40aee4d3da508e094d31dc2e48b583908a63bf8710230fa86c76250e892f33c3b00432c129f042e2804d2bd7732d6b4146d9f07842c74624dc89b0d722a567256849001dc508b0d0e89ee089d7d1a3963c0c5ea2aba98360508bb383a9c350bc895eed0e224ef617d0513f44723e052a86373951b734b68b8d2b490711603556850895f528cf5243459fca60a7c31da4a104737462880950210f213f94b13d9e2aa3a348f5e4fbdf88a3253ed0c0a7671ca0b660467a01ac7ee87d0ce0b9c89821af97ef8844a91d0a0f2de7570ba675c4fcc4cdd452e67eb06bc59146af547871cbdc7d4671307b8bf52860476880781218dfb76421b2d5bc3e504eb90419aa0aa209e88757f897cfd8f32fd605b30aec040000"
+        ],
+        "rawHeaders": [
+            "Date",
+            "Thu, 19 Nov 2020 04:47:12 GMT",
+            "Content-Type",
+            "application/json",
+            "Transfer-Encoding",
+            "chunked",
+            "Connection",
+            "close",
+            "Server",
+            "nginx",
+            "Set-Cookie",
+            "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+            "Set-Cookie",
+            "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.audioblocks.com",
+            "Cache-Control",
+            "no-cache, private",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Content-Encoding",
+            "gzip"
+        ],
+        "responseIsBinary": false
+    }
+]

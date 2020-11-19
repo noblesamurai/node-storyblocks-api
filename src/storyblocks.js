@@ -58,7 +58,7 @@ class StoryblocksApi {
     const { privateKey, publicKey } = this[CREDENTIALS];
     const expires = Math.floor(Date.now() / 1000) + AUTH_EXPIRY_SECONDS;
     const hmac = crypto.createHmac('sha256', privateKey + expires);
-    const { pathname } = new URL(this[PREFIX] + endpoint);
+    const { pathname } = new URL(`${this[PREFIX]}/${endpoint}`);
     hmac.update(pathname);
     return { EXPIRES: expires, HMAC: hmac.digest('hex'), APIKEY: publicKey };
   }
@@ -92,8 +92,8 @@ class StoryblocksApi {
       throwHttpErrors: false
     };
     const response = await client(endpoint, opts);
-    const { errors, ...results } = JSON.parse(response.body);
-    if (errors) throw createError(response.statusCode || 500, errors);
+    const results = JSON.parse(response.body);
+    if (results.errors) throw createError(response.statusCode || 500, results.errors);
     return results;
   }
 }

@@ -1,0 +1,35 @@
+[
+    {
+        "path": "/api/v2/audio/search?results_per_page=5&project_id=test&user_id=test&content_scores=true&EXPIRES=1234567890&HMAC=0000000000&APIKEY=PUBLIC_KEY",
+        "scope": "https://api.audioblocks.com:443",
+        "method": "GET",
+        "body": "",
+        "status": 200,
+        "response": [
+            "1f8b0800000000000003dd975d6fdb361486ff8aa10b5d593629ea338031c4193a3b59e6255eda75c360502425d3964899a4623b41fefb28c771ddad03da22ebe0e98a2279f4be3c787074f8e818697039534c37a5d1ce1904f6e93a87f7df1f1dc34dc99c33672c74cd151745672a73d31962b22c946c0475ba8e99375526302f678d2aeddeb931b53eebf76905569bc4009e1624ed915236345752989e60a67f08d27ddc502efb43fdcbfa623d1c0d170feb260b78d0e72f9a9eb69a5e76d0ecd5a2b0ba9c5acb4182d2c87ad8d6adcdaad19cb44b7a26d8da39cb71a959d7a915bbe76cfd25fef6215fe16ef6d3bbeb5e55a3ef5a4f83fd775ca978c1c5e0fceefbf164f8e3e4e26aea1a5e316d7055cf2a3d801108e308fa08c22875eb262b39b962dbc1cdb53fbc9c2fc9f6729d8d6e65793d1fc7737f32c9ef09bdb91a153fdcf0d16fe4575ca0f7efde246f75a5ce3713f5e6b6bc35c370931556b8c0823f60c3a518d30104284c0217d7fc2d53dace0dfc1e70b591643936ac6a77ec52ea5a0a64d9b4510397097aa799b28b380d7092b390900ca6198e200908486244510a599ac469e2e75946915b2bb960c4d810630fe96a861599dbb700a4098c43e8c52c0ebc208c222fcd42e2811c053ea2710c31dceffe19176c2709418ca9ef257986bc208d122f25007b280f5192070805a8a590366a77c696090b715657760483a7ee078847b8aeb79d73413b079cff457ce7ad9a8705f50e20ff05dc38fe2fc0fd84afff03b2717ccac846fe0159788cecb5546257751bf16aa84ea7abcbcb72b5504b7fa3560bb07daec059696b80f6aa67454f3762362df51db8582d46c7e0466190a6ff08ae51cdab14dcaf3079f214ef327bc214a7e80562901e433ce5556d7f67dc6c5f8de1bf770bfa20720c6b9084be75f5eddb830f764e1ecb5d0e4f184b18d90671df0f7cc4e5d0768b8269dd1953865f0dcde9462e8db86b1bd96d22f9c37d5febca83c00f61e2bd487aade431a82188e13768073edfdcc963bbcbe82963db16ae3db6e0e98faeb364dbb554744aa4b2779d47473f0f6cb34be55a9412d359cd1461c2f0f6ce66e775a3724cd8c7d34f4f7f0209953bc9f90d0000"
+        ],
+        "rawHeaders": [
+            "Date",
+            "Thu, 19 Nov 2020 04:47:11 GMT",
+            "Content-Type",
+            "application/json",
+            "Transfer-Encoding",
+            "chunked",
+            "Connection",
+            "close",
+            "Server",
+            "nginx",
+            "Set-Cookie",
+            "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+            "Set-Cookie",
+            "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.audioblocks.com",
+            "Cache-Control",
+            "no-cache, private",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Content-Encoding",
+            "gzip"
+        ],
+        "responseIsBinary": false
+    }
+]

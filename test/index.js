@@ -30,6 +30,15 @@ APIS.forEach(({ service: name, type, prefixUrl }) => {
   describe(`index: ${name}`, function () {
     const { [name]: service } = storyblocks;
 
+    beforeEach(function () {
+      nock.cleanAll();
+      nock.disableNetConnect();
+    });
+
+    afterEach(function () {
+      nock.cleanAll();
+    });
+
     it(`should return an ${name} api service`, function () {
       expect(service).to.be.an.instanceOf(require('../src/storyblocks'));
       expect(service).to.respondTo('search');

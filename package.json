@@ -37,7 +37,10 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
+    "chai-string": "^1.5.0",
     "dirty-chai": "^2.0.1",
+    "dotenv": "^8.2.0",
+    "env-var": "^7.0.0",
     "jsdoc-to-markdown": "^6.0.1",
     "mocha": "^8.2.1",
     "nock": "^13.0.5",

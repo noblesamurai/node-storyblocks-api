@@ -1,0 +1,35 @@
+[
+    {
+        "path": "/api/v2/videos/stock-item/details/8180348?EXPIRES=1234567890&HMAC=0000000000&APIKEY=PUBLIC_KEY",
+        "scope": "https://api.videoblocks.com:443",
+        "method": "GET",
+        "body": "",
+        "status": 200,
+        "response": [
+            "1f8b0800000000000003d596c98edb3810865fc5e0d98b36db92cf83608041270d34904b302028b26431a64885a4ec5ed0ef3e5592dd8d649ce94c801c72118b1459fcea677179625147036cc7ee64eb9c997d6866ef746897b3bb56f843988593ee66dacec44c6a2f0d2cd99cc576e86a2bb4e1833738b48db10fbbd54a75c997fb3226badacb6a298d1b54e39d8d4b0b71f53228ac8e5a815bddbd97bcbe1537a04f9bfcb12ffdd45e1b270f6111469c856b160de22cc248b3209a85b60bb1986878e80c0caec8eef98bff455a263c49979ffb3db26ac57625b6e44589e00f3d85faceb928f6407f03b77062bb46980073d67b386a38515881ed9e18c781fd8f06781efc8bc2e342a5db2c2dd36a2b8550d55a64b9dad67929b74aa42a5d737e8bb4cbae2f302e9e6f7e2770a4bd8017ff43f19388e03b4ad35f93523c4936aaa8ca8d5aabaaae6ad5a45599cab212a2cc64de08d41c792fe8dbec77d21c6947f0e739538317513bcb7679823577b2c609c51b87e2c67123dc7cf838ee872c1df3ea894dffb8151d6da8e22fea30678d36c0837e045e3f44c09159b9de649bac28b673d682deb711dbd0c79c9db48a2d4e581658a9754402e087bac741db22af9214bd79f4cee9070eaa9615fa184f0e2e9d0289d3769f7ba03dee2138334c1190770c89a7c99848df92fef9c777488bac2a686cf60a4a2e5e40d32afb17689aa6655efd2428797f46d29bdbe20d69b1c31569d3041333c936f92bf09bca66e526c500df14b6cd3634e7355da724bf22eb7728d7db32298af52b243a7815352385bf5efd0203fb3944f4fcdf2b7f1d31c7552ff22d4e7ac9d03717beccf21fc9cf2b324eab8e9812d37aefbca65df28909ab3bbc8250732be2e081fd3d6707783839afc6ffc5017f09bbc79b9a4aea8c462de461efdd60d5571572530bef851c94201bc4101f46c3b8139566203ff550d706e74718831e719ba1e5ba6eb07aec2e9da56d7ea9b81ecec70476f33071e27101d0e340a58fdad266047bd478e9776023d5ee5dd452870eed4674da104703a0a6ce74b753833348766ef2601fa9d79ee6184b37d00c46f8f1ce362014f8d0eab15137843dc5855781b654ed70523ccec83852fd2cea9c390982da7b2175a325591e9488cea3e9011a2c823071bc59c81e5f2164002989df2005be21d0a407c9a5240de969d24d2144ef7a2dc725c2b501f23d9617af2f65ab51745c6a05417add4f27981d8cc15c14810bd3b7e2fc3879fe072e67ccbdaa090000"
+        ],
+        "rawHeaders": [
+            "Date",
+            "Thu, 19 Nov 2020 04:47:21 GMT",
+            "Content-Type",
+            "application/json",
+            "Transfer-Encoding",
+            "chunked",
+            "Connection",
+            "close",
+            "Server",
+            "nginx",
+            "Set-Cookie",
+            "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+            "Set-Cookie",
+            "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.videoblocks.com",
+            "Cache-Control",
+            "no-cache, private",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Content-Encoding",
+            "gzip"
+        ],
+        "responseIsBinary": false
+    }
+]

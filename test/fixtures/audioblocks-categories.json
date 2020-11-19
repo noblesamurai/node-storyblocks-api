@@ -1,0 +1,35 @@
+[
+    {
+        "path": "/api/v2/audio/stock-item/categories?EXPIRES=1234567890&HMAC=0000000000&APIKEY=PUBLIC_KEY",
+        "scope": "https://api.audioblocks.com:443",
+        "method": "GET",
+        "body": "",
+        "status": 200,
+        "response": [
+            "1f8b0800000000000003a599414f23391085ff4a94c39c38a46108646e749310769625226838ac56236fc7492cdc2eafdb3d3361b4ff7ddd83b61f0423b92b3714c4a3aafcd573b9f2e7cfa15a0d3f654743232a39fc34bc301bb71b1e0d4b325e1affd5ef6cfb71d5d4aa6c3f165e6ec8edbe6e1c35b6fd05d16af8efd1b3cc7127b3944e515373854e3aa18516bb75a3b9421f3ba16b535be594d970a54e3ba9a5587145c69dc89dd4e2c701e19c754a73612dfbc8ce3b99dfe99be4a635e954eea87ceca1b291c6c98e9f6cd4e9145ba5f5e0b6f17c31405d28232be19f094e047b2f32105950637caf1ed99302480bb2ecf48e51abb9b283f92152a8d40339dd07eed7a91dc3000a72965c700b7e82a8d39cb45a895d3df830585a592aa107d36fc19dfaf8cb5ea468c43939478e1f26d8ff4d3c3db1754e70089fd5aa4d75262aa5fb34f6eb144f5e1c861675f06fd1c746f7c4c0ff45f5b70ab5e7270a4f0e1ea8363def89bdb8708eb96e241f8813f8e954cbd23b3207d8c5096c356f2a2bdd2f747db0fbf023bf7240edd6955b597b277a882913fea0a9dab3fbffc2fe0813b96a94177dda202607867317903b303800bc90ae6c02c2640e9404c65f28f4c3a11102e58730077d57a68f77c60a08cf5b2861e8c06cd11c175ab82a926dbdfed1fe8ffda9aefdb863049df16eeba7c8a0252e8caaa2b54f91410fe4c26c78299d02fb5cf8ad23aade563a2198d317bc4b1da329450498e7caad981901ec9c44ec624c890438e74e8ac7e8749aa2038af3e6e9296a792932c0f78bdcaa52cb8130abc1bd13eb75cc9b5324c172219ca7989fa4c880e542d42ad6a7292a40b9d0aa7ce49dfc182c178ebe33f91983e44b6276d518205f12c5eeb984a28c01f274bd0e1731b32a407926b4e6923c06c9b370ddaad80b292529903c53e1bdf3e6799da2017467616ada4606b01415903b23f2b597965960c03b73aaf4d1ab3921a033e07b4f61c26f3bfc2aac2278519d01e379583ff02a7d068eafcdaa0943537870b0ceec0c307f563e4c6c91f125a54680f946d5bfd630af1fb1291a20f9868c8c3c2b5244c0f16debc1ccfa82e48508b331afb4007921c96a6628a078b10d65e151770e86ef94b55cb33907bccb52ad15ab2ee78077f94f132e71664a20f79e483ff7e58d28b76193c25404c4e1060fb32f2f3d60fc1086561e3be7c0f8410a4bdc58c0f1c356d55e732b039443387ecbcd0a2c173a6ce178059e80e56b53b3efdf09582e94e7b9cd04285f58ab05d7cf2760f90fe11be6fd3b01bfef6d8c121c74027e678d338a1f0e182ea8b20db717262f2126aab7acb69c00e1e90fab29fe524fa90f20be111be6949f8d00f18c3d2a652330dcbeee5985c94680785a4917b65725af1bb21130beaeac287903603602c7cbb0a165ced7d90820e761c0e6bea4b21138c6de8d675dd9082ccf4833679c6c0496afdabd29efdc33e475f7217fabf1ee176aaff79b598668424e077cb592a1b3963be3237dfe6e48914555760c8ca636d6a7efaabdfac6303b064797c2f5c9ef59e7afff00f270eb46c21c0000"
+        ],
+        "rawHeaders": [
+            "Date",
+            "Thu, 19 Nov 2020 04:47:15 GMT",
+            "Content-Type",
+            "application/json",
+            "Transfer-Encoding",
+            "chunked",
+            "Connection",
+            "close",
+            "Server",
+            "nginx",
+            "Set-Cookie",
+            "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+            "Set-Cookie",
+            "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.audioblocks.com",
+            "Cache-Control",
+            "no-cache, private",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "Content-Encoding",
+            "gzip"
+        ],
+        "responseIsBinary": false
+    }
+]

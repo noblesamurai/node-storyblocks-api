@@ -29,8 +29,8 @@ const services = credentials =>
         { name: type, endpoint: e`stock-item/details/${'stock_item_id'}` },
         { name: 'similar', endpoint: e`stock-item/similar/${'stock_item_id'}` },
         { name: 'download', endpoint: e`stock-item/download/${'stock_item_id'}` },
-        { name: 'collections', endpoint: e`stock-item/collections` },
-        { name: 'collection', endpoint: e`stock-item/collections/${'collection_id'}` }
+        { name: 'collections', endpoint: e`collections` },
+        { name: 'collection', endpoint: e`collections/${'collection_id'}` }
       ])
     }),
     {}
