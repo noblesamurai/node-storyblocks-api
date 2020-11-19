@@ -24,7 +24,7 @@
     "url": "https://github.com/noblesamurai/node-storyblocks-api/issues"
   },
   "engines": {
-    "node": "^10 || ^12",
+    "node": "^10 || ^12 || ^14",
     "npm": "6.x"
   },
   "dependencies": {
