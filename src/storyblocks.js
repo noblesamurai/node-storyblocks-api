@@ -4,7 +4,6 @@ const crypto = require('crypto');
 const got = require('got');
 const mapKeys = require('lodash.mapkeys');
 const snakeCase = require('lodash.snakecase');
-const { URL } = require('url');
 
 const AUTH_EXPIRY_SECONDS = 12 * 60 * 60; // 12 hours
 
@@ -14,7 +13,7 @@ function createError (code, errorOrErrors) {
   return _createError(code, 'request failed', { errors });
 }
 
-// strip any \u0000 null characters from the response before it is json parsed.
+// Strip any \u0000 null characters from the response before it is json parsed.
 const client = got.extend({
   hooks: {
     afterResponse: [
@@ -43,7 +42,7 @@ class StoryblocksApi {
     this[PREFIX] = prefix;
     this[CREDENTIALS] = credentials;
     endpoints.forEach(addEndpoint.bind(this));
-    // don't allow any more modifications to this object after the constructor
+    // Don't allow any more modifications to this object after the constructor
     // has finished.
     Object.freeze(this);
   }
@@ -71,8 +70,8 @@ class StoryblocksApi {
    * @param {object} params
    * @return {object}
    */
-  query (params) {
-    return mapKeys(params, (value, key) => snakeCase(key));
+  query (parameters) {
+    return mapKeys(parameters, (value, key) => snakeCase(key));
   }
 
   /**
@@ -83,15 +82,15 @@ class StoryblocksApi {
    * @param {object} params
    * @return {object}
    */
-  async request (endpointFn, method, params) {
-    const { endpoint, query } = endpointFn(this.query(params));
-    const opts = {
+  async request (endpointFn, method, parameters) {
+    const { endpoint, query } = endpointFn(this.query(parameters));
+    const options = {
       prefixUrl: this[PREFIX],
       method,
       searchParams: { ...query, ...this.auth(endpoint) },
       throwHttpErrors: false
     };
-    const response = await client(endpoint, opts);
+    const response = await client(endpoint, options);
     const results = JSON.parse(response.body);
     if (results.errors) throw createError(response.statusCode || 500, results.errors);
     return results;

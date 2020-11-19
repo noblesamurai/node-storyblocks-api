@@ -1,4 +1,4 @@
-const expect = require('chai').expect;
+const { expect } = require('chai');
 const { getCredentials, nockBack } = require('./util');
 const credentials = getCredentials();
 const { videoblocks } = require('..')(credentials);
@@ -6,7 +6,7 @@ const { videoblocks } = require('..')(credentials);
 describe('service: videoblocks', function () {
   this.timeout(5000);
 
-  it('should return a list of videos', async function () {
+  it('should return a list of videos', async () => {
     const fixture = 'videoblocks-search.json';
     const { nockDone, context } = await nockBack(fixture);
     const search = await videoblocks.search({
@@ -26,7 +26,7 @@ describe('service: videoblocks', function () {
     nockDone();
   });
 
-  it('should return content scores with a list of videos', async function () {
+  it('should return content scores with a list of videos', async () => {
     const fixture = 'videoblocks-search-with-content-scores.json';
     const { nockDone, context } = await nockBack(fixture);
     const search = await videoblocks.search({
@@ -50,7 +50,7 @@ describe('service: videoblocks', function () {
     nockDone();
   });
 
-  it('should return video details', async function () {
+  it('should return video details', async () => {
     const fixture = 'videoblocks-video.json';
     const { nockDone, context } = await nockBack(fixture);
     const video = await videoblocks.video({
@@ -62,7 +62,7 @@ describe('service: videoblocks', function () {
     nockDone();
   });
 
-  it('should return a list of download urls', async function () {
+  it('should return a list of download urls', async () => {
     const fixture = 'videoblocks-download.json';
     const { nockDone, context } = await nockBack(fixture);
     const download = await videoblocks.download({
@@ -82,7 +82,7 @@ describe('service: videoblocks', function () {
     nockDone();
   });
 
-  it('should return a list of similar videos', async function () {
+  it('should return a list of similar videos', async () => {
     const fixture = 'videoblocks-similar.json';
     const { nockDone, context } = await nockBack(fixture);
     const similar = await videoblocks.similar({
@@ -97,7 +97,7 @@ describe('service: videoblocks', function () {
     nockDone();
   });
 
-  it('should return a list of categories', async function () {
+  it('should return a list of categories', async () => {
     const fixture = 'videoblocks-categories.json';
     const { nockDone, context } = await nockBack(fixture);
     const categories = await videoblocks.categories();
@@ -110,7 +110,7 @@ describe('service: videoblocks', function () {
     nockDone();
   });
 
-  it('should return a list of collections', async function () {
+  it('should return a list of collections', async () => {
     const fixture = 'videoblocks-collections.json';
     const { nockDone, context } = await nockBack(fixture);
     const collections = await videoblocks.collections();
@@ -123,7 +123,7 @@ describe('service: videoblocks', function () {
     nockDone();
   });
 
-  it('should return a list of videos in a collection', async function () {
+  it('should return a list of videos in a collection', async () => {
     const fixture = 'videoblocks-collection.json';
     const { nockDone, context } = await nockBack(fixture);
     const collection = await videoblocks.collection({

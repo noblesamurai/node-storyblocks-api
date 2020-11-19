@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "coverage": "nyc npm test",
-    "pretest": "semistandard",
+    "pretest": "xo",
     "test": "mocha --recursive test",
     "watch": "mocha --recursive --watch test",
     "docs": "jsdoc2md index.js"
@@ -41,11 +41,15 @@
     "dirty-chai": "^2.0.1",
     "dotenv": "^8.2.0",
     "env-var": "^7.0.0",
+    "eslint-config-semistandard": "^15.0.1",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-standard": "^4.1.0",
     "jsdoc-to-markdown": "^6.0.1",
     "mocha": "^8.2.1",
     "nock": "^13.0.5",
     "nyc": "^15.1.0",
-    "semistandard": "*"
+    "xo": "^0.34.2"
   },
   "keywords": [],
   "nyc": {
@@ -63,5 +67,9 @@
     "env": [
       "mocha"
     ]
+  },
+  "xo": {
+    "env": "mocha",
+    "extends": "semistandard"
   }
 }

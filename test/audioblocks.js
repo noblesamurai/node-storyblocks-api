@@ -1,4 +1,4 @@
-const expect = require('chai').expect;
+const { expect } = require('chai');
 const { getCredentials, nockBack } = require('./util');
 const credentials = getCredentials();
 const { audioblocks } = require('..')(credentials);
@@ -6,7 +6,7 @@ const { audioblocks } = require('..')(credentials);
 describe('service: audioblocks', function () {
   this.timeout(5000);
 
-  it('should return a list of audio tracks', async function () {
+  it('should return a list of audio tracks', async () => {
     const fixture = 'audioblocks-search.json';
     const { nockDone, context } = await nockBack(fixture);
     const search = await audioblocks.search({
@@ -25,7 +25,7 @@ describe('service: audioblocks', function () {
     nockDone();
   });
 
-  it('should return content scores with a list of audio tracks', async function () {
+  it('should return content scores with a list of audio tracks', async () => {
     const fixture = 'audioblocks-search-with-content-scores.json';
     const { nockDone, context } = await nockBack(fixture);
     const search = await audioblocks.search({
@@ -48,7 +48,7 @@ describe('service: audioblocks', function () {
     nockDone();
   });
 
-  it('should return audio track details', async function () {
+  it('should return audio track details', async () => {
     const fixture = 'audioblocks-audio.json';
     const { nockDone, context } = await nockBack(fixture);
     const track = await audioblocks.audio({
@@ -60,7 +60,7 @@ describe('service: audioblocks', function () {
     nockDone();
   });
 
-  it('should return a list of download urls', async function () {
+  it('should return a list of download urls', async () => {
     const fixture = 'audioblocks-download.json';
     const { nockDone, context } = await nockBack(fixture);
     const download = await audioblocks.download({
@@ -78,7 +78,7 @@ describe('service: audioblocks', function () {
     nockDone();
   });
 
-  it('should return a list of similar audio tracks', async function () {
+  it('should return a list of similar audio tracks', async () => {
     const fixture = 'audioblocks-similar.json';
     const { nockDone, context } = await nockBack(fixture);
     const similar = await audioblocks.similar({
@@ -93,7 +93,7 @@ describe('service: audioblocks', function () {
     nockDone();
   });
 
-  it('should return a list of categories', async function () {
+  it('should return a list of categories', async () => {
     const fixture = 'audioblocks-categories.json';
     const { nockDone, context } = await nockBack(fixture);
     const categories = await audioblocks.categories();
@@ -106,7 +106,7 @@ describe('service: audioblocks', function () {
     nockDone();
   });
 
-  it('should return a list of collections', async function () {
+  it('should return a list of collections', async () => {
     const fixture = 'audioblocks-collections.json';
     const { nockDone, context } = await nockBack(fixture);
     const collections = await audioblocks.collections();
@@ -119,7 +119,7 @@ describe('service: audioblocks', function () {
     nockDone();
   });
 
-  it('should return a list of videos in a collection', async function () {
+  it('should return a list of videos in a collection', async () => {
     const fixture = 'audioblocks-collection.json';
     const { nockDone, context } = await nockBack(fixture);
     const collection = await audioblocks.collection({

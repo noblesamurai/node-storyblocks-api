@@ -26,6 +26,7 @@ async function nockBack (fixture) {
     // Restore the normal "wild" mode once done so normal nocks will still work.
     _nockBack.setMode('wild');
   }
+
   return { nockDone, context };
 }
 

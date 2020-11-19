@@ -19,21 +19,20 @@ const APIS = [
   }
 ];
 
-const services = credentials =>
-  APIS.reduce(
-    (acc, { service, type, prefixUrl }) => ({
-      ...acc,
-      [service]: new StoryblocksApi(prefixUrl, credentials, [
-        { name: 'search', endpoint: e`search` },
-        { name: 'categories', endpoint: e`stock-item/categories` },
-        { name: type, endpoint: e`stock-item/details/${'stock_item_id'}` },
-        { name: 'similar', endpoint: e`stock-item/similar/${'stock_item_id'}` },
-        { name: 'download', endpoint: e`stock-item/download/${'stock_item_id'}` },
-        { name: 'collections', endpoint: e`collections` },
-        { name: 'collection', endpoint: e`collections/${'collection_id'}` }
-      ])
-    }),
-    {}
-  );
+function services (credentials) {
+  const services = {};
+  APIS.forEach(({ service, type, prefixUrl }) => {
+    services[service] = new StoryblocksApi(prefixUrl, credentials, [
+      { name: 'search', endpoint: e`search` },
+      { name: 'categories', endpoint: e`stock-item/categories` },
+      { name: type, endpoint: e`stock-item/details/${'stock_item_id'}` },
+      { name: 'similar', endpoint: e`stock-item/similar/${'stock_item_id'}` },
+      { name: 'download', endpoint: e`stock-item/download/${'stock_item_id'}` },
+      { name: 'collections', endpoint: e`collections` },
+      { name: 'collection', endpoint: e`collections/${'collection_id'}` }
+    ]);
+  });
+  return services;
+}
 
 module.exports = services;
