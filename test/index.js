@@ -56,10 +56,10 @@ APIS.forEach(({ service: name, type, prefixUrl }) => {
       nock(prefixUrl)
         .get('/search')
         .query(q => (query = q) || true) // Export query for checking later
-        .reply(200, { total_results: 1, results: ['ITEM'] });
+        .reply(200, { totalResults: 1, results: ['ITEM'] });
 
       const response = await service.search({ keyword: 'fish', resultsPerPage: 5, projectId: 'test', userId: 'test' });
-      expect(response).to.deep.equal({ total_results: 1, results: ['ITEM'] });
+      expect(response).to.deep.equal({ totalResults: 1, results: ['ITEM'] });
       expect(query).to.have.keys(
         'keyword',
         'results_per_page',
@@ -77,7 +77,7 @@ APIS.forEach(({ service: name, type, prefixUrl }) => {
         .get('/search')
         .query(true)
         .reply(200, {
-          total_results: 1,
+          totalResults: 1,
           results: { blerg: 'things\u0000' }
         });
 

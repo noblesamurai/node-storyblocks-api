@@ -15,11 +15,11 @@ describe('service: audioblocks', function () {
       userId: 'test'
     });
     expect(search).to.be.an('object');
-    expect(search.total_results).to.be.a('number');
+    expect(search.totalResults).to.be.a('number');
     expect(search.results).to.be.an('array').with.lengthOf(5);
     search.results.forEach(result => {
       expect(result).to.be.an('object')
-        .that.includes.keys('id', 'title', 'thumbnail_url', 'preview_url', 'duration', 'bpm');
+        .that.includes.keys('id', 'title', 'thumbnailUrl', 'previewUrl', 'duration', 'bpm');
     });
     context.assertScopesFinished();
     nockDone();
@@ -35,11 +35,11 @@ describe('service: audioblocks', function () {
       contentScores: true
     });
     expect(search).to.be.an('object');
-    expect(search.total_results).to.be.a('number');
+    expect(search.totalResults).to.be.a('number');
     expect(search.results).to.be.an('array').with.lengthOf(5);
     search.results.forEach(result => {
       expect(result).to.be.an('object')
-        .that.includes.keys('id', 'title', 'thumbnail_url', 'preview_url', 'duration', 'bpm');
+        .that.includes.keys('id', 'title', 'thumbnailUrl', 'previewUrl', 'duration', 'bpm');
     });
 
     expect(search.keywordScore).to.be.an('object');
@@ -55,7 +55,7 @@ describe('service: audioblocks', function () {
       stockItemId: 148396
     });
     expect(track).to.be.an('object')
-      .that.includes.keys('id', 'title', 'thumbnail_url', 'preview_url', 'duration', 'bpm', 'categories', 'keywords');
+      .that.includes.keys('id', 'title', 'thumbnailUrl', 'previewUrl', 'duration', 'bpm', 'categories', 'keywords');
     context.assertScopesFinished();
     nockDone();
   });
@@ -69,7 +69,7 @@ describe('service: audioblocks', function () {
       userId: 'test'
     });
     expect(download).to.be.an('object')
-      .that.includes.keys('MP3', 'WAV');
+      .that.includes.keys('mp3', 'wav');
     Object.values(download).forEach(url => {
       expect(url).to.be.a('string')
         .that.startsWith('https://');
@@ -87,7 +87,7 @@ describe('service: audioblocks', function () {
     expect(similar).to.be.an('array');
     similar.forEach(video => {
       expect(video).to.be.an('object')
-        .that.includes.keys('id', 'title', 'thumbnail_url', 'preview_url', 'duration', 'bpm');
+        .that.includes.keys('id', 'title', 'thumbnailUrl', 'previewUrl', 'duration', 'bpm');
     });
     context.assertScopesFinished();
     nockDone();
@@ -100,7 +100,7 @@ describe('service: audioblocks', function () {
     expect(categories).to.be.an('array');
     categories.forEach(category => {
       expect(category).to.be.an('object')
-        .that.includes.keys('id', 'name', 'content_type');
+        .that.includes.keys('id', 'name', 'contentType');
     });
     context.assertScopesFinished();
     nockDone();
@@ -113,7 +113,7 @@ describe('service: audioblocks', function () {
     expect(collections).to.be.an('array');
     collections.forEach(collection => {
       expect(collection).to.be.an('object')
-        .that.includes.keys('id', 'name', 'description', 'num_items');
+        .that.includes.keys('id', 'name', 'description', 'numItems');
     });
     context.assertScopesFinished();
     nockDone();
@@ -128,7 +128,7 @@ describe('service: audioblocks', function () {
     expect(collection).to.be.an('array');
     collection.forEach(video => {
       expect(video).to.be.an('object')
-        .that.includes.keys('id', 'title', 'thumbnail_url', 'preview_url', 'duration', 'bpm');
+        .that.includes.keys('id', 'title', 'thumbnailUrl', 'previewUrl', 'duration', 'bpm');
     });
     context.assertScopesFinished();
     nockDone();

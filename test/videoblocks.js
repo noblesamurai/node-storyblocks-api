@@ -16,11 +16,11 @@ describe('service: videoblocks', function () {
       userId: 'test'
     });
     expect(search).to.be.an('object');
-    expect(search.total_results).to.be.a('number');
+    expect(search.totalResults).to.be.a('number');
     expect(search.results).to.be.an('array').with.lengthOf(5);
     search.results.forEach(result => {
       expect(result).to.be.an('object')
-        .that.includes.keys('id', 'title', 'thumbnail_url', 'preview_urls', 'duration');
+        .that.includes.keys('id', 'title', 'thumbnailUrl', 'previewUrls', 'duration');
     });
     context.assertScopesFinished();
     nockDone();
@@ -37,11 +37,11 @@ describe('service: videoblocks', function () {
       contentScores: true
     });
     expect(search).to.be.an('object');
-    expect(search.total_results).to.be.a('number');
+    expect(search.totalResults).to.be.a('number');
     expect(search.results).to.be.an('array').with.lengthOf(5);
     search.results.forEach(result => {
       expect(result).to.be.an('object')
-        .that.includes.keys('id', 'title', 'thumbnail_url', 'preview_urls', 'duration');
+        .that.includes.keys('id', 'title', 'thumbnailUrl', 'previewUrls', 'duration');
     });
 
     expect(search.keywordScore).to.be.an('object');
@@ -57,7 +57,7 @@ describe('service: videoblocks', function () {
       stockItemId: 8180348
     });
     expect(video).to.be.an('object')
-      .that.includes.keys('id', 'title', 'thumbnail_url', 'preview_urls', 'duration', 'categories', 'keywords');
+      .that.includes.keys('id', 'title', 'thumbnailUrl', 'previewUrls', 'duration', 'categories', 'keywords');
     context.assertScopesFinished();
     nockDone();
   });
@@ -71,10 +71,10 @@ describe('service: videoblocks', function () {
       userId: 'test'
     });
     expect(download).to.be.an('object')
-      .that.includes.keys('MP4');
-    expect(download.MP4).to.be.an('object')
-      .that.includes.keys('_720p', '_1080p');
-    Object.values(download.MP4).forEach(url => {
+      .that.includes.keys('mp4');
+    expect(download.mp4).to.be.an('object')
+      .that.includes.keys('720p', '1080p');
+    Object.values(download.mp4).forEach(url => {
       expect(url).to.be.a('string')
         .that.startsWith('https://');
     });
@@ -91,7 +91,7 @@ describe('service: videoblocks', function () {
     expect(similar).to.be.an('array');
     similar.forEach(video => {
       expect(video).to.be.an('object')
-        .that.includes.keys('id', 'title', 'thumbnail_url', 'preview_urls', 'duration');
+        .that.includes.keys('id', 'title', 'thumbnailUrl', 'previewUrls', 'duration');
     });
     context.assertScopesFinished();
     nockDone();
@@ -104,7 +104,7 @@ describe('service: videoblocks', function () {
     expect(categories).to.be.an('array');
     categories.forEach(category => {
       expect(category).to.be.an('object')
-        .that.includes.keys('id', 'name', 'content_type');
+        .that.includes.keys('id', 'name', 'contentType');
     });
     context.assertScopesFinished();
     nockDone();
@@ -117,7 +117,7 @@ describe('service: videoblocks', function () {
     expect(collections).to.be.an('array');
     collections.forEach(collection => {
       expect(collection).to.be.an('object')
-        .that.includes.keys('id', 'name', 'description', 'num_items');
+        .that.includes.keys('id', 'name', 'description', 'numItems');
     });
     context.assertScopesFinished();
     nockDone();
@@ -132,7 +132,7 @@ describe('service: videoblocks', function () {
     expect(collection).to.be.an('array');
     collection.forEach(video => {
       expect(video).to.be.an('object')
-        .that.includes.keys('id', 'title', 'thumbnail_url', 'preview_urls', 'duration');
+        .that.includes.keys('id', 'title', 'thumbnailUrl', 'previewUrls', 'duration');
     });
     context.assertScopesFinished();
     nockDone();

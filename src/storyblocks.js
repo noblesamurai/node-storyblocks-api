@@ -2,6 +2,7 @@ const _createError = require('http-errors');
 const camelCase = require('lodash.camelcase');
 const crypto = require('crypto');
 const got = require('got');
+const isPlainObject = require('lodash.isplainobject');
 const mapKeys = require('lodash.mapkeys');
 const snakeCase = require('lodash.snakecase');
 
@@ -67,11 +68,24 @@ class StoryblocksApi {
    * in JS we need to convert them back to snake case before making our
    * requests.
    *
-   * @param {object} params
+   * @param {object} object
    * @return {object}
    */
-  query (parameters) {
-    return mapKeys(parameters, (value, key) => snakeCase(key));
+  toSnakeCase (object) {
+    return mapKeys(object, (value, key) => snakeCase(key));
+  }
+
+  /**
+   * Convert object keys back to camel case again.
+   *
+   * @param {object} object
+   * @return {object}
+   */
+  toCamelCase (object) {
+    return mapKeys(object, (value, key) => {
+      if (/^_\d+p$/.test(key)) return key.slice(1);
+      return camelCase(key);
+    });
   }
 
   /**
@@ -83,7 +97,7 @@ class StoryblocksApi {
    * @return {object}
    */
   async request (endpointFn, method, parameters) {
-    const { endpoint, query } = endpointFn(this.query(parameters));
+    const { endpoint, query } = endpointFn(this.toSnakeCase(parameters));
     const options = {
       prefixUrl: this[PREFIX],
       method,
@@ -91,7 +105,9 @@ class StoryblocksApi {
       throwHttpErrors: false
     };
     const response = await client(endpoint, options);
-    const results = JSON.parse(response.body);
+    const results = JSON.parse(response.body, (key, value) => {
+      return isPlainObject(value) ? this.toCamelCase(value) : value;
+    });
     if (results.errors) throw createError(response.statusCode || 500, results.errors);
     return results;
   }
