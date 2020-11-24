@@ -21,12 +21,13 @@ _nockBack.fixtures = path.resolve(__dirname, 'fixtures');
  */
 async function nockBack (fixture) {
   // Use recorded nocks or record if we don't have any
+  const previousMode = _nockBack.currentMode;
   _nockBack.setMode('record');
   const { nockDone: _nockDone, context } = await _nockBack(fixture, { after: fixScope, afterRecord });
   function nockDone () {
     _nockDone();
-    // Restore the normal "wild" mode once done so normal nocks will still work.
-    _nockBack.setMode('wild');
+    // Restore the previous mode once done so normal nocks will still work.
+    _nockBack.setMode(previousMode);
   }
 
   return { nockDone, context };
@@ -91,10 +92,13 @@ function ungzipFixtureDefinitionResponse (defs) {
     if (headers['content-encoding'] !== 'gzip') return def;
 
     const rawHeaders = headersInputToRawArray({ ...headers, 'content-encoding': '' });
-    const response = def.response.join ? def.response.join('') : def.response;
-    const binary = Buffer.from(response, 'hex');
+    const data = def.response.join ? def.response.join('') : def.response;
+    const binary = Buffer.from(data, 'hex');
     const buffer = zlib.gunzipSync(binary);
-    return { ...def, response: JSON.parse(buffer), rawHeaders };
+    const response = headers['content-type'] === 'application/json'
+      ? JSON.parse(buffer)
+      : buffer.toString();
+    return { ...def, response, rawHeaders };
   });
 }
 
