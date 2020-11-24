@@ -6,29 +6,254 @@
         "body": "",
         "status": 200,
         "response": [
-            "1f8b08000000000000039596418fda301085ff4a9433950261b7edde58b4b495a08a48d43db455659221b1d6f14413034255ff7b1dd8cd54c20de686406f3cf3fcbd31df7f87b2081fc6a3508b1ac287700624850a47618eda8036bfccb1e9bedf221a5142f86774564c58a1652d547b5d32ed258fbb566a68db40e8224808b7f6b344ed51e3aeafb1402c4efa47d80375ad5dedf9be177f96ad4192b950a71233ca2bb9f719fb3d9740250b713ccf3007051b12c66f888f7d91afc2ecc8a3f371d44b12c046f948f84e53858760855d77d74d1af3cda60d92390fb8869ce0349f4785b86f3683bcd2a8b03c7ac8988f4cd6102c45d3faccc948642474dbf5ecdb285fc4acb1a6be7a146450374a1870f068fa9ffa20f0d53c6db790bf1ab6c403509055920a47998b34b1e98912399c4d5fda78d4825e7c0ab0e7f17df46317459be884f6b7f575e727ecfc2702d0416a2f1b3c5899b0f75fb421bc3ccae117a7f06d0d78c938794b2c3158dbd4bb02eb38f003e3786cb024d1540e1c1d42c6232168ed32fc0f5797d298a148ed9a80b6c283cf943187766e37646d0fccbd74cc4f268df223376666920a8dd7edc58c8adddbb59f8629996d5a4322379733d5a7f5f46e23f2979270a76d6ade1216fb1033a46774d2c686ebb6c3999e8574adeaa18319a0855dc1408e200fc8a70cd1930672edd02135a39408b21c39a9182ac04c3ddb654837d93665b696b8bfcdf2293336b72498020f8e5d34d43903b782a27be56feb9d794b7309fa4662a68cdbcafecf71e477a875c66de8ed1caac0d0ad41c9d2f9e80fe8ef98bab4128d6b950ca9ffa18ea09640d0fdc1f37c527ffe05c3c26c3a8f0a0000"
+            {
+                "id": 1,
+                "name": "Aerial",
+                "content_type": "footage"
+            },
+            {
+                "id": 2,
+                "name": "Animals",
+                "content_type": "footage"
+            },
+            {
+                "id": 4,
+                "name": "Business and Professions",
+                "content_type": "footage"
+            },
+            {
+                "id": 5,
+                "name": "Food and Beverage",
+                "content_type": "footage"
+            },
+            {
+                "id": 6,
+                "name": "Historical and Archival",
+                "content_type": "footage"
+            },
+            {
+                "id": 7,
+                "name": "Holidays and Celebrations",
+                "content_type": "footage"
+            },
+            {
+                "id": 9,
+                "name": "Nature",
+                "content_type": "footage"
+            },
+            {
+                "id": 10,
+                "name": "People",
+                "content_type": "footage"
+            },
+            {
+                "id": 11,
+                "name": "Slow Motion",
+                "content_type": "footage"
+            },
+            {
+                "id": 12,
+                "name": "Sports and Recreation",
+                "content_type": "footage"
+            },
+            {
+                "id": 13,
+                "name": "Technology",
+                "content_type": "footage"
+            },
+            {
+                "id": 14,
+                "name": "Time Lapse",
+                "content_type": "footage"
+            },
+            {
+                "id": 15,
+                "name": "Transportation",
+                "content_type": "footage"
+            },
+            {
+                "id": 19,
+                "name": "Apple Motion Templates",
+                "content_type": "templates"
+            },
+            {
+                "id": 20,
+                "name": "Effects and Lower Thirds",
+                "content_type": "footage"
+            },
+            {
+                "id": 22,
+                "name": "Places and Landmarks",
+                "content_type": "footage"
+            },
+            {
+                "id": 23,
+                "name": "360° and VR",
+                "content_type": "footage"
+            },
+            {
+                "id": 24,
+                "name": "Green Screen",
+                "content_type": "footage"
+            },
+            {
+                "id": 25,
+                "name": "Intro",
+                "content_type": "templates"
+            },
+            {
+                "id": 26,
+                "name": "Business",
+                "content_type": "templates"
+            },
+            {
+                "id": 27,
+                "name": "Logo Reveal",
+                "content_type": "templates"
+            },
+            {
+                "id": 28,
+                "name": "Typography",
+                "content_type": "templates"
+            },
+            {
+                "id": 29,
+                "name": "Presentation",
+                "content_type": "templates"
+            },
+            {
+                "id": 30,
+                "name": "Slideshow",
+                "content_type": "templates"
+            },
+            {
+                "id": 31,
+                "name": "Cinematic",
+                "content_type": "templates"
+            },
+            {
+                "id": 32,
+                "name": "Titles",
+                "content_type": "templates"
+            },
+            {
+                "id": 33,
+                "name": "Photo",
+                "content_type": "templates"
+            },
+            {
+                "id": 34,
+                "name": "Promo",
+                "content_type": "templates"
+            },
+            {
+                "id": 35,
+                "name": "Abstract",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 36,
+                "name": "Business",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 37,
+                "name": "Space",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 38,
+                "name": "Fire",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 39,
+                "name": "Flowers",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 40,
+                "name": "Energy",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 41,
+                "name": "Particles",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 42,
+                "name": "Water",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 43,
+                "name": "Love",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 44,
+                "name": "Countdown",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 45,
+                "name": "Medical",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 46,
+                "name": "Science",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 47,
+                "name": "Music",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 48,
+                "name": "Technology",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 49,
+                "name": "Religion",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 50,
+                "name": "Shapes",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 51,
+                "name": "Premiere Pro Templates",
+                "content_type": "templates"
+            }
         ],
         "rawHeaders": [
-            "Date",
-            "Thu, 19 Nov 2020 04:47:24 GMT",
-            "Content-Type",
+            "date",
+            "Tue, 24 Nov 2020 02:57:00 GMT",
+            "content-type",
             "application/json",
-            "Transfer-Encoding",
+            "transfer-encoding",
             "chunked",
-            "Connection",
+            "connection",
             "close",
-            "Server",
+            "server",
             "nginx",
-            "Set-Cookie",
-            "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
-            "Set-Cookie",
-            "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.videoblocks.com",
-            "Cache-Control",
+            "set-cookie",
+            [
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.videoblocks.com"
+            ],
+            "cache-control",
             "no-cache, private",
-            "X-Frame-Options",
+            "x-frame-options",
             "SAMEORIGIN",
-            "Content-Encoding",
-            "gzip"
+            "content-encoding",
+            ""
         ],
         "responseIsBinary": false
     }

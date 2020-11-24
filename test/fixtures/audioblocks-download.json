@@ -5,30 +5,32 @@
         "method": "GET",
         "body": "",
         "status": 200,
-        "response": [
-            "1f8b0800000000000003dd93c7aeeb361040ffe52ebc8aafd5cb038c40cd6a96d52cb96c2e54288956b544153bc8fdf6e801c93e08924d768399218673c8f3db87e5901f3f3e0a84bae1c76e97d6d873e11006f93ce13f93aa1dd3ac6f1bf4d900b44bd6003468178d296c77e2709ea559d4c4c77b1e630a523bd80c1dec61936f873643db384acabc6fc726fdac3bf257f4eac03e6de7a66aa374d3f63087cd5e0864dd168fb664fa1b046b30a0a8eebeea618f3318cd3238419238436cba31ae606282d7deb508d128cae465ccb1e6b59555e86c41d8763625a96b6ab9ea42ed9e5ca39cbc5d0e5c38d4bdb0d8fdc1ab3c24d24b9caf83f3a881ef08c1b6d1d33d8e9134476da20e86a01fd6dc9ef8c436a0498301f46b3de2a988cb009d2431cec71183275482712c99923c0e788ee539228be394dc747dfb00095a8fa0758bcd80daa4d411a87fcea03892673659dbd711daafc0373d18bab619c0f64fa4db14ae8901febcd43e42284a8a7a25bd51961528f88b068991e4c6877913a1b1077bfd5a196f8f3f89b2e4914e703281fbc8b2def330ddb25f6a91a8ca7751f5dc5456e3999132cb93fd522d5c4f56292e3e9c3a51c549053dae823c8c7817bf75d3124aa13453cd11e48077b93c807c7ab9654719e3d426eb47adcbceb8f5c6042d6a8709a9d0c48db3af2d36b7dcda3bb338b49a88ee81a409d9d08edf94e8523cb83e162b304fd7c7640eb9163c65f93c86492c3186ec0846edfb9473f0c8d0291429a00969c0b706df3f29e3a548f66c73a7d07f4dee99568c7cb030caf7ce04570a765436cf4a0c2804e2603098caefc861b134de7f26ef17cdd3fa19b0dcd1aa3283c8b8840df9b5bb0e943c270b530997aa9e72136f187b2e29b2eb20e5975eeacb92fbf5b559ffd9d68960bf5ddf4e704c41175cc270eeba6e138ee6b1eec72f1f1721fcefad99a3e99f5bc3b1ff2b6b56e0ff9235ba446a0abc6accb6315fcdb668a6874c5d06e0096957bec79becdd04bec868e04039864020bea593a0867502052c7a31a70ba1223d29bbfa9c65acf78e44242d53481bd8bbc509f5206820ae8024fa66981fb2bb9d4778471fe9c7528a68f6b05ee3ec16b71a6e292b567c1dbbf17ed78767e0c42f1048437e295226db1a83ce2ff7515e320b68cc4d3837c42d0fcfdef5e95987a1473d4be99de1c617e5d68726b8c043f79a2e6f2f902c523b5c9f5ca72dc6886b99347602cb57aea02f1d3ae071a9b38d75b2d540117948e1fef75d32e6202b1afe999e68d333e1fd9272989ebe82a9de8ae1ddba3d635b69aa933e73b3df1c2ff2443d1e6aeb9c635ce109ad9ba6663e0b7fc79adfff00d075768c6d060000"
-        ],
+        "response": {
+            "MP3": "https://dm0qx8t0i9gc9.cloudfront.net/content/audio/BsTwCwBHBjzwub4i4/inspiring-soft-background.mp3?type=download&origin=AUDIOBLOCKS&timestamp_ms=1606186608791&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&stockItemId=148396&format=MP3&response-content-disposition=attachment&Expires=1606188408&Signature=G-YwU4Y4eswksB4VBzNL6aelOo2c8VFZl0Fct0zjKtT7XOMYB8LtRPsrvCz6cM9UueVPT8YmjfNd8-mvkJQyg9skaTSbUuS-29t6gbVYnUMwQkHbN-IXmQQtHLIK82hF5ImCsm5lBGLaglCez0Y86Dh0xkwRvXYSurlqLd4yegOCWrMENJ9HwCxQdk6i1X-iixU6jXolua1z7whNG1357yQENg5XZlZVSie5mygSjKHR-I3jrdwp7EiAuti09TUnMRzQNvk4nWG0VmITB86~LmoxGVfkmUCfAl64qfylPI7Ymnj8O5BTkt5YZRelRRwd8F~XFTSVsFrxjeoC8yjYzw__&Key-Pair-Id=APKAIAQ2JPZIIO2PHR7Q",
+            "WAV": "https://dm0qx8t0i9gc9.cloudfront.net/content/audio/BsTwCwBHBjzwub4i4/inspiring-soft-background.wav?type=download&origin=AUDIOBLOCKS&timestamp_ms=1606186608807&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&stockItemId=148396&format=WAV&response-content-disposition=attachment&Expires=1606188408&Signature=cMSrLSe0ZUszbhClPZ92pIoPTu1meVqNW0msgjsbl1gKRRWfe1npto-tOzdATJ5cMe-qFEqQhQedU~NxNIqoySGW~rLKqiYczOjKwyM-kwOZCoMF3lGTaSB0T9Ji3OZlKcqYF0HHUNR38Psehv2tz2LkXFqdX88RVKLaMYv0b6x5bx4Pg3zxo701ttAsACRyU1QM4jeiinNxFs3GkI79utFghDv1aUJyNeqBIjEFZVGunBEWEhsrOJrc8mpLCqmp3l1QZSazWct8AzS54HFpa-8zwhcMpNrHptXZo~~hAYFP56I~g5dYbescBvH7cIdAL6HEr~~~iFoGXTyvR97ROw__&Key-Pair-Id=APKAIAQ2JPZIIO2PHR7Q"
+        },
         "rawHeaders": [
-            "Date",
-            "Thu, 19 Nov 2020 04:47:13 GMT",
-            "Content-Type",
+            "date",
+            "Tue, 24 Nov 2020 02:56:48 GMT",
+            "content-type",
             "application/json",
-            "Transfer-Encoding",
+            "transfer-encoding",
             "chunked",
-            "Connection",
+            "connection",
             "close",
-            "Server",
+            "server",
             "nginx",
-            "Set-Cookie",
-            "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
-            "Set-Cookie",
-            "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.audioblocks.com",
-            "Cache-Control",
+            "set-cookie",
+            [
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.audioblocks.com"
+            ],
+            "cache-control",
             "no-cache, private",
-            "X-Frame-Options",
+            "x-frame-options",
             "SAMEORIGIN",
-            "Content-Encoding",
-            "gzip"
+            "content-encoding",
+            ""
         ],
         "responseIsBinary": false
     }

@@ -2,7 +2,9 @@
 require('dotenv').config();
 const env = require('env-var');
 const _nockBack = require('nock').back;
+const { headersArrayToObject, headersInputToRawArray } = require('nock/lib/common');
 const path = require('path');
+const zlib = require('zlib');
 
 // Set fixtures path
 _nockBack.fixtures = path.resolve(__dirname, 'fixtures');
@@ -38,7 +40,8 @@ async function nockBack (fixture) {
  * @return {object[]}
  */
 function afterRecord (defs) {
-  return defs.map(({ path, ...rest }) => ({ path: normaliseAuthQueryString(path), ...rest }));
+  return ungzipFixtureDefinitionResponse(defs)
+    .map(({ path, ...rest }) => ({ path: normaliseAuthQueryString(path), ...rest }));
 }
 
 /**
@@ -74,6 +77,25 @@ function normaliseAuthQueryString (path) {
   url.searchParams.set('EXPIRES', '1234567890');
   url.searchParams.set('HMAC', '0000000000');
   return url.pathname + url.search;
+}
+
+/**
+ * Ungzip response contents to make it easier to read/debug.
+ *
+ * @param {object[]} defs
+ * @return {object[]}
+ */
+function ungzipFixtureDefinitionResponse (defs) {
+  return defs.map(def => {
+    const headers = headersArrayToObject(def.rawHeaders);
+    if (headers['content-encoding'] !== 'gzip') return def;
+
+    const rawHeaders = headersInputToRawArray({ ...headers, 'content-encoding': '' });
+    const response = def.response.join ? def.response.join('') : def.response;
+    const binary = Buffer.from(response, 'hex');
+    const buffer = zlib.gunzipSync(binary);
+    return { ...def, response: JSON.parse(buffer), rawHeaders };
+  });
 }
 
 module.exports = {

@@ -6,29 +6,565 @@
         "body": "",
         "status": 200,
         "response": [
-            "1f8b0800000000000003a59adb6edb4812865fa5a19bbd8900f689a73b3b89c759c43bd9b107c162b118d0126d13964881a21c6806f3eefb575362976852961c204880a4e2fe54e7fe5bfffd6b52cc27a9b446ca0f93325be6937472b1699ef2b22966930f9379be9ed5c5aa29aa92ff8bf8582d16f98cfe5a3c54b5f82dcf16e213fdb6aaab65e5ccf19fb326ff239bcf731c3151810ca7413c95a19051aa542a15fd7c32d9ace88f71a372b3fca368f2e51aa43a367f7fd851c7511877d41ff3457e5fe3e788bba75c7cafeac5fc15bfb7c1276c6dd827d9e31c104be9884daa4d6aecdea447fcca881327c11e58a950990ef86299fd59948fe222af8b6cb1eec3969bc5e2b50ba369a0a64a0a19a43a4883701068c088018592f144bae349c45d256ceadc77b9591765be5ef7bcc393e1189f223e1ba78139c27760c4f8a2033eefaf7f6fb2b2d92c81b45c6d1a78ae45bdcb674fefc7946990a4323e8ee98d18a6b5dc8d61e74664deb3f875d3b4745745f3737e94a904a07e0b706fc400c3ae509077912f142a8fafd54bfe334e532655d15b4c7b23ce1471a7259dd32eeed74d9dcd1a71e37a87b8cc66cf8f75b529e767d505524aa60afe7a23efbc11638bb8bfe2a063bb465b6b9062599dd3273ea306a4ab51f9969fa890c988b324cc4fb1ea58be94e25f59b379078991a91d6e5f6db770aedb1b7112ed4922d6bdaeb265b1d8f61d32b9c96a94e3ac9b0efbcfce7a6a7b9ea650052a35c75ad88111830a550765b4f4a1ba594c972b7197af9b5760c320661a601c05a98a53335a637d2306621948acfd08fd5cbe1475552e31463113bfacd79bfc582f9d8cd1c9c465f4b14e6fa687468c4ec59d9b6cc4321a45f694d7ff588b4fd9eb080ea3d86900942845868c0f9dbe114349c20e25d4812ffcabec1d280a7911a68145d8f6b40703191966a787460cc5fada0aadf228e8d9f3caed32b33acff62b0c2ff79130d9a90e844447b4a91ede691cd0a11103327e928456fb62ff5667dbbc1617e59c5695f553b1a24f7b32904de1a4f14ed8527b230ee4f3268ca51f6dbf9773f0d0fcb8cdb3135968e7139242850d6a2c5a7d23c612fa8911e9d857d8655597b4b05c628f2b0656bdfd51878d279c2ad47b8838a135ef4dfab9d3376234caa77192843e773e6eee337157672ff9425c5555933dbe9a1593dddf8b076cc8e23a7bc9ca4c64882dfddf3dca216d4c8985fdc4204aa353a46fc46875d79d74106abfe97dacfe3cb5ee93a90c849254f723031f1bbd9caa44041830883179952148d9794c6bc5e6c7f7a26c904cd7d5a29867db57537eb8d464305546480d96b1eb0380e53430c4acd0d7a91e194edc6593d6d6f8527b7bed1805d29242a4e3548e2514a80f8d1890654061e413ea12334cfcfa70c23e3402062760a4630507db5853224f1d1831301eb790cd8e3dd858960f66323fc88c65f22b234ed3b548ad1369bb7de89fd98fe9bcae562bba4899673afcedfe480745bb1b941a0d5adf88d1443ea78d4e7cd0da9c3e1942628c99d48e56964b65897cc7d8452af75644c952c7c491cfe58b1ff9ba5ae6628a8694638116bf6c8a792e70ff761bfb49fe51186861aa34ea7e1fd05e9784130f8db87f7cdf31091ff6459dffc0f5e8d46ac711282e3415ac89c9118e0323c6a1ba8d5e5b3ee97f5954f758cb3e164d81b5ec67fc44335da73619bfe9c24f87469ccfe791e5839f648a750351603f4b7e9ad1e08631be6aef18bd1167ecd40bf850fb5cbf2b96f98fac5efd349a4d4d8cd56930bc0909460afb03b64e03950a461cadbb9aa02768df14be94eb55515347785f5b8f4963095c5ba72218ee9e03460c4d776826306cf25e6dcae7adb8b95f63f055abc5494b943b89d6169b5aa83ec3f7251869b7690529da85d30b384eb7d099200afd22d0c93cfbdde42c2a1c88e684db36b6bbe1f8312a8801417f18776d82a8a2aea9638f7a7828665df2bf0bcaeef2e5b5c0c8a0d07e9d3f99ab4ca73e1194574d6eaad9f3667566dcf61eb248f2e1eb2587417ce93ec360244ba338f02dbe9524b6e26bf18046b15de4e7a513b02cd59481083b3cff3816b6655adc1916f39154912fbccb3cc3e5ffcc70d114c49a128db55087425310a508a35e0f90b2eb4f062cfeaed2ca247b71f57d5094d8a3d5af77f34fa3f9d37062fe891993965ec1bc7dca56183874a1fb4af22a1a01dae7b9fe822bd006a2b1b5cef98b14e288f671276d32347380e643f77b7d9f95efcf278a4f40f9e45c3152731d94e95d12fc566ea4d63e869f57e802b7abaa6e684abfc34f2e65dce2348684d912a60679d5eb4d5e843632b6be0d5c6f572524ca99ebe16733b59a048e1b1174dbd88109403bf59cc5ce76eb0298421fbbab0d14c1020bc30cd2170af03d5858f5f0c03122847758616a71f7ea65bb0c7c1f5792dd61be41312d9ba7aa9a9f8f443b13ddd1d360b46f429643d6617780a76828324ff92717a38cf109750345b9c98af2ec747267918f20e98e0e602871b84d219d7652070392b2bbe71974299f4fbfe58be2b1a8366d57b8a5bda5d960f1a315e1cc38bae3f1ae86cc31c3ba18e2082397f2767781668ca16f0d3a6077637ad0a065ea7b0115fc3d09e6144a7af0c3a67c0c2c11cc8883f9ed45abd8e7fd773cf6d5a293c4cff797c214443e63651a8d29244d2d309c0cf4c65e8b905eb733da4a1f53dc2bb6e2f679bb408f3f170ae7b9c73d78420f3fb02088adce8ae646bf7a99efd71783c24455b46fbab7cfed55e7ac266ae9e9930404cc9bd105cf19a10c0de620d52a0b1c1fcea039d8f0b0a3a3af3b99f57c1fd11b325a0372fd48e0a8d9a28f22e97aeb4be413dde8d077077fedba6db2facc55af159ce128ac9447024750de88f92af2496e6cec77866f352eef70eb9bba86cb0be870c8687429397c5fc6852a24458f1890d13dc728dfa4e228f1097d952de82aba2886644d624321f2777ea0e02043a943d7836177b4421d921d773b92a97aa9c3864a62035ff45f21992e333cb19e2140391e522b705492aa61191a3a26d4c5f6194cb52f0b3c3cdda38149122687b92f3e7ccb7197cbf1258897f5d3c02be19042e74e436ba10c05d2d89003d2a111436202109858b876abefa76ab6710f50f5f6b4fca1c33051f18a01a8b17a7f65c488229f3f00f25ac12d14f127771fbf5f9f8902dd79f4e6d4a1ec8d188aece26503137b94ff60037814dfea0a17a735bebd32f0c58bd170d1e4840e372a3dbb98d2631c8c766fd08cc8bf59da2061bdf073d67c109f20573cbb8b01de336ef2fa8c90a1e4b198e0ede9983e8fa10223da0c7a2dda3f11580915c5cf8ba70a0fa9c542c061a0ab5627c60ddf96419de1ca88d780e1ba77ef05ad1196c9fe50d59dd04b3c7e7e7d7ec9eb2d1e0ac4755e57f9a959d4d1a0278e5d74217eb534f4c4d1f38e7f40251aaf9bdcaed08150f17493bb456623662767f6fe380c0a37bc876e2624ae62f26231c1978e7abaafeab66daba05074114390c0715657a463f07083afea8c8a832e5a87462ca7bd108e2f90259ee5a6c2436149af96cf10b966a7c50b23c369cad8c748e71aeed203469cc7fcfdbfff03174b03ced3260000"
+            {
+                "id": 15411,
+                "name": "Authentic",
+                "description": "Authentic Collection for Real Deal promotion",
+                "date_added": "2016-08-16 17:22:12",
+                "date_updated": "2016-08-16 17:22:12",
+                "num_items": 1384
+            },
+            {
+                "id": 18768,
+                "name": "Celebrate The World",
+                "description": "Celebrate the World Collection",
+                "date_added": "2016-11-16 14:34:45",
+                "date_updated": "2016-11-16 14:34:45",
+                "num_items": 190
+            },
+            {
+                "id": 22624,
+                "name": "Amazing Aerials",
+                "description": null,
+                "date_added": "2017-02-21 10:30:06",
+                "date_updated": "2017-02-21 10:30:06",
+                "num_items": 61
+            },
+            {
+                "id": 22673,
+                "name": "9 To 5: The Business Collection",
+                "description": null,
+                "date_added": "2017-02-22 10:58:04",
+                "date_updated": "2017-02-22 10:58:04",
+                "num_items": 71
+            },
+            {
+                "id": 22674,
+                "name": "Quantum Computing: The Tech Collection",
+                "description": null,
+                "date_added": "2017-02-22 11:09:18",
+                "date_updated": "2017-02-22 11:09:18",
+                "num_items": 55
+            },
+            {
+                "id": 22676,
+                "name": "Work Out: The Fitness Collection",
+                "description": null,
+                "date_added": "2017-02-22 11:19:13",
+                "date_updated": "2017-02-22 11:19:13",
+                "num_items": 64
+            },
+            {
+                "id": 22678,
+                "name": "The Love Collection",
+                "description": null,
+                "date_added": "2017-02-22 11:24:27",
+                "date_updated": "2017-02-22 11:24:27",
+                "num_items": 67
+            },
+            {
+                "id": 22679,
+                "name": "Abstract Motion Backgrounds",
+                "description": null,
+                "date_added": "2017-02-22 11:29:14",
+                "date_updated": "2017-02-22 11:29:14",
+                "num_items": 74
+            },
+            {
+                "id": 22680,
+                "name": "Health Care",
+                "description": null,
+                "date_added": "2017-02-22 11:30:01",
+                "date_updated": "2017-02-22 11:30:01",
+                "num_items": 79
+            },
+            {
+                "id": 22682,
+                "name": "In Nature",
+                "description": null,
+                "date_added": "2017-02-22 11:41:55",
+                "date_updated": "2017-02-22 11:41:55",
+                "num_items": 73
+            },
+            {
+                "id": 22724,
+                "name": "Family",
+                "description": "March collection",
+                "date_added": "2017-02-23 11:02:46",
+                "date_updated": "2017-02-23 11:02:46",
+                "num_items": 62
+            },
+            {
+                "id": 24310,
+                "name": "Ml-mp Test",
+                "description": "",
+                "date_added": "2017-04-06 10:28:43",
+                "date_updated": "2017-04-06 10:28:43",
+                "num_items": 52
+            },
+            {
+                "id": 24831,
+                "name": "Environmental Issues Collection",
+                "description": "",
+                "date_added": "2017-04-19 11:20:06",
+                "date_updated": "2017-04-19 11:20:06",
+                "num_items": 28
+            },
+            {
+                "id": 25780,
+                "name": "Mother's Day",
+                "description": "",
+                "date_added": "2017-05-09 17:41:06",
+                "date_updated": "2017-05-09 17:41:06",
+                "num_items": 96
+            },
+            {
+                "id": 26309,
+                "name": "Father's Day",
+                "description": "",
+                "date_added": "2017-05-23 16:05:28",
+                "date_updated": "2017-05-23 16:05:28",
+                "num_items": 59
+            },
+            {
+                "id": 26529,
+                "name": "Outdoor Recreation",
+                "description": "",
+                "date_added": "2017-05-30 14:25:32",
+                "date_updated": "2017-05-30 14:25:32",
+                "num_items": 45
+            },
+            {
+                "id": 26532,
+                "name": "Prayer And Worship",
+                "description": "",
+                "date_added": "2017-05-30 15:16:14",
+                "date_updated": "2017-05-30 15:16:14",
+                "num_items": 48
+            },
+            {
+                "id": 26816,
+                "name": "Under The Sea",
+                "description": "",
+                "date_added": "2017-06-08 15:28:34",
+                "date_updated": "2017-06-08 15:28:34",
+                "num_items": 67
+            },
+            {
+                "id": 27381,
+                "name": "Born To Be Wild",
+                "description": "",
+                "date_added": "2017-06-26 16:32:30",
+                "date_updated": "2017-06-26 16:32:30",
+                "num_items": 26
+            },
+            {
+                "id": 29969,
+                "name": "Cuba Travel Footage",
+                "description": "Footage from Havana and Cuba",
+                "date_added": "2017-08-30 09:45:11",
+                "date_updated": "2017-08-30 09:45:11",
+                "num_items": 32
+            },
+            {
+                "id": 30633,
+                "name": "Cozy",
+                "description": "",
+                "date_added": "2017-09-10 21:41:27",
+                "date_updated": "2018-11-29 01:58:30",
+                "num_items": 116
+            },
+            {
+                "id": 33224,
+                "name": "Winter Holidays",
+                "description": "",
+                "date_added": "2017-10-24 13:27:12",
+                "date_updated": "2019-11-04 21:20:22",
+                "num_items": 87
+            },
+            {
+                "id": 33542,
+                "name": "Motion Backgrounds",
+                "description": "",
+                "date_added": "2017-10-31 09:38:10",
+                "date_updated": "2017-10-31 09:38:10",
+                "num_items": 57
+            },
+            {
+                "id": 33679,
+                "name": "Best Of Motion Backgrounds",
+                "description": "",
+                "date_added": "2017-11-02 18:09:32",
+                "date_updated": "2017-11-02 18:09:32",
+                "num_items": 16
+            },
+            {
+                "id": 33680,
+                "name": "Best Of Footage",
+                "description": "",
+                "date_added": "2017-11-02 18:09:41",
+                "date_updated": "2017-11-02 18:09:41",
+                "num_items": 15
+            },
+            {
+                "id": 33915,
+                "name": "Jaw-dropping 4k",
+                "description": "",
+                "date_added": "2017-11-07 10:30:20",
+                "date_updated": "2017-11-07 10:30:20",
+                "num_items": 76
+            },
+            {
+                "id": 34399,
+                "name": "Winter",
+                "description": "",
+                "date_added": "2017-11-13 14:51:27",
+                "date_updated": "2019-11-14 17:40:21",
+                "num_items": 157
+            },
+            {
+                "id": 34872,
+                "name": "Awesome - Trends Guide 2017",
+                "description": "",
+                "date_added": "2017-11-20 16:23:41",
+                "date_updated": "2017-11-20 16:23:41",
+                "num_items": 72
+            },
+            {
+                "id": 34909,
+                "name": "Fireworks",
+                "description": "",
+                "date_added": "2017-11-21 08:32:49",
+                "date_updated": "2017-11-21 08:32:49",
+                "num_items": 24
+            },
+            {
+                "id": 35529,
+                "name": "Global Cities - Trends Guide 2017",
+                "description": "",
+                "date_added": "2017-11-30 13:59:04",
+                "date_updated": "2017-11-30 13:59:04",
+                "num_items": 26
+            },
+            {
+                "id": 35532,
+                "name": "Celestial Footage - Trends Guide 2017",
+                "description": "",
+                "date_added": "2017-11-30 14:01:46",
+                "date_updated": "2017-11-30 14:01:46",
+                "num_items": 20
+            },
+            {
+                "id": 35539,
+                "name": "Timewarp - Trends Guide 2017",
+                "description": "",
+                "date_added": "2017-11-30 15:48:25",
+                "date_updated": "2019-08-28 11:04:15",
+                "num_items": 23
+            },
+            {
+                "id": 39135,
+                "name": "Inspiring Motion Backgrounds",
+                "description": "",
+                "date_added": "2018-02-01 09:16:22",
+                "date_updated": "2018-02-01 09:16:22",
+                "num_items": 33
+            },
+            {
+                "id": 40433,
+                "name": "Funky Mbs Hoopla",
+                "description": "",
+                "date_added": "2018-02-26 15:50:36",
+                "date_updated": "2018-03-08 10:17:13",
+                "num_items": 38
+            },
+            {
+                "id": 40763,
+                "name": "Business Footage Hoopla",
+                "description": "",
+                "date_added": "2018-03-04 19:15:25",
+                "date_updated": "2018-03-08 10:24:02",
+                "num_items": 82
+            },
+            {
+                "id": 40767,
+                "name": "Traffic Footage Hoopla",
+                "description": "",
+                "date_added": "2018-03-04 19:54:15",
+                "date_updated": "2018-03-08 10:14:36",
+                "num_items": 41
+            },
+            {
+                "id": 40768,
+                "name": "Mockups Hoopla",
+                "description": "",
+                "date_added": "2018-03-04 19:55:43",
+                "date_updated": "2018-03-08 10:15:58",
+                "num_items": 13
+            },
+            {
+                "id": 40802,
+                "name": "Healthy Lifestyle Hoopla",
+                "description": "",
+                "date_added": "2018-03-05 11:42:10",
+                "date_updated": "2018-03-08 10:16:34",
+                "num_items": 41
+            },
+            {
+                "id": 41275,
+                "name": "Beach Hoopla",
+                "description": "",
+                "date_added": "2018-03-13 18:07:04",
+                "date_updated": "2018-03-14 16:27:05",
+                "num_items": 110
+            },
+            {
+                "id": 41276,
+                "name": "Nature Aerials Hoopla",
+                "description": "",
+                "date_added": "2018-03-13 18:15:22",
+                "date_updated": "2018-03-20 16:39:09",
+                "num_items": 80
+            },
+            {
+                "id": 41314,
+                "name": "Shapes And Lines Mb - Hoopla",
+                "description": "",
+                "date_added": "2018-03-14 10:37:32",
+                "date_updated": "2018-03-21 17:58:18",
+                "num_items": 40
+            },
+            {
+                "id": 41315,
+                "name": "Urban Lifestyle Hoopla",
+                "description": "",
+                "date_added": "2018-03-14 10:42:09",
+                "date_updated": "2018-03-21 17:58:40",
+                "num_items": 87
+            },
+            {
+                "id": 41336,
+                "name": "Epic Sports - Hoopla",
+                "description": "",
+                "date_added": "2018-03-14 16:27:21",
+                "date_updated": "2018-03-28 16:47:02",
+                "num_items": 71
+            },
+            {
+                "id": 41858,
+                "name": "Hypnotic Mbs - Hoopla",
+                "description": "",
+                "date_added": "2018-03-23 16:47:13",
+                "date_updated": "2018-03-28 17:08:04",
+                "num_items": 56
+            },
+            {
+                "id": 41865,
+                "name": "Futuristic Tech - Hoopla",
+                "description": "",
+                "date_added": "2018-03-23 23:34:18",
+                "date_updated": "2018-03-28 16:53:29",
+                "num_items": 102
+            },
+            {
+                "id": 42179,
+                "name": "Parenthood - Hoopla",
+                "description": "",
+                "date_added": "2018-03-30 12:30:03",
+                "date_updated": "2018-04-04 18:28:06",
+                "num_items": 90
+            },
+            {
+                "id": 42446,
+                "name": "Mountains - Hoopla",
+                "description": "",
+                "date_added": "2018-04-04 23:31:36",
+                "date_updated": "2018-04-12 16:48:34",
+                "num_items": 117
+            },
+            {
+                "id": 42768,
+                "name": "Religious And Spiritual Mbs - Hoopla",
+                "description": "",
+                "date_added": "2018-04-12 22:08:48",
+                "date_updated": "2018-04-18 16:57:12",
+                "num_items": 60
+            },
+            {
+                "id": 43042,
+                "name": "Working With Tech - Hoopla",
+                "description": "",
+                "date_added": "2018-04-19 22:13:58",
+                "date_updated": "2018-04-19 22:13:58",
+                "num_items": 68
+            },
+            {
+                "id": 43285,
+                "name": "Water In Nature - Hoopla",
+                "description": "",
+                "date_added": "2018-04-25 13:20:16",
+                "date_updated": "2018-05-03 07:46:02",
+                "num_items": 145
+            },
+            {
+                "id": 43518,
+                "name": "City Skyline - Hoopla",
+                "description": "",
+                "date_added": "2018-05-01 10:22:37",
+                "date_updated": "2018-05-09 16:26:26",
+                "num_items": 91
+            },
+            {
+                "id": 44102,
+                "name": "Skies - Hoopla",
+                "description": "",
+                "date_added": "2018-05-16 09:30:35",
+                "date_updated": "2018-05-16 18:49:03",
+                "num_items": 110
+            },
+            {
+                "id": 44107,
+                "name": "Transportation - Hoopla",
+                "description": "",
+                "date_added": "2018-05-16 10:02:06",
+                "date_updated": "2018-05-23 17:03:54",
+                "num_items": 70
+            },
+            {
+                "id": 44366,
+                "name": "Celestial Stars Hoopla",
+                "description": "",
+                "date_added": "2018-05-23 10:34:37",
+                "date_updated": "2018-05-23 10:34:37",
+                "num_items": 78
+            },
+            {
+                "id": 44584,
+                "name": "Pride",
+                "description": "",
+                "date_added": "2018-05-29 13:31:19",
+                "date_updated": "2019-06-10 10:36:04",
+                "num_items": 27
+            },
+            {
+                "id": 48798,
+                "name": "Fall Foliage",
+                "description": "",
+                "date_added": "2018-09-04 09:19:17",
+                "date_updated": "2019-11-01 11:08:09",
+                "num_items": 102
+            },
+            {
+                "id": 49505,
+                "name": "Landmark Footage",
+                "description": "",
+                "date_added": "2018-09-20 11:09:24",
+                "date_updated": "2018-10-22 11:42:28",
+                "num_items": 79
+            },
+            {
+                "id": 49980,
+                "name": "Real People Revshare",
+                "description": "",
+                "date_added": "2018-10-03 17:09:23",
+                "date_updated": "2018-10-03 17:09:23",
+                "num_items": 157
+            },
+            {
+                "id": 49998,
+                "name": "Nature Documentary",
+                "description": "",
+                "date_added": "2018-10-04 15:37:05",
+                "date_updated": "2018-10-04 15:37:05",
+                "num_items": 77
+            },
+            {
+                "id": 49999,
+                "name": "Soothing Mbs",
+                "description": "",
+                "date_added": "2018-10-04 15:41:43",
+                "date_updated": "2018-10-04 15:41:43",
+                "num_items": 19
+            },
+            {
+                "id": 50489,
+                "name": "Young Professionals",
+                "description": "",
+                "date_added": "2018-10-18 10:27:12",
+                "date_updated": "2018-10-19 10:29:14",
+                "num_items": 62
+            },
+            {
+                "id": 50907,
+                "name": "Eat, Drink And Be Merry",
+                "description": "",
+                "date_added": "2018-10-29 23:25:27",
+                "date_updated": "2018-11-01 23:08:43",
+                "num_items": 32
+            },
+            {
+                "id": 51391,
+                "name": "Shop Til You Drop",
+                "description": "",
+                "date_added": "2018-11-10 16:31:57",
+                "date_updated": "2018-11-10 16:53:02",
+                "num_items": 35
+            },
+            {
+                "id": 51392,
+                "name": "Everyday Heroes",
+                "description": "",
+                "date_added": "2018-11-10 16:33:30",
+                "date_updated": "2018-11-10 16:41:23",
+                "num_items": 28
+            },
+            {
+                "id": 51393,
+                "name": "Sparkle And Shine Mbs",
+                "description": "",
+                "date_added": "2018-11-10 16:34:26",
+                "date_updated": "2018-11-26 00:14:41",
+                "num_items": 22
+            },
+            {
+                "id": 52076,
+                "name": "Drone Footage",
+                "description": "",
+                "date_added": "2018-11-29 00:51:46",
+                "date_updated": "2018-11-29 00:51:46",
+                "num_items": 76
+            },
+            {
+                "id": 54196,
+                "name": "Modern Workplaces",
+                "description": "",
+                "date_added": "2019-01-20 20:50:34",
+                "date_updated": "2019-01-20 20:50:34",
+                "num_items": 74
+            }
         ],
         "rawHeaders": [
-            "Date",
-            "Thu, 19 Nov 2020 04:47:25 GMT",
-            "Content-Type",
+            "date",
+            "Tue, 24 Nov 2020 02:57:01 GMT",
+            "content-type",
             "application/json",
-            "Transfer-Encoding",
+            "transfer-encoding",
             "chunked",
-            "Connection",
+            "connection",
             "close",
-            "Server",
+            "server",
             "nginx",
-            "Set-Cookie",
-            "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
-            "Set-Cookie",
-            "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.videoblocks.com",
-            "Cache-Control",
+            "set-cookie",
+            [
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.videoblocks.com"
+            ],
+            "cache-control",
             "no-cache, private",
-            "X-Frame-Options",
+            "x-frame-options",
             "SAMEORIGIN",
-            "Content-Encoding",
-            "gzip"
+            "content-encoding",
+            ""
         ],
         "responseIsBinary": false
     }
