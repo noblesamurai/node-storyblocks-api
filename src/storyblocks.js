@@ -1,16 +1,14 @@
 const _createError = require('http-errors');
-const camelCase = require('lodash.camelcase');
 const crypto = require('crypto');
 const got = require('got');
 const isPlainObject = require('lodash.isplainobject');
-const mapKeys = require('lodash.mapkeys');
-const snakeCase = require('lodash.snakecase');
+const { keysToCamelCase, keysToSnakeCase } = require('./convert');
 
 const AUTH_EXPIRY_SECONDS = 12 * 60 * 60; // 12 hours
 
 function createError (code, errorOrErrors) {
   if (typeof errorOrErrors === 'string') return _createError(code, errorOrErrors);
-  const errors = mapKeys(errorOrErrors, (value, key) => camelCase(key));
+  const errors = keysToCamelCase(errorOrErrors);
   return _createError(code, 'request failed', { errors });
 }
 
@@ -64,31 +62,6 @@ class StoryblocksApi {
   }
 
   /**
-   * Storyblocks APIs use snake case keys. So that we can use camel case keys
-   * in JS we need to convert them back to snake case before making our
-   * requests.
-   *
-   * @param {object} object
-   * @return {object}
-   */
-  toSnakeCase (object) {
-    return mapKeys(object, (value, key) => snakeCase(key));
-  }
-
-  /**
-   * Convert object keys back to camel case again.
-   *
-   * @param {object} object
-   * @return {object}
-   */
-  toCamelCase (object) {
-    return mapKeys(object, (value, key) => {
-      if (/^_\d+p$/.test(key)) return key.slice(1);
-      return camelCase(key);
-    });
-  }
-
-  /**
    * Make a request.
    *
    * @param {function} endpointFn
@@ -97,7 +70,7 @@ class StoryblocksApi {
    * @return {object}
    */
   async request (endpointFn, method, parameters) {
-    const { endpoint, query } = endpointFn(this.toSnakeCase(parameters));
+    const { endpoint, query } = endpointFn(keysToSnakeCase(parameters));
     const options = {
       prefixUrl: this[PREFIX],
       method,
@@ -106,7 +79,7 @@ class StoryblocksApi {
     };
     const response = await client(endpoint, options);
     const results = JSON.parse(response.body, (key, value) => {
-      return isPlainObject(value) ? this.toCamelCase(value) : value;
+      return isPlainObject(value) ? keysToCamelCase(value) : value;
     });
     if (results.errors) throw createError(response.statusCode || 500, results.errors);
     return results;
