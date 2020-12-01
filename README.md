@@ -135,6 +135,19 @@ const results = await videoblocks.collection(params);
 ```
 For a list of parameters see the [docs](https://documentation.storyblocks.com/#f60c7ed5-4c16-4c06-a992-04883c2838ba).
 
+## Tests
+
+Some tests use [nock.back](https://github.com/nock/nock#nock-back). These are tests that will record network
+traffic the first time they are run and then use those recordings as fixtures for subsequent runs.
+
+When recording tests a valid storyblocks private and public key is required. These are set using the
+`STORYBLOCKS_PRIVATE_KEY` and `STORYBLOCKS_PUBLIC_KEY` environment variables. The simplest way to do this
+is with a `.env` file which will be automatically loaded by the nock.back tests. Note that `.env` files
+have been added to the `.gitignore` so they are never committed.
+
+Fixtures are stored in `/test/fixtures`. If you need to re-record a test the simplest way is to just remove
+the recorded fixture and run the tests again.
+
 ## License
 
 The BSD License
