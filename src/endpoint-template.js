@@ -21,15 +21,16 @@ function endpointTemplate (strings, ...keys) {
    * @param {object} query
    * @return {string}
    */
-  return function endpoint (query) {
+  return function (query) {
     let endpoint = '';
-    // construct the endpoint url using values from the input query object and
+    // Construct the endpoint url using values from the input query object and
     // remove them from the final query string at the same time.
     for (const [i, key] of keys.entries()) {
       const { [key]: value, ...rest } = query;
       endpoint += strings[i] + value;
       query = rest;
     }
+
     endpoint += strings[strings.length - 1];
     return { endpoint, query };
   };

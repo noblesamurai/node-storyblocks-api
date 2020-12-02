@@ -1,0 +1,137 @@
+[
+    {
+        "path": "/api/v2/videos/search?keywords=fish&results_per_page=5&project_id=test&user_id=test&content_scores=true&EXPIRES=1234567890&HMAC=0000000000&APIKEY=PUBLIC_KEY",
+        "scope": "https://api.videoblocks.com:443",
+        "method": "GET",
+        "body": "",
+        "status": 200,
+        "response": {
+            "total_results": 4045,
+            "results": [
+                {
+                    "title": "Carp, sturgeon and gobies on the fish market. Morning catch of fish. Useful seafood.",
+                    "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/rZJIMvhmliwmde8a6/videoblocks-carp-sturgeon-and-gobies-on-the-fish-market-morning-catch-of-fish-useful-seafood_r0vcrp_wb_thumbnail-180_01.jpg",
+                    "id": 4285013,
+                    "type": "footage",
+                    "is_new": false,
+                    "preview_urls": {
+                        "_180p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/rZJIMvhmliwmde8a6/videoblocks-carp-sturgeon-and-gobies-on-the-fish-market-morning-catch-of-fish-useful-seafood_r0vcrp_wb__67b624e77781b689e1c4731071ae419d__P180.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615981&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=4285013&resolution=180p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30",
+                        "_360p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/rZJIMvhmliwmde8a6/videoblocks-carp-sturgeon-and-gobies-on-the-fish-market-morning-catch-of-fish-useful-seafood_r0vcrp_wb__67b624e77781b689e1c4731071ae419d__P360.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615981&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=4285013&resolution=360p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30",
+                        "_480p": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/rZJIMvhmliwmde8a6/videoblocks-carp-sturgeon-and-gobies-on-the-fish-market-morning-catch-of-fish-useful-seafood_r0vcrp_wb__d7fe2df4feb3d80b184f8cf4053e9d08__P480.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615981&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=4285013&resolution=480p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30",
+                        "_720p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/rZJIMvhmliwmde8a6/videoblocks-carp-sturgeon-and-gobies-on-the-fish-market-morning-catch-of-fish-useful-seafood_r0vcrp_wb__67b624e77781b689e1c4731071ae419d__P720.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615981&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=4285013&resolution=720p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30"
+                    },
+                    "duration": 7
+                },
+                {
+                    "title": "Shoal of jack fish in tulemben in Bali, Indonesia",
+                    "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/2O0VXeG/shoal-of-jack-fish-in-tulemben-in-bali-indonesia_vkwub58su_1080__d_thumbnail-180_01.jpg",
+                    "id": 753322,
+                    "type": "footage",
+                    "is_new": false,
+                    "stockItemScore": {
+                        "score": 0.049577464788732394,
+                        "term_surface_percentile": 0.9627213420316869,
+                        "term_download_percentile": 0.9767008387698043,
+                        "global_download_percentile": 0.9749899073201868,
+                        "global_surface_percentile": 0.9502687060258546,
+                        "global_score": 0.9484872091487211
+                    },
+                    "preview_urls": {
+                        "_180p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/2O0VXeG/shoal-of-jack-fish-in-tulemben-in-bali-indonesia_vkwub58su_1080__d__0602439cde8f4d65f08aac98ae7b242d__P180.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615981&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=753322&resolution=180p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30",
+                        "_360p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/2O0VXeG/shoal-of-jack-fish-in-tulemben-in-bali-indonesia_vkwub58su_1080__d__0602439cde8f4d65f08aac98ae7b242d__P360.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615981&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=753322&resolution=360p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30",
+                        "_480p": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/2O0VXeG/shoal-of-jack-fish-in-tulemben-in-bali-indonesia_vkwub58su_1080__d__addd4875cec5934f7d4ccaf9e1c6197f__P480.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615981&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=753322&resolution=480p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30",
+                        "_720p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/2O0VXeG/shoal-of-jack-fish-in-tulemben-in-bali-indonesia_vkwub58su_1080__d__0602439cde8f4d65f08aac98ae7b242d__P720.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615981&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=753322&resolution=720p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30"
+                    },
+                    "duration": 15
+                },
+                {
+                    "title": "Mackerel Swimming In The Aquarium",
+                    "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/GTYSdDW/mackerel-swimming-in-the-aquarium_-yctoxlbr_thumbnail-180_01.jpg",
+                    "id": 72423,
+                    "type": "footage",
+                    "is_new": false,
+                    "stockItemScore": {
+                        "score": 0.04495347172512527,
+                        "term_surface_percentile": 0.9936626281453868,
+                        "term_download_percentile": 0.9739049394221808,
+                        "global_download_percentile": 0.9908727606287956,
+                        "global_surface_percentile": 0.9714380247730536,
+                        "global_score": 0.9818776211646274
+                    },
+                    "preview_urls": {
+                        "_180p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/GTYSdDW/mackerel-swimming-in-the-aquarium_-yctoxlbr__e5f452c867e266efb86a114706bdebe7__P180.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615981&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=72423&resolution=180p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30",
+                        "_360p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/GTYSdDW/mackerel-swimming-in-the-aquarium_-yctoxlbr__e5f452c867e266efb86a114706bdebe7__P360.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615981&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=72423&resolution=360p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30",
+                        "_480p": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/GTYSdDW/mackerel-swimming-in-the-aquarium_-yctoxlbr__89ecdfa9915492ad6149b1ecdf0389e5__P480.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615981&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=72423&resolution=480p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30",
+                        "_720p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/GTYSdDW/mackerel-swimming-in-the-aquarium_-yctoxlbr__e5f452c867e266efb86a114706bdebe7__P720.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615981&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=72423&resolution=720p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30"
+                    },
+                    "duration": 9
+                },
+                {
+                    "title": "School Of Fish. Sharks swim in a circle.",
+                    "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/SNc_bPaMeiw63zp8r/videoblocks-school-of-fish-sharks-swim-in-a-circle_smleuo42x_thumbnail-180_01.jpg",
+                    "id": 8180348,
+                    "type": "footage",
+                    "is_new": false,
+                    "stockItemScore": {
+                        "score": 0.06905370843989769,
+                        "term_surface_percentile": 0.9483690587138863,
+                        "term_download_percentile": 0.9850885368126747,
+                        "global_download_percentile": 0.9657490867205025,
+                        "global_surface_percentile": 0.888122489947444,
+                        "global_score": 0.9962777456101473
+                    },
+                    "preview_urls": {
+                        "_180p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/SNc_bPaMeiw63zp8r/videoblocks-school-of-fish-sharks-swim-in-a-circle_smleuo42x__ad17218197caad95a23d7b38c7da1d15__P180.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615982&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=8180348&resolution=180p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30",
+                        "_360p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/SNc_bPaMeiw63zp8r/videoblocks-school-of-fish-sharks-swim-in-a-circle_smleuo42x__ad17218197caad95a23d7b38c7da1d15__P360.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615982&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=8180348&resolution=360p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30",
+                        "_480p": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/SNc_bPaMeiw63zp8r/videoblocks-school-of-fish-sharks-swim-in-a-circle_smleuo42x__006d4986d5d9b9bdf1981c89aa82c3fa__P480.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615982&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=8180348&resolution=480p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30",
+                        "_720p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/SNc_bPaMeiw63zp8r/videoblocks-school-of-fish-sharks-swim-in-a-circle_smleuo42x__ad17218197caad95a23d7b38c7da1d15__P720.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615982&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=8180348&resolution=720p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30"
+                    },
+                    "duration": 30
+                },
+                {
+                    "title": "Very cute Blowfish in the water",
+                    "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/bOFlXnz/videoblocks-very-cute-blowfish-in-the-water_bzq8xciqs_thumbnail-180_01.jpg",
+                    "id": 10746073,
+                    "type": "footage",
+                    "is_new": false,
+                    "preview_urls": {
+                        "_180p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/bOFlXnz/videoblocks-very-cute-blowfish-in-the-water_bzq8xciqs__e5722c4923cb014a6f6d14ffdc62087f__P180.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615982&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=10746073&resolution=180p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30",
+                        "_360p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/bOFlXnz/videoblocks-very-cute-blowfish-in-the-water_bzq8xciqs__e5722c4923cb014a6f6d14ffdc62087f__P360.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615982&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=10746073&resolution=360p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30",
+                        "_480p": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/bOFlXnz/videoblocks-very-cute-blowfish-in-the-water_bzq8xciqs__3b80d8cc73ce6ecfe4d39a1a334eaa2a__P480.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615982&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=10746073&resolution=480p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30",
+                        "_720p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/bOFlXnz/videoblocks-very-cute-blowfish-in-the-water_bzq8xciqs__e5722c4923cb014a6f6d14ffdc62087f__P720.mp4?type=preview&origin=VIDEOBLOCKS&timestamp_ms=1606186615982&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=10746073&resolution=720p&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=ad884e95-22a3-4dd7-8a92-15b999569827&searchPageId=e0e4aa5e-bb98-4508-8281-4ce479399d30"
+                    },
+                    "duration": 17
+                }
+            ],
+            "keywordScore": {
+                "score": 0.012217359275469082,
+                "download_percentile": 0.9937353171495693,
+                "surface_percentile": 0.9933829287392326
+            }
+        },
+        "rawHeaders": [
+            "date",
+            "Tue, 24 Nov 2020 02:56:55 GMT",
+            "content-type",
+            "application/json",
+            "transfer-encoding",
+            "chunked",
+            "connection",
+            "close",
+            "server",
+            "nginx",
+            "set-cookie",
+            [
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.videoblocks.com"
+            ],
+            "cache-control",
+            "no-cache, private",
+            "x-frame-options",
+            "SAMEORIGIN",
+            "content-encoding",
+            ""
+        ],
+        "responseIsBinary": false
+    }
+]

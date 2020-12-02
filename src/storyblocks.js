@@ -1,37 +1,47 @@
-const createError = require('http-errors');
+const _createError = require('http-errors');
 const crypto = require('crypto');
 const got = require('got');
-const mapKeys = require('lodash.mapkeys');
-const snakeCase = require('lodash.snakecase');
+const isPlainObject = require('lodash.isplainobject');
+const { keysToCamelCase, keysToSnakeCase } = require('./convert');
 
 const AUTH_EXPIRY_SECONDS = 12 * 60 * 60; // 12 hours
 
-// strip any \u0000 null characters from the response before it is json parsed.
+function createError (code, errorOrErrors) {
+  if (typeof errorOrErrors === 'string') return _createError(code, errorOrErrors);
+  const errors = keysToCamelCase(errorOrErrors);
+  return _createError(code, 'request failed', { errors });
+}
+
+// Strip any \u0000 null characters from the response before it is json parsed.
 const client = got.extend({
   hooks: {
-    afterResponse: response => ({
-      ...response,
-      body: response.body.replace('\\u0000', '')
-    })
+    afterResponse: [
+      response => {
+        return {
+          ...response,
+          body: response.body.replace('\\u0000', '')
+        };
+      }
+    ]
   }
 });
 
-const BASE = Symbol('base');
+const PREFIX = Symbol('prefix');
 const CREDENTIALS = Symbol('credentials');
 
 class StoryblocksApi {
   /**
    * Constructor
    *
-   * @param {string} base the api base domain url
+   * @param {string} prefix the api url prefix
    * @param {string} credentials.privateKey
    * @param {string} credentials.publicKey
    */
-  constructor (base, credentials, endpoints = []) {
-    this[BASE] = base;
+  constructor (prefix, credentials, endpoints = []) {
+    this[PREFIX] = prefix;
     this[CREDENTIALS] = credentials;
     endpoints.forEach(addEndpoint.bind(this));
-    // don't allow any more modifications to this object after the constructor
+    // Don't allow any more modifications to this object after the constructor
     // has finished.
     Object.freeze(this);
   }
@@ -46,20 +56,9 @@ class StoryblocksApi {
     const { privateKey, publicKey } = this[CREDENTIALS];
     const expires = Math.floor(Date.now() / 1000) + AUTH_EXPIRY_SECONDS;
     const hmac = crypto.createHmac('sha256', privateKey + expires);
-    hmac.update(endpoint);
+    const { pathname } = new URL(`${this[PREFIX]}/${endpoint}`);
+    hmac.update(pathname);
     return { EXPIRES: expires, HMAC: hmac.digest('hex'), APIKEY: publicKey };
-  }
-
-  /**
-   * Storyblocks APIs use snake case keys. So that we can use camel case keys
-   * in JS we need to convert them back to snake case before making our
-   * requests.
-   *
-   * @param {object} params
-   * @return {object}
-   */
-  query (params) {
-    return mapKeys(params, (value, key) => snakeCase(key));
   }
 
   /**
@@ -70,21 +69,19 @@ class StoryblocksApi {
    * @param {object} params
    * @return {object}
    */
-  async request (endpointFn, method, params) {
-    const { endpoint, query } = endpointFn(this.query(params));
-    const opts = {
-      baseUrl: this[BASE],
-      json: true,
+  async request (endpointFn, method, parameters) {
+    const { endpoint, query } = endpointFn(keysToSnakeCase(parameters));
+    const options = {
+      prefixUrl: this[PREFIX],
       method,
-      query: { ...query, ...this.auth(endpoint) },
+      searchParams: { ...query, ...this.auth(endpoint) },
       throwHttpErrors: false
     };
-    const response = await client(endpoint, opts);
-    const {
-      body: { success = false, message = 'request failed', ...results } = {},
-      statusCode = 500
-    } = response;
-    if (!success) throw createError(statusCode, message, results);
+    const response = await client(endpoint, options);
+    const results = JSON.parse(response.body, (key, value) => {
+      return isPlainObject(value) ? keysToCamelCase(value) : value;
+    });
+    if (results.errors) throw createError(response.statusCode || 500, results.errors);
     return results;
   }
 }

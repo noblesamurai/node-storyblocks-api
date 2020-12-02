@@ -1,0 +1,93 @@
+[
+    {
+        "path": "/api/v2/audio/search?results_per_page=5&project_id=test&user_id=test&content_scores=true&EXPIRES=1234567890&HMAC=0000000000&APIKEY=PUBLIC_KEY",
+        "scope": "https://api.audioblocks.com:443",
+        "method": "GET",
+        "body": "",
+        "status": 200,
+        "response": {
+            "total_results": 10000,
+            "results": [
+                {
+                    "title": "Inspiring Soft Background",
+                    "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/BsTwCwBHBjzwub4i4/inspiring-soft-background.png",
+                    "id": 148396,
+                    "type": "music",
+                    "is_new": false,
+                    "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/BsTwCwBHBjzwub4i4/inspiring-soft-background_NWM.mp3?type=preview&origin=AUDIOBLOCKS&timestamp_ms=1606186606846&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=148396&resolution=&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=8541d7a3-5893-4351-88f0-ee79e8275c69&searchPageId=acf06e6d-bae9-41f3-9c1b-49d9eb378972",
+                    "duration": 140,
+                    "bpm": 114
+                },
+                {
+                    "title": "Happy And Inspiring",
+                    "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/BsTwCwBHBjzwub4i4/happy-and-inspiring.png",
+                    "id": 148377,
+                    "type": "music",
+                    "is_new": false,
+                    "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/BsTwCwBHBjzwub4i4/happy-and-inspiring_NWM.mp3?type=preview&origin=AUDIOBLOCKS&timestamp_ms=1606186606846&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=148377&resolution=&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=8541d7a3-5893-4351-88f0-ee79e8275c69&searchPageId=acf06e6d-bae9-41f3-9c1b-49d9eb378972",
+                    "duration": 162,
+                    "bpm": 111
+                },
+                {
+                    "title": "Morning Sun",
+                    "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/SSqJJlqjrk2xrqj0y/audioblocks-morning-sun_SlsU0CqjH.png",
+                    "id": 165499,
+                    "type": "music",
+                    "is_new": true,
+                    "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/SSqJJlqjrk2xrqj0y/audioblocks-morning-sun_SlsU0CqjH_NWM.mp3?type=preview&origin=AUDIOBLOCKS&timestamp_ms=1606186606846&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=165499&resolution=&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=8541d7a3-5893-4351-88f0-ee79e8275c69&searchPageId=acf06e6d-bae9-41f3-9c1b-49d9eb378972",
+                    "duration": 93,
+                    "bpm": 109
+                },
+                {
+                    "title": "Simplicity",
+                    "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/BsTwCwBHBjzwub4i4/simplicity.png",
+                    "id": 148523,
+                    "type": "music",
+                    "is_new": false,
+                    "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/BsTwCwBHBjzwub4i4/simplicity_NWM.mp3?type=preview&origin=AUDIOBLOCKS&timestamp_ms=1606186606846&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=148523&resolution=&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=8541d7a3-5893-4351-88f0-ee79e8275c69&searchPageId=acf06e6d-bae9-41f3-9c1b-49d9eb378972",
+                    "duration": 166,
+                    "bpm": 119
+                },
+                {
+                    "title": "Business Idea",
+                    "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/SxoktnUHBjzy8oizv/ssm-102518-Business-Idea.png",
+                    "id": 150717,
+                    "type": "music",
+                    "is_new": false,
+                    "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/SxoktnUHBjzy8oizv/ssm-102518-Business-Idea_NWM.mp3?type=preview&origin=AUDIOBLOCKS&timestamp_ms=1606186606846&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=150717&resolution=&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&searchId=8541d7a3-5893-4351-88f0-ee79e8275c69&searchPageId=acf06e6d-bae9-41f3-9c1b-49d9eb378972",
+                    "duration": 123,
+                    "bpm": 110
+                }
+            ],
+            "keywordScore": {
+                "score": 0,
+                "download_percentile": 0,
+                "surface_percentile": 0
+            }
+        },
+        "rawHeaders": [
+            "date",
+            "Tue, 24 Nov 2020 02:56:46 GMT",
+            "content-type",
+            "application/json",
+            "transfer-encoding",
+            "chunked",
+            "connection",
+            "close",
+            "server",
+            "nginx",
+            "set-cookie",
+            [
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.audioblocks.com"
+            ],
+            "cache-control",
+            "no-cache, private",
+            "x-frame-options",
+            "SAMEORIGIN",
+            "content-encoding",
+            ""
+        ],
+        "responseIsBinary": false
+    }
+]

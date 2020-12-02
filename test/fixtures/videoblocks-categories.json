@@ -1,0 +1,260 @@
+[
+    {
+        "path": "/api/v2/videos/stock-item/categories?EXPIRES=1234567890&HMAC=0000000000&APIKEY=PUBLIC_KEY",
+        "scope": "https://api.videoblocks.com:443",
+        "method": "GET",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "id": 1,
+                "name": "Aerial",
+                "content_type": "footage"
+            },
+            {
+                "id": 2,
+                "name": "Animals",
+                "content_type": "footage"
+            },
+            {
+                "id": 4,
+                "name": "Business and Professions",
+                "content_type": "footage"
+            },
+            {
+                "id": 5,
+                "name": "Food and Beverage",
+                "content_type": "footage"
+            },
+            {
+                "id": 6,
+                "name": "Historical and Archival",
+                "content_type": "footage"
+            },
+            {
+                "id": 7,
+                "name": "Holidays and Celebrations",
+                "content_type": "footage"
+            },
+            {
+                "id": 9,
+                "name": "Nature",
+                "content_type": "footage"
+            },
+            {
+                "id": 10,
+                "name": "People",
+                "content_type": "footage"
+            },
+            {
+                "id": 11,
+                "name": "Slow Motion",
+                "content_type": "footage"
+            },
+            {
+                "id": 12,
+                "name": "Sports and Recreation",
+                "content_type": "footage"
+            },
+            {
+                "id": 13,
+                "name": "Technology",
+                "content_type": "footage"
+            },
+            {
+                "id": 14,
+                "name": "Time Lapse",
+                "content_type": "footage"
+            },
+            {
+                "id": 15,
+                "name": "Transportation",
+                "content_type": "footage"
+            },
+            {
+                "id": 19,
+                "name": "Apple Motion Templates",
+                "content_type": "templates"
+            },
+            {
+                "id": 20,
+                "name": "Effects and Lower Thirds",
+                "content_type": "footage"
+            },
+            {
+                "id": 22,
+                "name": "Places and Landmarks",
+                "content_type": "footage"
+            },
+            {
+                "id": 23,
+                "name": "360° and VR",
+                "content_type": "footage"
+            },
+            {
+                "id": 24,
+                "name": "Green Screen",
+                "content_type": "footage"
+            },
+            {
+                "id": 25,
+                "name": "Intro",
+                "content_type": "templates"
+            },
+            {
+                "id": 26,
+                "name": "Business",
+                "content_type": "templates"
+            },
+            {
+                "id": 27,
+                "name": "Logo Reveal",
+                "content_type": "templates"
+            },
+            {
+                "id": 28,
+                "name": "Typography",
+                "content_type": "templates"
+            },
+            {
+                "id": 29,
+                "name": "Presentation",
+                "content_type": "templates"
+            },
+            {
+                "id": 30,
+                "name": "Slideshow",
+                "content_type": "templates"
+            },
+            {
+                "id": 31,
+                "name": "Cinematic",
+                "content_type": "templates"
+            },
+            {
+                "id": 32,
+                "name": "Titles",
+                "content_type": "templates"
+            },
+            {
+                "id": 33,
+                "name": "Photo",
+                "content_type": "templates"
+            },
+            {
+                "id": 34,
+                "name": "Promo",
+                "content_type": "templates"
+            },
+            {
+                "id": 35,
+                "name": "Abstract",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 36,
+                "name": "Business",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 37,
+                "name": "Space",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 38,
+                "name": "Fire",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 39,
+                "name": "Flowers",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 40,
+                "name": "Energy",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 41,
+                "name": "Particles",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 42,
+                "name": "Water",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 43,
+                "name": "Love",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 44,
+                "name": "Countdown",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 45,
+                "name": "Medical",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 46,
+                "name": "Science",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 47,
+                "name": "Music",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 48,
+                "name": "Technology",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 49,
+                "name": "Religion",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 50,
+                "name": "Shapes",
+                "content_type": "motion-backgrounds"
+            },
+            {
+                "id": 51,
+                "name": "Premiere Pro Templates",
+                "content_type": "templates"
+            }
+        ],
+        "rawHeaders": [
+            "date",
+            "Tue, 24 Nov 2020 02:57:00 GMT",
+            "content-type",
+            "application/json",
+            "transfer-encoding",
+            "chunked",
+            "connection",
+            "close",
+            "server",
+            "nginx",
+            "set-cookie",
+            [
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.videoblocks.com"
+            ],
+            "cache-control",
+            "no-cache, private",
+            "x-frame-options",
+            "SAMEORIGIN",
+            "content-encoding",
+            ""
+        ],
+        "responseIsBinary": false
+    }
+]

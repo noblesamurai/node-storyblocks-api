@@ -1,0 +1,37 @@
+[
+    {
+        "path": "/api/v2/audio/stock-item/download/148396?project_id=test&user_id=test&EXPIRES=1234567890&HMAC=0000000000&APIKEY=PUBLIC_KEY",
+        "scope": "https://api.audioblocks.com:443",
+        "method": "GET",
+        "body": "",
+        "status": 200,
+        "response": {
+            "MP3": "https://dm0qx8t0i9gc9.cloudfront.net/content/audio/BsTwCwBHBjzwub4i4/inspiring-soft-background.mp3?type=download&origin=AUDIOBLOCKS&timestamp_ms=1606186608791&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&stockItemId=148396&format=MP3&response-content-disposition=attachment&Expires=1606188408&Signature=G-YwU4Y4eswksB4VBzNL6aelOo2c8VFZl0Fct0zjKtT7XOMYB8LtRPsrvCz6cM9UueVPT8YmjfNd8-mvkJQyg9skaTSbUuS-29t6gbVYnUMwQkHbN-IXmQQtHLIK82hF5ImCsm5lBGLaglCez0Y86Dh0xkwRvXYSurlqLd4yegOCWrMENJ9HwCxQdk6i1X-iixU6jXolua1z7whNG1357yQENg5XZlZVSie5mygSjKHR-I3jrdwp7EiAuti09TUnMRzQNvk4nWG0VmITB86~LmoxGVfkmUCfAl64qfylPI7Ymnj8O5BTkt5YZRelRRwd8F~XFTSVsFrxjeoC8yjYzw__&Key-Pair-Id=APKAIAQ2JPZIIO2PHR7Q",
+            "WAV": "https://dm0qx8t0i9gc9.cloudfront.net/content/audio/BsTwCwBHBjzwub4i4/inspiring-soft-background.wav?type=download&origin=AUDIOBLOCKS&timestamp_ms=1606186608807&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&stockItemId=148396&format=WAV&response-content-disposition=attachment&Expires=1606188408&Signature=cMSrLSe0ZUszbhClPZ92pIoPTu1meVqNW0msgjsbl1gKRRWfe1npto-tOzdATJ5cMe-qFEqQhQedU~NxNIqoySGW~rLKqiYczOjKwyM-kwOZCoMF3lGTaSB0T9Ji3OZlKcqYF0HHUNR38Psehv2tz2LkXFqdX88RVKLaMYv0b6x5bx4Pg3zxo701ttAsACRyU1QM4jeiinNxFs3GkI79utFghDv1aUJyNeqBIjEFZVGunBEWEhsrOJrc8mpLCqmp3l1QZSazWct8AzS54HFpa-8zwhcMpNrHptXZo~~hAYFP56I~g5dYbescBvH7cIdAL6HEr~~~iFoGXTyvR97ROw__&Key-Pair-Id=APKAIAQ2JPZIIO2PHR7Q"
+        },
+        "rawHeaders": [
+            "date",
+            "Tue, 24 Nov 2020 02:56:48 GMT",
+            "content-type",
+            "application/json",
+            "transfer-encoding",
+            "chunked",
+            "connection",
+            "close",
+            "server",
+            "nginx",
+            "set-cookie",
+            [
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.audioblocks.com"
+            ],
+            "cache-control",
+            "no-cache, private",
+            "x-frame-options",
+            "SAMEORIGIN",
+            "content-encoding",
+            ""
+        ],
+        "responseIsBinary": false
+    }
+]

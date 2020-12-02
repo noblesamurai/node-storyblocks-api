@@ -1,6 +1,6 @@
-# Storyblocks API [![Build Status](https://travis-ci.org/noblesamurai/node-storyblocks-api.svg?branch=master)](https://travis-ci.org/noblesamurai/node-storyblocks-api)
+# Storyblocks API (Version 2) [![Build Status](https://travis-ci.org/noblesamurai/node-storyblocks-api.svg?branch=master)](https://travis-ci.org/noblesamurai/node-storyblocks-api)
 
-> storyblocks API wrapper for node.js
+> [Storyblocks API](https://documentation.storyblocks.com/) wrapper for node.js
 
 ## Installation
 
@@ -22,25 +22,30 @@ const credentials = {
 const { audioblocks, videoblocks } = require('storyblocks-api')(credentials);
 ```
 
-Then start making your requests to storyblocks
+Then start making your requests to Storyblocks
 ```js
 const params = {
   keywords: 'mountain aerial',
   page: 1,
   numResults: 5
 };
-const results = await videoblocks.search(params);
-// results = { info: [...], totalSearchResults: 4652 };
+const search = await videoblocks.search(params);
+// search = { results: [...], totalResults: 4652 };
 ```
 
 #### Parameters
 
 The parameters argument combines both the URI parameters and the Query parameters
-shown in the [docs](https://developer.storyblocks.com/docs/v1/index.html).
+shown in the [docs](https://documentation.storyblocks.com/).
 
 All parameter keys can be defined in camel case to be consistent with code styling
 practices.  All keys will be converted back to snake case for the acutal request
-to storyblocks.
+to Storyblocks.
+
+#### Response
+
+Response objects also have their keys converted back to camel case (from the
+mostly, but not entirely, snake case values returned from Storyblocks).
 
 ### Audioblocks
 
@@ -48,49 +53,43 @@ to storyblocks.
 ```js
 const results = await audioblocks.search(params);
 ```
-For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=search-audio).
+For a list of parameters see the [docs](https://documentation.storyblocks.com/#e4fbb5b0-0864-4e2a-8281-6c12b50f9a3e).
 
 #### List Categories
 ```js
 const results = await audioblocks.categories(params);
 ```
-For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=list-categories-2).
+For a list of parameters see the [docs](https://documentation.storyblocks.com/#fec2f320-b587-443f-9a97-d839f311c429).
 
-#### List Subcategories
-```js
-const results = await audioblocks.subcategories(params);
-```
-For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=list-subcategories).
-
-#### Get Audio
+#### Get Audio Details
 ```js
 const results = await audioblocks.audio(params);
 ```
-For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=get-audio).
+For a list of parameters see the [docs](https://documentation.storyblocks.com/#b401c4b9-c0a6-4751-97c7-5a33c57c73c3).
 
 #### Get Similar Audio
 ```js
 const results = await audioblocks.similar(params);
 ```
-For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=get-similar-audio).
+For a list of parameters see the [docs](https://documentation.storyblocks.com/#44a1b6bc-0634-47fc-8f87-cf3ba0cc2216).
 
 #### Download Audio
 ```js
 const results = await audioblocks.download(params);
 ```
-For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=download-audio).
+For a list of parameters see the [docs](https://documentation.storyblocks.com/#191f9e61-a96c-4bde-8e71-7ba0d662baaf).
 
 #### List Collections
 ```js
 const results = await audioblocks.collections(params);
 ```
-For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=list-collections-2).
+For a list of parameters see the [docs](https://documentation.storyblocks.com/#98493935-a86e-426b-8165-c78197373059).
 
 #### Get Collections
 ```js
 const results = await audioblocks.collection(params);
 ```
-For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=get-collection-2).
+For a list of parameters see the [docs](https://documentation.storyblocks.com/#4d2905f5-cafd-461a-881a-e0702bfc7cb2).
 
 ### Videoblocks
 
@@ -98,43 +97,56 @@ For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v
 ```js
 const results = await videoblocks.search(params);
 ```
-For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=search-videos).
+For a list of parameters see the [docs](https://documentation.storyblocks.com/#51b6b1b7-c95c-450c-b61d-c323a5b7c472).
 
 #### List Categories
 ```js
 const results = await videoblocks.categories(params);
 ```
-For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=list-categories).
+For a list of parameters see the [docs](https://documentation.storyblocks.com/#c4aecae5-579f-4be8-b093-6b424635bc27)
 
-#### Get Video
+#### Get Video Details
 ```js
 const results = await videoblocks.video(params);
 ```
-For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=get-video).
+For a list of parameters see the [docs](https://documentation.storyblocks.com/#e4d549f5-711b-4a2a-a97d-50d1f487b433).
 
 #### Get Similar Videos
 ```js
 const results = await videoblocks.similar(params);
 ```
-For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=get-similar-videos).
+For a list of parameters see the [docs](https://documentation.storyblocks.com/#b29d52d2-c230-4167-8fb2-a9d307f746e9).
 
 #### Download Video
 ```js
 const results = await videoblocks.download(params);
 ```
-For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=download-video).
+For a list of parameters see the [docs](https://documentation.storyblocks.com/#430e0ff6-7e8d-4e92-be79-6a7a8a18c9dc).
 
 #### List Collections
 ```js
 const results = await videoblocks.collections(params);
 ```
-For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=list-collections).
+For a list of parameters see the [docs](https://documentation.storyblocks.com/#1debad1c-2135-4163-8a1c-73e662ce3a2b).
 
 #### Get Collections
 ```js
 const results = await videoblocks.collection(params);
 ```
-For a list of parameters see the [docs](https://developer.storyblocks.com/docs/v1/index.html#/?id=get-collection).
+For a list of parameters see the [docs](https://documentation.storyblocks.com/#f60c7ed5-4c16-4c06-a992-04883c2838ba).
+
+## Tests
+
+Some tests use [nock.back](https://github.com/nock/nock#nock-back). These are tests that will record network
+traffic the first time they are run and then use those recordings as fixtures for subsequent runs.
+
+When recording tests a valid storyblocks private and public key is required. These are set using the
+`STORYBLOCKS_PRIVATE_KEY` and `STORYBLOCKS_PUBLIC_KEY` environment variables. The simplest way to do this
+is with a `.env` file which will be automatically loaded by the nock.back tests. Note that `.env` files
+have been added to the `.gitignore` so they are never committed.
+
+Fixtures are stored in `/test/fixtures`. If you need to re-record a test the simplest way is to just remove
+the recorded fixture and run the tests again.
 
 ## License
 

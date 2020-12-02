@@ -1,8 +1,8 @@
-const expect = require('chai').expect;
+const { expect } = require('chai');
 const e = require('../src/endpoint-template');
 
-describe('endpoint templates', function () {
-  it('should return an endpoint string and modified query params', function () {
+describe('endpoint templates', () => {
+  it('should return an endpoint string and modified query params', () => {
     const template = e`/api/user/${'user_id'}/video/${'video_id'}`;
     const { endpoint, query } = template({
       user_id: 42,

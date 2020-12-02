@@ -1,0 +1,115 @@
+[
+    {
+        "path": "/api/v2/audio/stock-item/similar/148396?EXPIRES=1234567890&HMAC=0000000000&APIKEY=PUBLIC_KEY",
+        "scope": "https://api.audioblocks.com:443",
+        "method": "GET",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "title": "Lagoon",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/S3mpsq5Qwkeip5vyj/audioblocks-lagoon_songtradr1347396_BBgWmJ01uP.png",
+                "id": 186218,
+                "type": "music",
+                "is_new": true,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/S3mpsq5Qwkeip5vyj/audioblocks-lagoon_songtradr1347396_BBgWmJ01uP_NWM.mp3?type=preview&origin=AUDIOBLOCKS&timestamp_ms=1606186610060&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=186218&resolution=&searchId=2b1fecf5-53ed-4bbf-a2e0-88f618a5664c&searchPageId=4368a9be-0d72-4300-8d16-3861a8f7dc4b",
+                "duration": 185,
+                "bpm": 109
+            },
+            {
+                "title": "attention to details",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/SxoktnUHBjzy8oizv/attention-to-details.png",
+                "id": 149721,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/SxoktnUHBjzy8oizv/attention-to-details_NWM.mp3?type=preview&origin=AUDIOBLOCKS&timestamp_ms=1606186610060&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=149721&resolution=&searchId=2b1fecf5-53ed-4bbf-a2e0-88f618a5664c&searchPageId=4368a9be-0d72-4300-8d16-3861a8f7dc4b",
+                "duration": 100,
+                "bpm": 102
+            },
+            {
+                "title": "Corporate Tech",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/SxoktnUHBjzy8oizv/audioblocks-corporate-tech_rNuzkeRuI.png",
+                "id": 172606,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/SxoktnUHBjzy8oizv/audioblocks-corporate-tech_rNuzkeRuI_NWM.mp3?type=preview&origin=AUDIOBLOCKS&timestamp_ms=1606186610061&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=172606&resolution=&searchId=2b1fecf5-53ed-4bbf-a2e0-88f618a5664c&searchPageId=4368a9be-0d72-4300-8d16-3861a8f7dc4b",
+                "duration": 169,
+                "bpm": 192
+            },
+            {
+                "title": "Panorama",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/BsTwCwBHBjzwub4i4/panorama_MJ0QkIru.png",
+                "id": 92984,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/BsTwCwBHBjzwub4i4/panorama_MJ0QkIru_NWM.mp3?type=preview&origin=AUDIOBLOCKS&timestamp_ms=1606186610061&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=92984&resolution=&searchId=2b1fecf5-53ed-4bbf-a2e0-88f618a5664c&searchPageId=4368a9be-0d72-4300-8d16-3861a8f7dc4b",
+                "duration": 168,
+                "bpm": 119
+            },
+            {
+                "title": "Suffused",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/S3mpsq5Qwkeip5vyj/audioblocks-suffused_songtradr1347393_BSlD18WgOD.png",
+                "id": 187112,
+                "type": "music",
+                "is_new": true,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/S3mpsq5Qwkeip5vyj/audioblocks-suffused_songtradr1347393_BSlD18WgOD_NWM.mp3?type=preview&origin=AUDIOBLOCKS&timestamp_ms=1606186610061&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=187112&resolution=&searchId=2b1fecf5-53ed-4bbf-a2e0-88f618a5664c&searchPageId=4368a9be-0d72-4300-8d16-3861a8f7dc4b",
+                "duration": 165,
+                "bpm": 110
+            },
+            {
+                "title": "the gorge",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/SxoktnUHBjzy8oizv/the-gorge.png",
+                "id": 162125,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/SxoktnUHBjzy8oizv/the-gorge_NWM.mp3?type=preview&origin=AUDIOBLOCKS&timestamp_ms=1606186610061&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=162125&resolution=&searchId=2b1fecf5-53ed-4bbf-a2e0-88f618a5664c&searchPageId=4368a9be-0d72-4300-8d16-3861a8f7dc4b",
+                "duration": 321,
+                "bpm": 114
+            },
+            {
+                "title": "Daytime",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/BsTwCwBHBjzwub4i4/daytime_f1BT0SB_.png",
+                "id": 92889,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/BsTwCwBHBjzwub4i4/daytime_f1BT0SB__NWM.mp3?type=preview&origin=AUDIOBLOCKS&timestamp_ms=1606186610061&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=92889&resolution=&searchId=2b1fecf5-53ed-4bbf-a2e0-88f618a5664c&searchPageId=4368a9be-0d72-4300-8d16-3861a8f7dc4b",
+                "duration": 148,
+                "bpm": 123
+            },
+            {
+                "title": "Corporate Elegant Gentle Smooth Background",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/HBkoCjiJNjpi3pnnv/audioblocks-corporate-elegant-gentle-smooth-background_BnBORwkM8.png",
+                "id": 165773,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/HBkoCjiJNjpi3pnnv/audioblocks-corporate-elegant-gentle-smooth-background_BnBORwkM8_NWM.mp3?type=preview&origin=AUDIOBLOCKS&timestamp_ms=1606186610061&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&stockItemId=165773&resolution=&searchId=2b1fecf5-53ed-4bbf-a2e0-88f618a5664c&searchPageId=4368a9be-0d72-4300-8d16-3861a8f7dc4b",
+                "duration": 139,
+                "bpm": 115
+            }
+        ],
+        "rawHeaders": [
+            "date",
+            "Tue, 24 Nov 2020 02:56:50 GMT",
+            "content-type",
+            "application/json",
+            "transfer-encoding",
+            "chunked",
+            "connection",
+            "close",
+            "server",
+            "nginx",
+            "set-cookie",
+            [
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.audioblocks.com"
+            ],
+            "cache-control",
+            "no-cache, private",
+            "x-frame-options",
+            "SAMEORIGIN",
+            "content-encoding",
+            ""
+        ],
+        "responseIsBinary": false
+    }
+]

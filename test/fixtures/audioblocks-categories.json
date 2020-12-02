@@ -1,0 +1,641 @@
+[
+    {
+        "path": "/api/v2/audio/stock-item/categories?EXPIRES=1234567890&HMAC=0000000000&APIKEY=PUBLIC_KEY",
+        "scope": "https://api.audioblocks.com:443",
+        "method": "GET",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "id": 1,
+                "name": "Angry",
+                "content_type": "music",
+                "category_group": "mood"
+            },
+            {
+                "id": 2,
+                "name": "Serious",
+                "content_type": "music",
+                "category_group": "mood"
+            },
+            {
+                "id": 3,
+                "name": "Playful",
+                "content_type": "music",
+                "category_group": "mood"
+            },
+            {
+                "id": 4,
+                "name": "Inspiring",
+                "content_type": "music",
+                "category_group": "mood"
+            },
+            {
+                "id": 5,
+                "name": "Sad",
+                "content_type": "music",
+                "category_group": "mood"
+            },
+            {
+                "id": 6,
+                "name": "Relaxing",
+                "content_type": "music",
+                "category_group": "mood"
+            },
+            {
+                "id": 7,
+                "name": "Happy",
+                "content_type": "music",
+                "category_group": "mood"
+            },
+            {
+                "id": 8,
+                "name": "Love",
+                "content_type": "music",
+                "category_group": "mood"
+            },
+            {
+                "id": 9,
+                "name": "Rock",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 10,
+                "name": "Chill Out",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 11,
+                "name": "Cinematic",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 13,
+                "name": "Country",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 15,
+                "name": "Pop",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 20,
+                "name": "Hip Hop",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 21,
+                "name": "World",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 22,
+                "name": "Corporate",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 25,
+                "name": "Holidays & Special Events",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 26,
+                "name": "Horror",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 29,
+                "name": "Jazz",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 31,
+                "name": "Kids & Family",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 32,
+                "name": "Classical",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 33,
+                "name": "Ambient",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 34,
+                "name": "Religious",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 36,
+                "name": "Blues",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 37,
+                "name": "Electronic",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 38,
+                "name": "Bumpers & Stingers",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 39,
+                "name": "Orchestra",
+                "content_type": "music",
+                "category_group": "instrument"
+            },
+            {
+                "id": 40,
+                "name": "Guitar",
+                "content_type": "music",
+                "category_group": "instrument"
+            },
+            {
+                "id": 41,
+                "name": "Brass",
+                "content_type": "music",
+                "category_group": "instrument"
+            },
+            {
+                "id": 42,
+                "name": "Percussion",
+                "content_type": "music",
+                "category_group": "instrument"
+            },
+            {
+                "id": 43,
+                "name": "Vocals",
+                "content_type": "music",
+                "category_group": "instrument"
+            },
+            {
+                "id": 44,
+                "name": "Woodwind",
+                "content_type": "music",
+                "category_group": "instrument"
+            },
+            {
+                "id": 45,
+                "name": "Piano",
+                "content_type": "music",
+                "category_group": "instrument"
+            },
+            {
+                "id": 46,
+                "name": "Alarms",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 47,
+                "name": "Ambient",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 48,
+                "name": "Animals",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 49,
+                "name": "Bangs",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 50,
+                "name": "Bathroom",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 51,
+                "name": "Bells",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 52,
+                "name": "Birds",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 53,
+                "name": "Boats",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 54,
+                "name": "Breaking",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 55,
+                "name": "Buzzers",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 56,
+                "name": "Vehicle and Traffic",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 57,
+                "name": "Cartoon",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 58,
+                "name": "Casino",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 59,
+                "name": "Clicks",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 60,
+                "name": "Crowds",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 61,
+                "name": "Dogs",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 62,
+                "name": "Doors",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 63,
+                "name": "Effects",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 64,
+                "name": "Falling",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 65,
+                "name": "Festive",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 66,
+                "name": "Fire",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 67,
+                "name": "Flight",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 68,
+                "name": "Footsteps",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 69,
+                "name": "Friction",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 70,
+                "name": "Toys and Games",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 71,
+                "name": "House",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 72,
+                "name": "Industrial",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 73,
+                "name": "Kitchen",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 74,
+                "name": "Misc",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 75,
+                "name": "Money",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 76,
+                "name": "Office",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 77,
+                "name": "Paper",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 78,
+                "name": "People",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 79,
+                "name": "Phones",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 80,
+                "name": "Ripping",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 81,
+                "name": "Scifi",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 82,
+                "name": "Squeaks",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 83,
+                "name": "Tools and Machines",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 84,
+                "name": "Trains",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 85,
+                "name": "Water",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 86,
+                "name": "Weapons",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 87,
+                "name": "Whistles",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 88,
+                "name": "Weather",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 89,
+                "name": "Clocks",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 90,
+                "name": "Insects",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 91,
+                "name": "City",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 92,
+                "name": "Applause",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 93,
+                "name": "Nature",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 94,
+                "name": "Horror",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 95,
+                "name": "Furniture",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 96,
+                "name": "Computer",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 97,
+                "name": "Whoosh",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 98,
+                "name": "Explosion",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 99,
+                "name": "Magic",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 100,
+                "name": "Fight",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 101,
+                "name": "Wood",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 102,
+                "name": "Emergency",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 103,
+                "name": "Impact",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 104,
+                "name": "Sports",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 105,
+                "name": "Balloon",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 106,
+                "name": "Electronics",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 107,
+                "name": "Foley",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 108,
+                "name": "Glass",
+                "content_type": "sfx",
+                "category_group": "sfx"
+            },
+            {
+                "id": 116,
+                "name": "R&B",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 118,
+                "name": "Folk",
+                "content_type": "music",
+                "category_group": "genre"
+            },
+            {
+                "id": 119,
+                "name": "Synth",
+                "content_type": "music",
+                "category_group": "instrument"
+            },
+            {
+                "id": 124,
+                "name": "Epic",
+                "content_type": "music",
+                "category_group": "mood"
+            },
+            {
+                "id": 125,
+                "name": "Dark",
+                "content_type": "music",
+                "category_group": "mood"
+            }
+        ],
+        "rawHeaders": [
+            "date",
+            "Tue, 24 Nov 2020 02:56:50 GMT",
+            "content-type",
+            "application/json",
+            "transfer-encoding",
+            "chunked",
+            "connection",
+            "close",
+            "server",
+            "nginx",
+            "set-cookie",
+            [
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.audioblocks.com"
+            ],
+            "cache-control",
+            "no-cache, private",
+            "x-frame-options",
+            "SAMEORIGIN",
+            "content-encoding",
+            ""
+        ],
+        "responseIsBinary": false
+    }
+]

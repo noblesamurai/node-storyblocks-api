@@ -1,0 +1,161 @@
+[
+    {
+        "path": "/api/v2/videos/stock-item/details/8180348?EXPIRES=1234567890&HMAC=0000000000&APIKEY=PUBLIC_KEY",
+        "scope": "https://api.videoblocks.com:443",
+        "method": "GET",
+        "body": "",
+        "status": 200,
+        "response": {
+            "title": "School Of Fish. Sharks swim in a circle.",
+            "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/SNc_bPaMeiw63zp8r/videoblocks-school-of-fish-sharks-swim-in-a-circle_smleuo42x_thumbnail-180_01.jpg",
+            "id": 8180348,
+            "type": "Footage",
+            "is_new": false,
+            "preview_urls": {
+                "_180p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/SNc_bPaMeiw63zp8r/videoblocks-school-of-fish-sharks-swim-in-a-circle_smleuo42x__ad17218197caad95a23d7b38c7da1d15__P180.mp4",
+                "_360p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/SNc_bPaMeiw63zp8r/videoblocks-school-of-fish-sharks-swim-in-a-circle_smleuo42x__ad17218197caad95a23d7b38c7da1d15__P360.mp4",
+                "_480p": "https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/SNc_bPaMeiw63zp8r/videoblocks-school-of-fish-sharks-swim-in-a-circle_smleuo42x__006d4986d5d9b9bdf1981c89aa82c3fa__P480.mp4",
+                "_720p": "https://dm0qx8t0i9gc9.cloudfront.net/previews/video/SNc_bPaMeiw63zp8r/videoblocks-school-of-fish-sharks-swim-in-a-circle_smleuo42x__ad17218197caad95a23d7b38c7da1d15__P720.mp4"
+            },
+            "duration": 30,
+            "download_formats": {
+                "MOV": {
+                    "_2160p": {
+                        "format_name": "4KMOV",
+                        "file_size_bytes": 2856262447,
+                        "height": 2160,
+                        "width": 3840,
+                        "bitrate_kbps": 743901,
+                        "frame_rate": 29.97,
+                        "video_codec": "mjpeg",
+                        "resolution": 2160
+                    },
+                    "_1080p": {
+                        "format_name": "HDMOV",
+                        "file_size_bytes": 429421602,
+                        "height": 1080,
+                        "width": 1920,
+                        "bitrate_kbps": 111839,
+                        "frame_rate": 29.97,
+                        "video_codec": "mjpeg",
+                        "resolution": 1080
+                    }
+                },
+                "MP4": {
+                    "_2160p": {
+                        "format_name": "4KMP4",
+                        "file_size_bytes": 109860263,
+                        "height": 2160,
+                        "width": 3840,
+                        "bitrate_kbps": 28612,
+                        "frame_rate": 29.97,
+                        "video_codec": "h264",
+                        "resolution": 2160
+                    },
+                    "_720p": {
+                        "format_name": "HDMP4",
+                        "file_size_bytes": 15780445,
+                        "height": 720,
+                        "width": 1280,
+                        "bitrate_kbps": 4109,
+                        "frame_rate": 29.97,
+                        "video_codec": "h264",
+                        "resolution": 720
+                    },
+                    "_1080p": {
+                        "format_name": "HDMP4",
+                        "file_size_bytes": 31604379,
+                        "height": 1080,
+                        "width": 1920,
+                        "bitrate_kbps": 8231,
+                        "frame_rate": 29.97,
+                        "video_codec": "h264",
+                        "resolution": 1080
+                    }
+                }
+            },
+            "categories": [
+                "animals",
+                "nature"
+            ],
+            "keywords": [
+                "4k",
+                "angle",
+                "animal",
+                "background",
+                "backgrounds",
+                "barracuda",
+                "beauty",
+                "below",
+                "blue",
+                "bubbles",
+                "climate",
+                "community",
+                "conformity",
+                "cooperation",
+                "creature",
+                "deep",
+                "diving",
+                "environment",
+                "exoticism",
+                "family",
+                "feeding",
+                "fish",
+                "following",
+                "frenzy",
+                "great",
+                "group",
+                "large",
+                "leadership",
+                "life",
+                "low",
+                "marine",
+                "motion",
+                "move",
+                "nature",
+                "ocean",
+                "pacific",
+                "predator",
+                "reef",
+                "saltwater",
+                "school",
+                "sea",
+                "seascape",
+                "shark",
+                "sharks",
+                "swimming",
+                "tropical",
+                "under",
+                "underwater",
+                "water",
+                "white"
+            ],
+            "description": null,
+            "has_alpha": false
+        },
+        "rawHeaders": [
+            "date",
+            "Tue, 24 Nov 2020 02:56:57 GMT",
+            "content-type",
+            "application/json",
+            "transfer-encoding",
+            "chunked",
+            "connection",
+            "close",
+            "server",
+            "nginx",
+            "set-cookie",
+            [
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.videoblocks.com"
+            ],
+            "cache-control",
+            "no-cache, private",
+            "x-frame-options",
+            "SAMEORIGIN",
+            "content-encoding",
+            ""
+        ],
+        "responseIsBinary": false
+    }
+]

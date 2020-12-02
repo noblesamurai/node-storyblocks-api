@@ -1,0 +1,44 @@
+[
+    {
+        "path": "/api/v2/videos/stock-item/download/8180348?project_id=test&user_id=test&EXPIRES=1234567890&HMAC=0000000000&APIKEY=PUBLIC_KEY",
+        "scope": "https://api.videoblocks.com:443",
+        "method": "GET",
+        "body": "",
+        "status": 200,
+        "response": {
+            "MOV": {
+                "_2160p": "https://d2v9y0dukr6mq2.cloudfront.net/video/content/SNc_bPaMeiw63zp8r/videoblocks-school-of-fish-sharks-swim-in-a-circle_SmleUO42X.mov?type=download&origin=VIDEOBLOCKS&timestamp_ms=1606186618395&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&stockItemId=8180348&format=4KMOV&resolution=2160p&response-content-disposition=attachment&Expires=1606188418&Signature=LVtDakMlGUTE6ui61suqes5lfTWgVtxfYNiTu1BQnOXwDeXd8zO7Dnbx-MCTMwQpwWjV5HZ0sk8ipKZMlYqFVPr-uJ4JwM6Awx23y3VEvAKhnf9dQO1vhR0f-p78Ofc2knSYLJbI2Bzqvb69GnIO9a89euwC5qXdc-RTpmopEbg-1XxuVPYpDHBsnMylcbp~LAeQsZKvUYbuAUiPsW7RxOAu46Wlc1~XxQEZjN24AUMHRpHkF5cEYt-MkZwcL0rWgFucls1pSqlEvAOQUGHAVEOlg1FWB2R6y3a7vHU42WD2bQata9cZwT9t6OI9eYmmZW4TcepPtU9Mv9JEfe0EYw__&Key-Pair-Id=APKAIAQ2JPZIIO2PHR7Q",
+                "_1080p": "https://dm0qx8t0i9gc9.cloudfront.net/content/video/SNc_bPaMeiw63zp8r/videoblocks-school-of-fish-sharks-swim-in-a-circle_smleuo42x_1080__D.mov?type=download&origin=VIDEOBLOCKS&timestamp_ms=1606186618397&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&stockItemId=8180348&format=HDMOV&resolution=1080p&response-content-disposition=attachment&Expires=1606188418&Signature=OJ3ZSPNJ~TrvA1pgIN-2rUkG5ap0oiHwksXr9i-41hOrOBHZsPTBjCAQtNtrZUfYKEzBJTyKrIAZIf~i04ypknrWlBLz-~PmO9W58na4sBdRsUKy0maS-7ToEimlAQfAzg89wv0sHwJk5ODDxdkPm~UQHVdRjcGxNgJAIShnu29AVpCAuG8X2XUfAZU~tEOpHFy224gp8Pjth4cI9IJWV2NxEFlDPMDp6OASq91OA34cddo4M~UivEkD5zYVZlHrYrJRJgE1Yy~iB6skCBLWg9twzy2r3eY3NomGsmouWdHeKsdxhTPetTkq4By4nrAsp4fk-UVtEbvJ72IR7A-Ing__&Key-Pair-Id=APKAIAQ2JPZIIO2PHR7Q"
+            },
+            "MP4": {
+                "_2160p": "https://dm0qx8t0i9gc9.cloudfront.net/content/video/SNc_bPaMeiw63zp8r/videoblocks-school-of-fish-sharks-swim-in-a-circle_smleuo42x_2160__D.mp4?type=download&origin=VIDEOBLOCKS&timestamp_ms=1606186618396&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&stockItemId=8180348&format=4KMP4&resolution=2160p&response-content-disposition=attachment&Expires=1606188418&Signature=GGnizFbX49imyFp0PHlmHhjBjhCUUVGbQV0lX402xocdi93EF5My8nMSmtv-rEM5QZctEWMLfYgizqhTGaWpYkC0s3Xinni0Dw1yTK~7hrFtQ-aIXjw-7s2ntrw4MmUejiiOLFlfk6mLiKw~qPlWG7hxA7XTb~Zn1NRzfecctafdyFSpdLYwZwTNQzF1L2gZJIeY4V~iWyfKahNx3rlKd3JIDSKPPoMQ4VLJNina2xObRzerGYZBbMESOWQSJZzaE7~xfD4USDRs6N2m1lWxWO4JSbnRrR1pKzPOW28kb3fIuFb2demrPxkSPCT3mvZSs4zQboUoml8~t6Hh4CwUag__&Key-Pair-Id=APKAIAQ2JPZIIO2PHR7Q",
+                "_720p": "https://dm0qx8t0i9gc9.cloudfront.net/content/video/SNc_bPaMeiw63zp8r/videoblocks-school-of-fish-sharks-swim-in-a-circle_smleuo42x_720__D.mp4?type=download&origin=VIDEOBLOCKS&timestamp_ms=1606186618398&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&stockItemId=8180348&format=HDMP4&resolution=720p&response-content-disposition=attachment&Expires=1606188418&Signature=L41A6B~Z7E-rLqDGUyBaMArnskhi7N6Pr~iE9zNSDteBN20HE-e9wzJLqyosw8zM2~-RfZgH2xb1XoE8S4wuhHDJsoAtyuNRoSuGFOwoHpg1EcPeljLmswmkU7aa8ONbNcII7gR-VTT-gnMZSIvs8lbFeWgRNr7O1HUWE3ftEFA7Rxpe4V6K4VaUh9VhkN6mBSfr1r7DsrI5QsYMIPJLvNMuu9C-vIy98fByY32NnMWnEO5UbYaAgoP6A85xd0lE8jw9F0KNyjtrNJHUZ-ZmoD1jfNMD7SJeMyKz4xwcsrzZPI0WHByRQmeRMBhWZOEsNNq2RBcLUd9EuarcfOS7dw__&Key-Pair-Id=APKAIAQ2JPZIIO2PHR7Q",
+                "_1080p": "https://dm0qx8t0i9gc9.cloudfront.net/content/video/SNc_bPaMeiw63zp8r/videoblocks-school-of-fish-sharks-swim-in-a-circle_smleuo42x_1080__D.mp4?type=download&origin=VIDEOBLOCKS&timestamp_ms=1606186618399&publicKey=QM2BJhkcyJwbHRolMhI7h2OOfvcdQKHgGQiHZcXag3YWF8VsmrAxOrFRlRtB5xbg&organizationId=103584&apiVersion=2.0&endUserId=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3&projectId=test&stockItemId=8180348&format=HDMP4&resolution=1080p&response-content-disposition=attachment&Expires=1606188418&Signature=B59vSQOU6fYf9r3gbgtEcx~z0Nk8fTNixeQ3AzB~AbwWos7-rCJKSBMlpGN~GszF5WFgVUEVinnU3XycKviW0jQ3l24TXnVfi9NIOkC2opUnGrYpMCeqP~N~eTXET~2hW9lJqsvjC99TNe6kb6ncx3m67PrvjUdDhnuzudBDWFmYBWAWm7egRZL93-ifpc3WKy1eDU~CbVHGyGNgy1ifQM3XHu25DCzWaAkt0UK6gZqR6j5PU0arDRpVG4lxE8WnZvr28Z7Kxrz26mj1ILJeFwPEHwypr1Xb4bOkFeUzw4Yk0PsWoeobdcaXG3QPm0PUAmkfwlMBP9xgi4H03B~Gfw__&Key-Pair-Id=APKAIAQ2JPZIIO2PHR7Q"
+            }
+        },
+        "rawHeaders": [
+            "date",
+            "Tue, 24 Nov 2020 02:56:58 GMT",
+            "content-type",
+            "application/json",
+            "transfer-encoding",
+            "chunked",
+            "connection",
+            "close",
+            "server",
+            "nginx",
+            "set-cookie",
+            [
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.videoblocks.com"
+            ],
+            "cache-control",
+            "no-cache, private",
+            "x-frame-options",
+            "SAMEORIGIN",
+            "content-encoding",
+            ""
+        ],
+        "responseIsBinary": false
+    }
+]

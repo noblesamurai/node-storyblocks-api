@@ -1,0 +1,245 @@
+[
+    {
+        "path": "/api/v2/audio/collections/250?EXPIRES=1234567890&HMAC=0000000000&APIKEY=PUBLIC_KEY",
+        "scope": "https://api.audioblocks.com:443",
+        "method": "GET",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "title": "Epic Inspiration (solo piano)",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/SxoktnUHBjzy8oizv/ssm-102518-Epic-Inspiration-solo-piano.png",
+                "id": 152940,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/SxoktnUHBjzy8oizv/ssm-102518-Epic-Inspiration-solo-piano_NWM.mp3",
+                "duration": 158,
+                "bpm": 139
+            },
+            {
+                "title": "play by the house rules",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/SxoktnUHBjzy8oizv/play-by-the-house-rules.png",
+                "id": 159136,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/SxoktnUHBjzy8oizv/play-by-the-house-rules_NWM.mp3",
+                "duration": 119,
+                "bpm": 131
+            },
+            {
+                "title": "Inspirational Orchestra (no piano 60s)",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/SxoktnUHBjzy8oizv/ssm-102518-Inspirational-Orchestra-no-piano-60s.png",
+                "id": 155808,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/SxoktnUHBjzy8oizv/ssm-102518-Inspirational-Orchestra-no-piano-60s_NWM.mp3",
+                "duration": 62,
+                "bpm": 161
+            },
+            {
+                "title": "Glorious Day - Piano and String 01",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/SxoktnUHBjzy8oizv/ssm-102518-Glorious-Day-Piano-and-String-01.png",
+                "id": 154162,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/SxoktnUHBjzy8oizv/ssm-102518-Glorious-Day-Piano-and-String-01_NWM.mp3",
+                "duration": 151,
+                "bpm": 171
+            },
+            {
+                "title": "Rip Rich Black ",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/BsTwCwBHBjzwub4i4/jdi-rip-rich-black-032314-83.png",
+                "id": 97061,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/BsTwCwBHBjzwub4i4/jdi-rip-rich-black-032314-83_NWM.mp3",
+                "duration": 120,
+                "bpm": 119
+            },
+            {
+                "title": "Inspiring 01",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/SxoktnUHBjzy8oizv/ssm-102518-Inspiring-01.png",
+                "id": 155818,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/SxoktnUHBjzy8oizv/ssm-102518-Inspiring-01_NWM.mp3",
+                "duration": 137,
+                "bpm": 105
+            },
+            {
+                "title": "Radiate Long (no drums)",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/SxoktnUHBjzy8oizv/ssm-102518-Radiate-Long-no-drums.png",
+                "id": 159502,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/SxoktnUHBjzy8oizv/ssm-102518-Radiate-Long-no-drums_NWM.mp3",
+                "duration": 119,
+                "bpm": 151
+            },
+            {
+                "title": "Sky is the Limit",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/SxoktnUHBjzy8oizv/ssm-102518-Sky-is-the-Limit.png",
+                "id": 160682,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/SxoktnUHBjzy8oizv/ssm-102518-Sky-is-the-Limit_NWM.mp3",
+                "duration": 96,
+                "bpm": 104
+            },
+            {
+                "title": "Optimistic Piano and Strings",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/SxoktnUHBjzy8oizv/ssm-102518-Optimistic-Piano-and-Strings.png",
+                "id": 158746,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/SxoktnUHBjzy8oizv/ssm-102518-Optimistic-Piano-and-Strings_NWM.mp3",
+                "duration": 234,
+                "bpm": 191
+            },
+            {
+                "title": "A Dramatic Twist",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/BsTwCwBHBjzwub4i4/a-dramatic-twist_MJDQXUHd.png",
+                "id": 93714,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/BsTwCwBHBjzwub4i4/a-dramatic-twist_MJDQXUHd_NWM.mp3",
+                "duration": 28,
+                "bpm": 194
+            },
+            {
+                "title": "Moving emotional piano hero track",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/SxoktnUHBjzy8oizv/moving-emotional-piano-hero-track.png",
+                "id": 148713,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/SxoktnUHBjzy8oizv/moving-emotional-piano-hero-track_NWM.mp3",
+                "duration": 149,
+                "bpm": 143
+            },
+            {
+                "title": "hope in the world",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/SxoktnUHBjzy8oizv/hope-in-the-world.png",
+                "id": 155130,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/SxoktnUHBjzy8oizv/hope-in-the-world_NWM.mp3",
+                "duration": 104,
+                "bpm": 179
+            },
+            {
+                "title": "glad being happy",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/SxoktnUHBjzy8oizv/glad-being-happy.png",
+                "id": 154131,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/SxoktnUHBjzy8oizv/glad-being-happy_NWM.mp3",
+                "duration": 120,
+                "bpm": 132
+            },
+            {
+                "title": "Rocking The Southern Way",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/BsTwCwBHBjzwub4i4/rocking-the-southern-way_f1a9NLrd.png",
+                "id": 93920,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/BsTwCwBHBjzwub4i4/rocking-the-southern-way_f1a9NLrd_NWM.mp3",
+                "duration": 215,
+                "bpm": 127
+            },
+            {
+                "title": "Action Sports",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/BsTwCwBHBjzwub4i4/action-sports.png",
+                "id": 98360,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/BsTwCwBHBjzwub4i4/action-sports_NWM.mp3",
+                "duration": 73,
+                "bpm": 127
+            },
+            {
+                "title": "Carribbean Funk",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/BsTwCwBHBjzwub4i4/jdi-carribbean-funk-032414-13.png",
+                "id": 96890,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/BsTwCwBHBjzwub4i4/jdi-carribbean-funk-032414-13_NWM.mp3",
+                "duration": 98,
+                "bpm": 180
+            },
+            {
+                "title": "Gotta Get Funky Tonight",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/BsTwCwBHBjzwub4i4/jdi-gotta-get-funky-tonight-032414-31.png",
+                "id": 96978,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/BsTwCwBHBjzwub4i4/jdi-gotta-get-funky-tonight-032414-31_NWM.mp3",
+                "duration": 107,
+                "bpm": 145
+            },
+            {
+                "title": "Funky Brown Business",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/BsTwCwBHBjzwub4i4/jdi-funky-brown-business-032414-30.png",
+                "id": 96967,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/BsTwCwBHBjzwub4i4/jdi-funky-brown-business-032414-30_NWM.mp3",
+                "duration": 124,
+                "bpm": 109
+            },
+            {
+                "title": "Deep Thoughts Full",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/BsTwCwBHBjzwub4i4/deep-thoughts-full_G10GtE4O.png",
+                "id": 16391,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/BsTwCwBHBjzwub4i4/deep-thoughts-full_G10GtE4O_NWM.mp3",
+                "duration": 99,
+                "bpm": 199
+            },
+            {
+                "title": "Never-Ending Optimism",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/BsTwCwBHBjzwub4i4/never-ending-optimism_zJOfdWSd.png",
+                "id": 77719,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/BsTwCwBHBjzwub4i4/never-ending-optimism_zJOfdWSd_NWM.mp3",
+                "duration": 132,
+                "bpm": 125
+            },
+            {
+                "title": "Achieving The Dream",
+                "thumbnail_url": "https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/audio/BsTwCwBHBjzwub4i4/achieving-the-dream_M1voRSHd.png",
+                "id": 92882,
+                "type": "music",
+                "is_new": false,
+                "preview_url": "https://dm0qx8t0i9gc9.cloudfront.net/previews/audio/BsTwCwBHBjzwub4i4/achieving-the-dream_M1voRSHd_NWM.mp3",
+                "duration": 175,
+                "bpm": 119
+            }
+        ],
+        "rawHeaders": [
+            "date",
+            "Tue, 24 Nov 2020 02:56:53 GMT",
+            "content-type",
+            "application/json",
+            "transfer-encoding",
+            "chunked",
+            "connection",
+            "close",
+            "server",
+            "nginx",
+            "set-cookie",
+            [
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.audioblocks.com"
+            ],
+            "cache-control",
+            "no-cache, private",
+            "x-frame-options",
+            "SAMEORIGIN",
+            "content-encoding",
+            ""
+        ],
+        "responseIsBinary": false
+    }
+]

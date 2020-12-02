@@ -1,0 +1,555 @@
+[
+    {
+        "path": "/api/v2/audio/collections?EXPIRES=1234567890&HMAC=0000000000&APIKEY=PUBLIC_KEY",
+        "scope": "https://api.audioblocks.com:443",
+        "method": "GET",
+        "body": "",
+        "status": 200,
+        "response": [
+            {
+                "id": 236,
+                "name": "Authentic",
+                "description": "Authentic Collection for Real Deal promotion",
+                "date_added": "2016-08-16 16:58:27",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 0
+            },
+            {
+                "id": 245,
+                "name": "Ab Holiday",
+                "description": "AudioBlocks Holiday Campaign",
+                "date_added": "2016-11-14 17:06:55",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 150
+            },
+            {
+                "id": 246,
+                "name": "Celebrate The World",
+                "description": "Celebrate the World Collection",
+                "date_added": "2016-11-17 10:25:50",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 8
+            },
+            {
+                "id": 247,
+                "name": "Foley Sfx",
+                "description": null,
+                "date_added": "2017-02-24 11:39:48",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 15
+            },
+            {
+                "id": 248,
+                "name": "Background Loops",
+                "description": null,
+                "date_added": "2017-02-24 13:17:54",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 0
+            },
+            {
+                "id": 249,
+                "name": "Holiday Sfx",
+                "description": null,
+                "date_added": "2017-02-24 13:18:13",
+                "date_updated": "2018-11-01 23:16:11",
+                "num_items": 38
+            },
+            {
+                "id": 250,
+                "name": "Inspiring Tracks",
+                "description": null,
+                "date_added": "2017-02-24 13:18:26",
+                "date_updated": "2019-02-25 14:32:41",
+                "num_items": 21
+            },
+            {
+                "id": 251,
+                "name": "Lyric Rock Tracks",
+                "description": null,
+                "date_added": "2017-02-24 13:18:46",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 0
+            },
+            {
+                "id": 252,
+                "name": "Non-cheesy Tracks",
+                "description": null,
+                "date_added": "2017-02-24 13:19:00",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 8
+            },
+            {
+                "id": 253,
+                "name": "Movie Trailers",
+                "description": null,
+                "date_added": "2017-02-24 13:19:01",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 16
+            },
+            {
+                "id": 254,
+                "name": "Youtube Intros",
+                "description": null,
+                "date_added": "2017-02-24 13:19:44",
+                "date_updated": "2019-05-15 12:49:01",
+                "num_items": 22
+            },
+            {
+                "id": 255,
+                "name": "Guitar Loops",
+                "description": null,
+                "date_added": "2017-02-24 13:27:38",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 0
+            },
+            {
+                "id": 257,
+                "name": "Go Beyond Full",
+                "description": null,
+                "date_added": "2017-03-16 11:45:33",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 73
+            },
+            {
+                "id": 258,
+                "name": "Star Wars",
+                "description": "",
+                "date_added": "2017-05-01 18:49:39",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 39
+            },
+            {
+                "id": 260,
+                "name": "#cometogether Full",
+                "description": "",
+                "date_added": "2017-05-03 12:40:03",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 78
+            },
+            {
+                "id": 262,
+                "name": "Weather The Storm",
+                "description": "",
+                "date_added": "2017-05-11 10:02:07",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 34
+            },
+            {
+                "id": 266,
+                "name": "Under The Sea",
+                "description": "",
+                "date_added": "2017-06-26 09:57:30",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 24
+            },
+            {
+                "id": 268,
+                "name": "Wild",
+                "description": "",
+                "date_added": "2017-06-26 10:33:12",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 20
+            },
+            {
+                "id": 271,
+                "name": "Explosive Sound Effects",
+                "description": "Curated collection of explosive sound effects",
+                "date_added": "2017-08-01 09:06:28",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 41
+            },
+            {
+                "id": 272,
+                "name": "Heroic Theme Music",
+                "description": "Collection of heroic (epic and inspiring) music tracks",
+                "date_added": "2017-08-08 09:08:20",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 5
+            },
+            {
+                "id": 273,
+                "name": "Sounds Of Thrones",
+                "description": "",
+                "date_added": "2017-08-16 11:41:40",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 31
+            },
+            {
+                "id": 275,
+                "name": "Hype Music",
+                "description": "Hype music and uptempo jock jams",
+                "date_added": "2017-08-28 14:16:48",
+                "date_updated": "2019-02-25 14:51:50",
+                "num_items": 25
+            },
+            {
+                "id": 276,
+                "name": "Halloween",
+                "description": "",
+                "date_added": "2017-08-29 12:08:59",
+                "date_updated": "2018-09-27 11:19:21",
+                "num_items": 21
+            },
+            {
+                "id": 278,
+                "name": "Rebel",
+                "description": "",
+                "date_added": "2017-08-30 15:49:01",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 6
+            },
+            {
+                "id": 279,
+                "name": "Cozy Collection",
+                "description": "",
+                "date_added": "2017-09-07 05:09:11",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 16
+            },
+            {
+                "id": 282,
+                "name": "Dark Music",
+                "description": "",
+                "date_added": "2017-10-11 13:39:14",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 12
+            },
+            {
+                "id": 283,
+                "name": "Wanderlust",
+                "description": "",
+                "date_added": "2017-10-11 13:51:07",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 15
+            },
+            {
+                "id": 284,
+                "name": "Classical",
+                "description": "",
+                "date_added": "2017-10-13 10:06:56",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 61
+            },
+            {
+                "id": 288,
+                "name": "The Holidays",
+                "description": "",
+                "date_added": "2017-10-23 20:58:28",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 26
+            },
+            {
+                "id": 289,
+                "name": "Winter Non-holiday",
+                "description": "",
+                "date_added": "2017-10-24 16:03:02",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 14
+            },
+            {
+                "id": 291,
+                "name": "Epic Vocal Tracks",
+                "description": "",
+                "date_added": "2017-10-31 13:45:26",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 10
+            },
+            {
+                "id": 295,
+                "name": "Best Of Music",
+                "description": "",
+                "date_added": "2017-11-07 11:33:39",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 7
+            },
+            {
+                "id": 298,
+                "name": "Blissful Music",
+                "description": "",
+                "date_added": "2017-11-20 14:43:54",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 17
+            },
+            {
+                "id": 300,
+                "name": "Awesome - Trends Guide 2017",
+                "description": "",
+                "date_added": "2017-12-01 15:24:49",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 20
+            },
+            {
+                "id": 301,
+                "name": "Real People - Trends Guide 2017",
+                "description": "",
+                "date_added": "2017-12-01 15:29:45",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 0
+            },
+            {
+                "id": 302,
+                "name": "Essentialism - Trends Guide 2017",
+                "description": "",
+                "date_added": "2017-12-01 15:30:07",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 31
+            },
+            {
+                "id": 303,
+                "name": "Electric Sfx - Trends Guide 2017",
+                "description": "",
+                "date_added": "2017-12-01 15:31:43",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 62
+            },
+            {
+                "id": 304,
+                "name": "Vr Sound - Trends Guide 2017",
+                "description": "",
+                "date_added": "2017-12-01 15:32:15",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 69
+            },
+            {
+                "id": 305,
+                "name": "Yt-podcast - Trends Guide 2017",
+                "description": "",
+                "date_added": "2017-12-01 15:32:37",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 19
+            },
+            {
+                "id": 306,
+                "name": "Electro Pop",
+                "description": "",
+                "date_added": "2018-01-15 06:36:54",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 10
+            },
+            {
+                "id": 307,
+                "name": "Transitons",
+                "description": "",
+                "date_added": "2018-01-22 10:32:17",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 16
+            },
+            {
+                "id": 312,
+                "name": "Epic Battle Music",
+                "description": "",
+                "date_added": "2018-02-01 09:55:42",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 20
+            },
+            {
+                "id": 313,
+                "name": "Energizing",
+                "description": "",
+                "date_added": "2018-02-28 13:05:41",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 7
+            },
+            {
+                "id": 314,
+                "name": "Epic And Beautiful",
+                "description": "",
+                "date_added": "2018-03-04 20:29:02",
+                "date_updated": "2018-03-30 11:45:39",
+                "num_items": 12
+            },
+            {
+                "id": 316,
+                "name": "Jingles",
+                "description": "",
+                "date_added": "2018-03-30 14:34:22",
+                "date_updated": "2018-03-30 14:34:22",
+                "num_items": 4
+            },
+            {
+                "id": 317,
+                "name": "Action/sport",
+                "description": "",
+                "date_added": "2018-04-13 10:19:50",
+                "date_updated": "2018-04-13 10:19:50",
+                "num_items": 6
+            },
+            {
+                "id": 318,
+                "name": "Everyday Sfx",
+                "description": "",
+                "date_added": "2018-04-23 05:56:21",
+                "date_updated": "2018-04-23 05:56:21",
+                "num_items": 32
+            },
+            {
+                "id": 319,
+                "name": "Accordion And Polka",
+                "description": "",
+                "date_added": "2018-04-27 10:26:19",
+                "date_updated": "2018-04-27 10:26:19",
+                "num_items": 6
+            },
+            {
+                "id": 321,
+                "name": "Zen",
+                "description": "",
+                "date_added": "2018-05-15 09:33:34",
+                "date_updated": "2018-05-15 10:11:38",
+                "num_items": 10
+            },
+            {
+                "id": 324,
+                "name": "Summer Sfx",
+                "description": "",
+                "date_added": "2018-05-17 21:36:09",
+                "date_updated": "2018-05-17 21:36:09",
+                "num_items": 24
+            },
+            {
+                "id": 325,
+                "name": "Country Nights",
+                "description": "",
+                "date_added": "2018-05-23 10:39:01",
+                "date_updated": "2018-05-23 10:39:01",
+                "num_items": 22
+            },
+            {
+                "id": 330,
+                "name": "Latin Dance",
+                "description": "",
+                "date_added": "2018-05-29 14:03:42",
+                "date_updated": "2018-05-29 14:03:42",
+                "num_items": 18
+            },
+            {
+                "id": 331,
+                "name": "Weddings",
+                "description": "",
+                "date_added": "2018-06-04 17:07:26",
+                "date_updated": "2019-02-25 15:04:55",
+                "num_items": 35
+            },
+            {
+                "id": 335,
+                "name": "Road Tripping",
+                "description": "",
+                "date_added": "2018-06-27 14:31:01",
+                "date_updated": "2018-06-27 14:31:01",
+                "num_items": 18
+            },
+            {
+                "id": 336,
+                "name": "Epic Gaming",
+                "description": "",
+                "date_added": "2018-07-09 10:11:15",
+                "date_updated": "2018-07-09 10:11:15",
+                "num_items": 18
+            },
+            {
+                "id": 337,
+                "name": "Exercise Music",
+                "description": "",
+                "date_added": "2018-07-19 17:50:17",
+                "date_updated": "2018-07-19 17:50:17",
+                "num_items": 7
+            },
+            {
+                "id": 338,
+                "name": "Relaxing Guitar Music",
+                "description": "",
+                "date_added": "2018-07-30 13:12:39",
+                "date_updated": "2018-07-30 13:12:39",
+                "num_items": 32
+            },
+            {
+                "id": 339,
+                "name": "Empowering Music",
+                "description": "",
+                "date_added": "2018-08-06 14:13:20",
+                "date_updated": "2018-08-06 14:13:20",
+                "num_items": 10
+            },
+            {
+                "id": 340,
+                "name": "Youtube Background Music",
+                "description": "",
+                "date_added": "2018-08-07 14:39:17",
+                "date_updated": "2018-08-07 14:39:17",
+                "num_items": 21
+            },
+            {
+                "id": 341,
+                "name": "Hip Hop Instrumental",
+                "description": "",
+                "date_added": "2018-08-29 12:30:10",
+                "date_updated": "2018-08-29 12:30:10",
+                "num_items": 11
+            },
+            {
+                "id": 342,
+                "name": "Sport Sfx",
+                "description": "",
+                "date_added": "2018-09-05 14:14:20",
+                "date_updated": "2018-09-05 14:14:20",
+                "num_items": 53
+            },
+            {
+                "id": 343,
+                "name": "Cozy Coffee Shop",
+                "description": "",
+                "date_added": "2018-09-11 23:37:44",
+                "date_updated": "2018-09-11 23:37:44",
+                "num_items": 30
+            },
+            {
+                "id": 346,
+                "name": "Piano In The Background",
+                "description": "",
+                "date_added": "2018-09-28 12:12:28",
+                "date_updated": "2018-09-28 12:12:28",
+                "num_items": 51
+            },
+            {
+                "id": 347,
+                "name": "Murder Mystery Music",
+                "description": "",
+                "date_added": "2018-10-04 15:45:11",
+                "date_updated": "2018-10-04 15:45:11",
+                "num_items": 13
+            },
+            {
+                "id": 348,
+                "name": "Hair Raising Asmr",
+                "description": "",
+                "date_added": "2018-10-12 14:41:29",
+                "date_updated": "2018-10-12 14:41:29",
+                "num_items": 80
+            }
+        ],
+        "rawHeaders": [
+            "date",
+            "Tue, 24 Nov 2020 02:56:52 GMT",
+            "content-type",
+            "application/json",
+            "transfer-encoding",
+            "chunked",
+            "connection",
+            "close",
+            "server",
+            "nginx",
+            "set-cookie",
+            [
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/",
+                "login_session=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.audioblocks.com"
+            ],
+            "cache-control",
+            "no-cache, private",
+            "x-frame-options",
+            "SAMEORIGIN",
+            "content-encoding",
+            ""
+        ],
+        "responseIsBinary": false
+    }
+]
