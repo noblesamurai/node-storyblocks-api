@@ -1,0 +1,10 @@
+[tool.tartufo]
+cleanup = true
+entropy = true
+exclude-path-patterns = [
+  # Automatically generated test fixtures.
+  '^test/fixtures/.*\.json$'
+]
+json = false
+regex = true
+repo-path = "."
