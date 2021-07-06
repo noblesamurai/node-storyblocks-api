@@ -9,7 +9,7 @@
     "/src"
   ],
   "scripts": {
-    "coverage": "nyc npm test",
+    "coverage": "c8 npm test",
     "pretest": "xo",
     "test": "mocha --recursive test",
     "watch": "mocha --recursive --watch test",
@@ -24,6 +24,7 @@
     "url": "https://github.com/noblesamurai/node-storyblocks-api/issues"
   },
   "dependencies": {
+    "c8": "^7.7.3",
     "got": "^11.8.0",
     "http-errors": "^1.7.3",
     "lodash.camelcase": "^4.3.0",
@@ -45,11 +46,10 @@
     "jsdoc-to-markdown": "^7.0.1",
     "mocha": "^8.2.1",
     "nock": "^13.0.5",
-    "nyc": "^15.1.0",
     "xo": "^0.35.0"
   },
   "keywords": [],
-  "nyc": {
+  "c8": {
     "include": [
       "src"
     ],
