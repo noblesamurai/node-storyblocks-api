@@ -148,6 +148,20 @@ have been added to the `.gitignore` so they are never committed.
 Fixtures are stored in `/test/fixtures`. If you need to re-record a test the simplest way is to just remove
 the recorded fixture and run the tests again.
 
+## Contributing
+
+### Prerequisites
+
+```
+$ pip install pre-commit
+```
+
+### Installation
+
+```
+$ pre-commit install --install-hooks
+```
+
 ## License
 
 The BSD License
